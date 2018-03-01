@@ -1,0 +1,145 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_CUETIMELINER\vvvv_50alpha35.18_x64\packs\VVVV.Audio\girlpower\LTC_Receiver.v4p" systemname="LTC_Receiver" filename="D:\_VVVV\_Projects\_CUETIMELINER\vvvv_50alpha35.18_x64\packs\VVVV.Audio\girlpower\LTC_Receiver.v4p" scrollx="60" scrolly="0">
+   <BOUNDS type="Window" left="4620" top="4815" width="9525" height="8940">
+   </BOUNDS>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3930" top="5640" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3930" top="5640" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Play">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="128" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="4770" top="6345" width="1590" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4770" top="6345" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="44100">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Sample Rate|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="129" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="4590" top="5835" width="1590" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4590" top="5835" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="|ASIO4ALL v2|">
+   </PIN>
+   </NODE>
+   <PACK Name="testPack" Version="0.1.0">
+   </PACK>
+   <NODE systemname="AudioEngine (VAudio)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.Nodes.dll" nodename="AudioEngine (VAudio)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="3885" top="6975" width="1050" height="270">
+   </BOUNDS>
+   <PIN pinname="Driver">
+   </PIN>
+   <PIN pinname="Control Panel" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Play">
+   </PIN>
+   <PIN pinname="Desired Output Channels" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Desired Input Channels" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Sample Rate">
+   </PIN>
+   <PIN pinname="Time" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Play">
+   </LINK>
+   <LINK srcnodeid="128" srcpinname="Output Enum" dstnodeid="2" dstpinname="Sample Rate">
+   </LINK>
+   <LINK srcnodeid="129" srcpinname="Output Enum" dstnodeid="2" dstpinname="Driver">
+   </LINK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   <NODE systemname="LTCDecoder (VAudio Sink)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.LTC.dll" nodename="LTCDecoder (VAudio Sink)" componentmode="Hidden" id="151">
+   <BOUNDS type="Node" left="2325" top="2370" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2325" top="2370" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Timecode" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AudioIn (VAudio Source)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.Nodes.dll" nodename="AudioIn (VAudio Source)" componentmode="Hidden" id="152">
+   <BOUNDS type="Node" left="2010" top="1110" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2010" top="1110" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Audio Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" id="153">
+   <BOUNDS type="Node" left="2325" top="1905" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="152" srcpinname="Audio Out" dstnodeid="153" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="153" srcpinname="Output Node" dstnodeid="151" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="156" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3765" top="7455" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3765" top="7455" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Time" dstnodeid="156" dstpinname="Y Input Value">
+   </LINK>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <PACK Name="dx11" Version="1.0.4">
+   </PACK>
+   <NODE systemname="LTC2Sec (VAudio)" filename="%VVVV%\packs\VVVV.Audio\nodes\modules\LTC2Sec (VAudio).v4p" nodename="LTC2Sec (VAudio)" componentmode="Hidden" id="159">
+   <BOUNDS type="Node" left="2310" top="3375" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="FPS" slicecount="1" values="30">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="151" srcpinname="Timecode" dstnodeid="159" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="160">
+   <BOUNDS type="Box" left="2250" top="3945" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2250" top="3945" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="159" srcpinname="Output" dstnodeid="160" dstpinname="Y Input Value">
+   </LINK>
+   </PATCH>

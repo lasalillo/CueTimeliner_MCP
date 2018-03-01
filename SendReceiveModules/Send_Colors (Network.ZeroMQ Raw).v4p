@@ -1,0 +1,325 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\_LaunchPad-Mini\SendReceiveModules\Send_Colors (Network.ZeroMQ Raw).v4p" systemname="Send_Colors (Network.ZeroMQ Raw)" filename="D:\_VIDEOMIXER\_LaunchPad\Send_Colors (Network.ZeroMQ Raw).v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="10200" top="7305" width="11505" height="6660">
+   </BOUNDS>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3120" top="1425" width="510" height="465">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3120" top="1425" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enable">
+   </PIN>
+   </NODE>
+   <PACK Name="VVVV.Packs" Version="0.1.0">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="20" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="615" top="1425" width="585" height="255">
+   </BOUNDS>
+   <BOUNDS type="Node" left="615" top="1425" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="tcp">
+   </PIN>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Protocol">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2205" top="1425" width="825" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2205" top="1425" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4452">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Port">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="26" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3165" top="2685" width="405" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3165" top="2685" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="46" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1260" top="4965" width="405" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1260" top="4965" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Success">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="74" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1320" top="1425" width="825" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1320" top="1425" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="127.0.0.1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="localhost">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Server">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="158" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4695" top="3765" width="405" height="570">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4695" top="3765" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="163">
+   <BOUNDS type="Node" left="6435" top="3840" width="840" height="270">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="164" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8670" top="150" width="1365" height="1500">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8670" top="150" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Send">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Send (Network.ZeroMQ Raw)" filename="%VVVV%\packs\vvvv-ZeroMQ_Release_x64\nodes\plugins\VVVV.ZeroMQ.dll" nodename="Send (Network.ZeroMQ Raw)" componentmode="Hidden" id="153">
+   <BOUNDS type="Node" left="1275" top="4560" width="5220" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1275" top="4560" width="250" height="250">
+   </BOUNDS>
+   <PIN pinname="Frames" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Frames Bin Size" visible="1" slicecount="2" values="1,1">
+   </PIN>
+   <PIN pinname="Send" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="153" srcpinname="Success" dstnodeid="46" dstpinname="Y Input Value">
+   </LINK>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.0">
+   </PACK>
+   <NODE systemname="AsRaw (Color)" filename="%VVVV%\lib\nodes\modules\Color\AsRaw (Color).v4p" nodename="AsRaw (Color)" componentmode="Hidden" id="171">
+   <BOUNDS type="Node" left="4455" top="2895" width="915" height="270">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="80" values="|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|,|1.00000,1.00000,1.00000,0.00000|">
+   </PIN>
+   <BOUNDS type="Box" left="4455" top="2895">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="174">
+   <BOUNDS type="Node" left="4365" top="225" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4365" top="225" width="1395" height="1275">
+   </BOUNDS>
+   <PIN pinname="Columns" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Color Input" slicecount="64" values="|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.00000,0.23822,0.60147,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.74051,0.45070,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.69805,0.61252,0.00000,1.00000|,|0.71382,0.00000,0.74052,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.55508,0.00000,0.37022,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.00000,0.43665,0.10507,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.27657,0.42730,0.00000,1.00000|,|0.61636,0.49081,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.72947,0.27060,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|,|0.77573,0.33635,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Pads">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="175">
+   <BOUNDS type="Node" left="5805" top="195" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5805" top="195" width="1395" height="1275">
+   </BOUNDS>
+   <PIN pinname="Columns" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   <PIN pinname="Color Input" slicecount="16" values="|0.47921,0.23470,0.00000,1.00000|,|0.47921,0.23470,0.00000,1.00000|,|0.47921,0.23470,0.00000,1.00000|,|0.47921,0.23470,0.00000,1.00000|,|0.47921,0.23470,0.00000,1.00000|,|0.47921,0.23470,0.00000,1.00000|,|0.47921,0.23470,0.00000,1.00000|,|0.47921,0.23470,0.00000,1.00000|,|0.47921,0.23470,0.00000,1.00000|,|0.47921,0.23470,0.00000,1.00000|,|0.04248,0.26605,0.00000,1.00000|,|0.47921,0.23470,0.00000,1.00000|,|0.27539,0.00000,0.07086,1.00000|,|0.00000,0.08396,0.18817,1.00000|,|0.48291,0.03720,0.00000,1.00000|,|0.47921,0.23470,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Buttons">
+   </PIN>
+   </NODE>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="181">
+   <BOUNDS type="Node" left="7230" top="2940" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Simulate" visible="1">
+   </PIN>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="164" srcpinname="Y Output Value" dstnodeid="181" dstpinname="Simulate">
+   </LINK>
+   <LINK srcnodeid="158" srcpinname="Y Output Value" dstnodeid="153" dstpinname="Frames Bin Size">
+   </LINK>
+   <NODE systemname="Change (Color)" filename="%VVVV%\lib\nodes\modules\Color\Change (Color).v4p" nodename="Change (Color)" componentmode="Hidden" id="189">
+   <BOUNDS type="Node" left="5490" top="2895" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="80" values="|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="5490" top="2895">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="189" srcpinname="Output" dstnodeid="163" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="163" srcpinname="Output" dstnodeid="153" dstpinname="Send">
+   </LINK>
+   <LINK srcnodeid="171" srcpinname="Output" dstnodeid="153" dstpinname="Frames">
+   </LINK>
+   <LINK srcnodeid="181" srcpinname="Bang" dstnodeid="163" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Cons (Color)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Color)" componentmode="Hidden" id="173">
+   <BOUNDS type="Node" left="4440" top="2280" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1 Bin Size" slicecount="1" visible="1" values="32">
+   </PIN>
+   <PIN pinname="Input 2 Bin Size" slicecount="1" values="64">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="175" srcpinname="Color Output" dstnodeid="173" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="174" srcpinname="Color Output" dstnodeid="173" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="173" srcpinname="Output" dstnodeid="171" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="173" srcpinname="Output" dstnodeid="189" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Publisher (Network.ZeroMQ)" filename="%VVVV%\packs\vvvv-ZeroMQ_Release_x64\nodes\plugins\VVVV.ZeroMQ.dll" nodename="Publisher (Network.ZeroMQ)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="1260" top="2175" width="1965" height="270">
+   </BOUNDS>
+   <PIN pinname="Protocol" visible="1">
+   </PIN>
+   <PIN pinname="Port" visible="1">
+   </PIN>
+   <PIN pinname="Sockets" visible="1">
+   </PIN>
+   <PIN pinname="Valid" visible="1">
+   </PIN>
+   <PIN pinname="Server" visible="1" slicecount="1" values="127.0.0.1">
+   </PIN>
+   <BOUNDS type="Box" left="1260" top="2175">
+   </BOUNDS>
+   <PIN pinname="Bind" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Enable">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Output Enum" dstnodeid="19" dstpinname="Protocol">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Port">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Valid" dstnodeid="26" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="74" srcpinname="Output String" dstnodeid="19" dstpinname="Server">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Sockets" dstnodeid="153" dstpinname="Socket">
+   </LINK>
+   </PATCH>

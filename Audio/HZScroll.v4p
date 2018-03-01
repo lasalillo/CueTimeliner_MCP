@@ -1,0 +1,75 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_CUETIMELINER\Audio\HZScroll.v4p" systemname="HZScroll" filename="D:\_VVVV\_Projects\_CUETIMELINER\Audio\HZScroll.v4p">
+   <NODE systemname="Decompose (Transform Vector)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Decompose (Transform Vector)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1710" top="1500" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1710" top="1500" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="ScaleXYZ" visible="1">
+   </PIN>
+   <PIN pinname="TranslateXYZ" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (3d Split)" nodename="Vector (3d Split)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="2145" top="2040" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1500" top="2475" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="ScaleX" visible="1">
+   </PIN>
+   <PIN pinname="TranslateX" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (3d Split)" nodename="Vector (3d Split)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1545" top="2055" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="X" dstnodeid="2" dstpinname="TranslateX">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="X" dstnodeid="2" dstpinname="ScaleX">
+   </LINK>
+   <NODE id="4" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="3075" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="3075" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Transform Out" dstnodeid="4" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="TranslateXYZ" dstnodeid="3" dstpinname="XYZ">
+   </LINK>
+   <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform In|">
+   </PIN>
+   <BOUNDS type="Box" left="1710" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1710" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output Node" dstnodeid="0" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="ScaleXYZ" dstnodeid="1" dstpinname="XYZ">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="3745" height="4075">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.0.4">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   </PATCH>

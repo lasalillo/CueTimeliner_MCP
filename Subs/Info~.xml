@@ -1,0 +1,39 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_CUETIMELINER\Subs\Info.v4p" systemname="Info" filename="D:\_VVVV\_Projects\_CUETIMELINER\Subs\Info.v4p" bgcolor="4010496">
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">
+   <BOUNDS type="Node" left="210" top="225" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="210" top="225" width="1965" height="3375">
+   </BOUNDS>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="|SpaceBar=Play/Stop&cr;&lf;HZScrool=RB+Move&cr;&lf;(+Shift=Fast)&cr;&lf;VtScrool=MouseWheel&cr;&lf;Zoom=Z+MouseWheel&cr;&lf;(+Shift=Fast)&cr;&lf;LoopOn/OFF=Shif+L    LoopPointsEdit:   &cr;&lf;LB+L=Start &cr;&lf;RB+L=End   &cr;&lf;RB+Ctr=SelectTrack&cr;&lf;LB=SetPlayerPointer&cr;&lf;Alt+Z=UnDo&cr;&lf;Alt+Y=ReDo|">
+   </PIN>
+   </NODE>
+   <BOUNDS type="Window" left="13950" top="8790" width="12705" height="6000">
+   </BOUNDS>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <PACK Name="addonpack" Version="35.9.0">
+   </PACK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="1">
+   <BOUNDS type="Node" left="2370" top="225" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2370" top="225" width="3750" height="4620">
+   </BOUNDS>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="|Shift+T=EditTrackName&cr;&lf;A+RB=AddCue (With the current UI Values)&cr;&lf;A+RB+Ctr=AddCueOnNewTrack&cr;&lf;D+OnSelectedCue+RB=DeleteCue &cr;&lf;C+OnSelectedCue+RB=CloneCue (to any track)  M+RB+OnSelectedCue=MoveCue (+Ctr=Snap)  &cr;&lf;F+MouseWheel+OnSelectedCue=EditFadeTime Alt+N=EditName&cr;&lf;Alt+V OnSelectedCue=EditValues&cr;&lf;OnControllerUI:&cr;&lf;LB=EditValue   &cr;&lf;LB+Shift=Slow  &cr;&lf;LB+Ctr=Multiple   &cr;&lf;RB+Ctr=EditMode (Lin,Exp,Start,End)&cr;&lf;Shift+E=MoveMulti&cr;&lf;Shift+C=CopyMulti&cr;&lf;OnEditMulti:&cr;&lf;Shif+RB=SelectTracks&cr;&lf;Ctr+RB=MoveCues&cr;&lf;LoopPoints=SelectArea|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="3">
+   <BOUNDS type="Node" left="6330" top="225" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6330" top="225" width="5955" height="1170">
+   </BOUNDS>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="|If TrackName=V-Name:  CueName=Last Founded (not Empty)&cr;&lf;Do name the first and leave the rest empty to animate along the same name) &cr;&lf;PresetPos=VideoPlayerPointer&cr;&lf;Only First 2 Controls And Buttons are active and sent&cr;&lf;(The rest of the values are still there but ony visible on edit) |">
+   </PIN>
+   </NODE>
+   </PATCH>
