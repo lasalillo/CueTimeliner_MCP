@@ -1512,18 +1512,4 @@
    </LINK>
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="2" dstpinname="Default">
    </LINK>
-   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="451">
-   <BOUNDS type="Node" left="10035" top="2535" width="1935" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="10035" top="2535" width="1935" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Probar sin controladores|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    </PATCH>
