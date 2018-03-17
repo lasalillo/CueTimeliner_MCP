@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\_CueTimeliner_MCP\TimelineGraphics.v4p" systemname="TimelineGraphics" filename="D:\_VVVV\_Projects\_CUETIMELINER\TimelineGraphics.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\_VVVV\_Projects\_CUETIMELINER\TimelineGraphics.v4p" systemname="TimelineGraphics" filename="D:\_VVVV\_Projects\_CUETIMELINER\TimelineGraphics.v4p" scrollx="0" scrolly="0">
    <NODE id="1" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Input">
    </PIN>
@@ -14,7 +14,7 @@
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
-   <PACK Name="addonpack" Version="36.0.0">
+   <PACK Name="addonpack" Version="35.9.0">
    </PACK>
    <NODE systemname="Text (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\text\VVVV.DX11.Nodes.Text.dll" nodename="Text (DX11.Layer)" componentmode="Hidden" id="12">
    <BOUNDS type="Node" left="11085" top="5865" width="100" height="100">
@@ -233,11 +233,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="42">
-   <BOUNDS type="Box" left="6720" top="3285" width="1590" height="270">
+   <BOUNDS type="Box" left="4560" top="2865" width="1590" height="270">
    </BOUNDS>
-   <BOUNDS type="Node" left="6720" top="3285" width="0" height="0">
+   <BOUNDS type="Node" left="4560" top="2865" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Ebrima">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="|Century Gothic|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="Arial">
    </PIN>
@@ -784,6 +784,10 @@
    </LINK>
    <LINK srcnodeid="15" srcpinname="UpdateCues" dstnodeid="46" dstpinname="Apply">
    </LINK>
+   <LINK srcnodeid="15" srcpinname="UpdateExtras" dstnodeid="65" dstpinname="Evaluate">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="UpdateCues" dstnodeid="12" dstpinname="Evaluate">
+   </LINK>
    <NODE systemname="FileTexture (DX11 2d.Pooled)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d.Pooled)" componentmode="Hidden" id="56">
    <BOUNDS type="Node" left="2760" top="6765" width="100" height="100">
    </BOUNDS>
@@ -829,9 +833,5 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="75" srcpinname="Sampler" dstnodeid="55" dstpinname="Sampler State">
-   </LINK>
-   <LINK srcnodeid="15" srcpinname="UpdateCues" dstnodeid="12" dstpinname="Evaluate">
-   </LINK>
-   <LINK srcnodeid="15" srcpinname="UpdateExtras" dstnodeid="65" dstpinname="Evaluate">
    </LINK>
    </PATCH>

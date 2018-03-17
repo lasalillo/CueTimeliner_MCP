@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_CUETIMELINER_MCP\SendReceiveModules\Receive (MIDI IN).v4p" systemname="Receive (MIDI IN)" filename="D:\_VVVV\_Projects\_CUETIMELINER\SendReceiveModules\Receive (MIDI IN).v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\SBB\_NEW_BALANCE\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\SendReceiveModules\Receive (MIDI IN).v4p" systemname="Receive (MIDI IN)" filename="D:\_VVVV\_Projects\_CUETIMELINER\SendReceiveModules\Receive (MIDI IN).v4p" scrollx="0" scrolly="-360">
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="0" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="2265" top="1245" width="675" height="240">
    </BOUNDS>
@@ -68,7 +68,7 @@
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
-   <PACK Name="addonpack" Version="35.9.0">
+   <PACK Name="addonpack" Version="36.0.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6">
    <BOUNDS type="Box" left="2925" top="1305" width="480" height="480">
@@ -158,16 +158,18 @@
    </LINK>
    <LINK srcnodeid="10" srcpinname="Output" dstnodeid="5" dstpinname="Input Node">
    </LINK>
-   <NODE systemname="FromRaw (Controllers)" filename="..\vl\VVVV.Preset.CueTimeliner.vl" nodename="FromRaw (Controllers)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="1515" top="2670" width="100" height="100">
+   <NODE systemname="FromRaw (MIDI.Controllers)" filename="..\MCP\vl\VVVV.MIDI.Controllers.vl" nodename="FromRaw (MIDI.Controllers)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="1470" top="2865" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Raw" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="16" dstpinname="Raw">
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="17" dstpinname="Raw">
    </LINK>
-   <LINK srcnodeid="16" srcpinname="Output" dstnodeid="10" dstpinname="Input">
+   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="10" dstpinname="Input">
    </LINK>
+   <PACK Name="dx11" Version="1.0.4">
+   </PACK>
    </PATCH>

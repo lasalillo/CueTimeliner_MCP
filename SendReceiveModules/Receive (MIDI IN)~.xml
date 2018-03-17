@@ -159,7 +159,7 @@
    <LINK srcnodeid="10" srcpinname="Output" dstnodeid="5" dstpinname="Input Node">
    </LINK>
    <NODE systemname="FromRaw (Controllers)" filename="..\vl\VVVV.Preset.CueTimeliner.vl" nodename="FromRaw (Controllers)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="1485" top="2730" width="100" height="100">
+   <BOUNDS type="Node" left="1515" top="2670" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Raw" visible="1">
    </PIN>

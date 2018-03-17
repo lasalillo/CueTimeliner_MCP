@@ -2,7 +2,7 @@
    <PATCH nodename="D:\_CueTimeliner_MCP\MidiLedsOut.v4p" systemname="MidiLedsOut" filename="D:\_VVVV\_Projects\_CUETIMELINER\MidiLedsOut.v4p" bgcolor="7303023" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="19455" top="10725" width="5505" height="4545">
    </BOUNDS>
-   <NODE systemname="Receive_Raw (Network.ZeroMQ Raw)" filename="SendReceiveModules\Receive_Raw (Network.ZeroMQ Raw).v4p" nodename="Receive_Raw (Network.ZeroMQ Raw)" componentmode="InAWindow" id="4">
+   <NODE systemname="Receive_Raw (Network.ZeroMQ Raw)" filename="SendReceiveModules\Receive_Raw (Network.ZeroMQ Raw).v4p" nodename="Receive_Raw (Network.ZeroMQ Raw)" componentmode="Hidden" id="4">
    <BOUNDS type="Node" left="2115" top="1665" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
@@ -163,8 +163,6 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="On Data" visible="1">
-   </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Output" dstnodeid="15" dstpinname="Raw">
    </LINK>
@@ -219,21 +217,5 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="19" srcpinname="Out" dstnodeid="18" dstpinname="Default">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="20">
-   <BOUNDS type="Box" left="3210" top="2490" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3210" top="2490" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="15" srcpinname="On Data" dstnodeid="20" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
