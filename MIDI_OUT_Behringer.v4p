@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="C:\Users\worse\Dropbox\_JOBS\AKTUELL\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_OUT_Behringer.v4p" scrollx="0" scrolly="0" systemname="MIDI_OUT" filename="C:\SBB\_NEW_BALANCE\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_OUT.v4p">
+   <PATCH nodename="D:\_CueTimeliner_MCP\MIDI_OUT_Behringer.v4p" scrollx="0" scrolly="0" systemname="MIDI_OUT" filename="C:\SBB\_NEW_BALANCE\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_OUT.v4p">
    <BOUNDS type="Window" left="39405" top="4215" width="3495" height="4050">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
@@ -38,22 +38,6 @@
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
    </NODE>
-   <NODE systemname="Receive_Raw_Topic (Network.ZeroMQ Raw)" filename="..\SendReceiveModules\Receive_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Receive_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="24">
-   <BOUNDS type="Node" left="555" top="1665" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Topic" slicecount="1" visible="1" values="Realtime">
-   </PIN>
-   <PIN pinname="Enable" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="555" top="1665">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Enable">
-   </LINK>
-   <LINK srcnodeid="20" srcpinname="Output String" dstnodeid="24" dstpinname="Topic">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="41" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="1635" top="630" width="480" height="480">
    </BOUNDS>
@@ -133,7 +117,7 @@
    <NODE systemname="FromRaw (MIDI.ControllerSystem)" filename="vl\VVVV.MIDI.Controllers.vl" nodename="FromRaw (MIDI.ControllerSystem)" componentmode="Hidden" id="25">
    <BOUNDS type="Node" left="555" top="2055" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Raw" visible="1">
+   <PIN pinname="Raw" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -142,8 +126,6 @@
    <PIN pinname="On Data" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="24" srcpinname="Output" dstnodeid="25" dstpinname="Raw">
-   </LINK>
    <LINK srcnodeid="25" srcpinname="On Data" dstnodeid="42" dstpinname="Y Input Value">
    </LINK>
    <NODE id="40" systemname="MIDIOut (MIDI.ControllerSystem)" filename="vl\VVVV.MIDI.Controllers.vl" nodename="MIDIOut (MIDI.ControllerSystem)" componentmode="Hidden">
@@ -161,5 +143,23 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="25" srcpinname="Output" dstnodeid="40" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Receive_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Receive_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Receive_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="24">
+   <BOUNDS type="Node" left="555" top="1665" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Topic" slicecount="1" visible="1" values="Realtime">
+   </PIN>
+   <PIN pinname="Enable" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="555" top="1665">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Enable">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Output String" dstnodeid="24" dstpinname="Topic">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Output" dstnodeid="25" dstpinname="Raw">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="C:\Users\worse\Dropbox\_JOBS\AKTUELL\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_IN_Behringer.v4p" systemname="MIDI_IN" filename="C:\SBB\_NEW_BALANCE\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_IN.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\_CueTimeliner_MCP\MIDI_IN_Behringer.v4p" systemname="MIDI_IN" filename="C:\SBB\_NEW_BALANCE\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_IN.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="39405" top="0" width="3495" height="4320">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
@@ -22,22 +22,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="XTouch/PlatFormM+">
-   </PIN>
-   </NODE>
-   <NODE systemname="Send_Raw_Topic (Network.ZeroMQ Raw)" filename="..\SendReceiveModules\Send_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Send_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="540" top="3030" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Window" left="16350" top="1920" width="10275" height="11385">
-   </BOUNDS>
-   <PIN pinname="Send" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Topic" slicecount="1" visible="1" values="sss">
-   </PIN>
-   <PIN pinname="Raw" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Enable" visible="1">
-   </PIN>
-   <PIN pinname="Success" visible="1">
    </PIN>
    </NODE>
    <NODE id="4" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)" hiddenwhenlocked="0" managers="">
@@ -120,8 +104,6 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Send">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
    <BOUNDS type="Box" left="555" top="2430" width="795" height="240">
    </BOUNDS>
@@ -136,8 +118,6 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="5" dstpinname="Topic">
-   </LINK>
    <PACK Name="dx11" Version="1.0.4">
    </PACK>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
@@ -160,8 +140,6 @@
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
    </NODE>
-   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Enable">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8">
    <BOUNDS type="Box" left="2550" top="2565" width="285" height="240">
    </BOUNDS>
@@ -226,8 +204,6 @@
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Success" dstnodeid="10" dstpinname="Y Input Value">
-   </LINK>
    <NODE id="0" systemname="MIDIIn (MIDI.ControllerSystem)" filename="vl\VVVV.MIDI.Controllers.vl" nodename="MIDIIn (MIDI.ControllerSystem)" componentmode="Hidden">
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -248,10 +224,34 @@
    <PIN pinname="On Data" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Raw" dstnodeid="5" dstpinname="Raw">
-   </LINK>
    <LINK srcnodeid="3" srcpinname="On Data" dstnodeid="8" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Output" dstnodeid="3" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Send_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Send_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Send_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="540" top="3030" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="16350" top="1920" width="10275" height="11385">
+   </BOUNDS>
+   <PIN pinname="Send" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Topic" slicecount="1" visible="1" values="sss">
+   </PIN>
+   <PIN pinname="Raw" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enable" visible="1">
+   </PIN>
+   <PIN pinname="Success" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Send">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="5" dstpinname="Topic">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Enable">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Success" dstnodeid="10" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Raw" dstnodeid="5" dstpinname="Raw">
    </LINK>
    </PATCH>
