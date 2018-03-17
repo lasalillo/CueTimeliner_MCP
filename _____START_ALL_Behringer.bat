@@ -2,7 +2,7 @@
 @echo --------------NETWORK----------------
 timeout 1
 @echo OFF 
-start "" "%~dp0vvvv_50alpha35.18_x64\vvvv.exe"  /showexceptions 0 /allowmultiple /Shutup /o ..\SendReceiveModules\Network.v4p
+start "" "%~dp0vvvv_50alpha35.18_x64\vvvv.exe"  /showexceptions 0 /allowmultiple /shutup /o ..\SendReceiveModules\Network.v4p
 @echo OFF
 @echo --------------Timeliner----------------
 timeout 1
@@ -12,12 +12,12 @@ timeout 1
 @echo --------------MIDI IN----------------
 timeout 1
 @echo OFF
-start "" "%~dp0vvvv_50alpha35.18_x64\vvvv.exe"  /showexceptions 0 /allowmultiple /Shutup  /o ..\MIDI_IN_Behringer.v4p
+start "" "%~dp0vvvv_50alpha35.18_x64\vvvv.exe"  /showexceptions 0 /allowmultiple /shutup  /o ..\MIDI_IN_Behringer.v4p
 @echo OFF
 @echo --------------MIDI OUT----------------
 timeout 1
 @echo OFF
- start "" "%~dp0vvvv_50alpha35.18_x64\vvvv.exe"  /showexceptions 0 /allowmultiple /Shutup  /o ..\MIDI_OUT_Behringer.v4p
+ start "" "%~dp0vvvv_50alpha35.18_x64\vvvv.exe"  /showexceptions 0 /allowmultiple /shutup  /o ..\MIDI_OUT_Behringer.v4p
 @echo OFF
 @echo --------------AudioPlayer----------------
 timeout 1
