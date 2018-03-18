@@ -1,8 +1,18 @@
+
+
 # CueTimeliner_MCP
 
 Snapshot based multitrack Timeliner
 
 Mackie Control Version
+
+Controllers Tested:
+
+-Behringer XTOUCH Compact
+
+-Icon Platform M+
+
+-Launchpad Mini (presets pool)
 
 Last update: vvvv_50alpha35.18_x64
 
