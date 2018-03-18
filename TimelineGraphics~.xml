@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_CUETIMELINER\TimelineGraphics.v4p" systemname="TimelineGraphics" filename="D:\_VVVV\_Projects\_CUETIMELINER\TimelineGraphics.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\_CueTimeliner_MCP\TimelineGraphics.v4p" systemname="TimelineGraphics" filename="D:\_VVVV\_Projects\_CUETIMELINER\TimelineGraphics.v4p" scrollx="0" scrolly="0">
    <NODE id="1" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Input">
    </PIN>
@@ -10,11 +10,11 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="4650" top="5955" width="19965" height="9645">
+   <BOUNDS type="Window" left="4890" top="9150" width="19965" height="9645">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
-   <PACK Name="addonpack" Version="35.9.0">
+   <PACK Name="addonpack" Version="36.0.0">
    </PACK>
    <NODE systemname="Text (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\text\VVVV.DX11.Nodes.Text.dll" nodename="Text (DX11.Layer)" componentmode="Hidden" id="12">
    <BOUNDS type="Node" left="11085" top="5865" width="100" height="100">
@@ -65,7 +65,7 @@
    </PIN>
    <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Layer 10" visible="1">
+   <PIN pinname="Layer 10" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer 9" visible="1">
    </PIN>
@@ -187,7 +187,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Blend (DX11.RenderState)" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="40" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll">
-   <BOUNDS type="Node" left="2055" top="3990" width="100" height="100">
+   <BOUNDS type="Node" left="1845" top="3780" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
@@ -204,14 +204,12 @@
    <PIN pinname="Geometry Out" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="40" srcpinname="Render State" dstnodeid="41" dstpinname="Render State">
-   </LINK>
    <LINK srcnodeid="39" srcpinname="Geometry Out" dstnodeid="41" dstpinname="Geometry In">
    </LINK>
    <NODE systemname="Text (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\text\VVVV.DX11.Nodes.Text.dll" nodename="Text (DX11.Layer)" componentmode="Hidden" id="43">
-   <BOUNDS type="Node" left="4020" top="3735" width="100" height="100">
+   <BOUNDS type="Node" left="4920" top="3435" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4020" top="3735" width="3000" height="3000">
+   <BOUNDS type="Box" left="4920" top="3435" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -233,11 +231,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="42">
-   <BOUNDS type="Box" left="4560" top="2865" width="1590" height="270">
+   <BOUNDS type="Box" left="11130" top="2160" width="2505" height="270">
    </BOUNDS>
-   <BOUNDS type="Node" left="4560" top="2865" width="0" height="0">
+   <BOUNDS type="Node" left="11130" top="2160" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="|Century Gothic|">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Ebrima">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="Arial">
    </PIN>
@@ -248,8 +246,6 @@
    <PIN pinname="Output Enum" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="42" srcpinname="Output Enum" dstnodeid="43" dstpinname="Font">
-   </LINK>
    <LINK srcnodeid="42" srcpinname="Output Enum" dstnodeid="12" dstpinname="Font">
    </LINK>
    <NODE systemname="ConstantInstanced_Module" filename="Subs\ConstantInstanced_Module.v4p" nodename="Subs\ConstantInstanced_Module.v4p" componentmode="Hidden" id="46">
@@ -315,8 +311,6 @@
    <LINK srcnodeid="49" srcpinname="Render State" dstnodeid="46" dstpinname="Render State">
    </LINK>
    <LINK srcnodeid="45" srcpinname="Render State" dstnodeid="49" dstpinname="Render State">
-   </LINK>
-   <LINK srcnodeid="12" srcpinname="Layer" dstnodeid="19" dstpinname="Layer 10">
    </LINK>
    <LINK srcnodeid="38" srcpinname="Layer" dstnodeid="19" dstpinname="Layer 9">
    </LINK>
@@ -465,9 +459,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="59">
-   <BOUNDS type="Box" left="15045" top="3735" width="285" height="720">
+   <BOUNDS type="Box" left="14985" top="3330" width="315" height="855">
    </BOUNDS>
-   <BOUNDS type="Node" left="15045" top="3735" width="0" height="0">
+   <BOUNDS type="Node" left="14985" top="3330" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="6" visible="1" values="-0.5,0,0,0.5,0,0">
    </PIN>
@@ -784,10 +778,6 @@
    </LINK>
    <LINK srcnodeid="15" srcpinname="UpdateCues" dstnodeid="46" dstpinname="Apply">
    </LINK>
-   <LINK srcnodeid="15" srcpinname="UpdateExtras" dstnodeid="65" dstpinname="Evaluate">
-   </LINK>
-   <LINK srcnodeid="15" srcpinname="UpdateCues" dstnodeid="12" dstpinname="Evaluate">
-   </LINK>
    <NODE systemname="FileTexture (DX11 2d.Pooled)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d.Pooled)" componentmode="Hidden" id="56">
    <BOUNDS type="Node" left="2760" top="6765" width="100" height="100">
    </BOUNDS>
@@ -833,5 +823,31 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="75" srcpinname="Sampler" dstnodeid="55" dstpinname="Sampler State">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="UpdateCues" dstnodeid="12" dstpinname="Evaluate">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="UpdateExtras" dstnodeid="65" dstpinname="Evaluate">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Layer" dstnodeid="19" dstpinname="Layer 10">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="76">
+   <BOUNDS type="Box" left="5475" top="2805" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5475" top="2805" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Bahnschrift">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Arial">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="76" srcpinname="Output Enum" dstnodeid="43" dstpinname="Font">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Render State" dstnodeid="41" dstpinname="Render State">
    </LINK>
    </PATCH>

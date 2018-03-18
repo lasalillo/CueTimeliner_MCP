@@ -85,9 +85,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="62">
-   <BOUNDS type="Box" left="375" top="1650" width="285" height="240">
+   <BOUNDS type="Box" left="375" top="1590" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="375" top="1650" width="0" height="0">
+   <BOUNDS type="Node" left="375" top="1590" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -105,9 +105,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="63">
-   <BOUNDS type="Box" left="885" top="1650" width="720" height="480">
+   <BOUNDS type="Box" left="885" top="1590" width="720" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="885" top="1650" width="0" height="0">
+   <BOUNDS type="Node" left="885" top="1590" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -127,9 +127,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="79">
-   <BOUNDS type="Box" left="1680" top="1650" width="795" height="240">
+   <BOUNDS type="Box" left="1725" top="1590" width="1155" height="300">
    </BOUNDS>
-   <BOUNDS type="Node" left="1680" top="1650" width="0" height="0">
+   <BOUNDS type="Node" left="1725" top="1590" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="222.39">
    </PIN>
@@ -140,6 +140,8 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Length">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
    </PIN>
    </NODE>
    <NODE systemname="Keyboard (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Window)" componentmode="Hidden" id="86" hiddenwhenlocked="1">
@@ -217,9 +219,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="144">
-   <BOUNDS type="Box" left="2580" top="2160" width="705" height="255">
+   <BOUNDS type="Box" left="3000" top="2160" width="750" height="255">
    </BOUNDS>
-   <BOUNDS type="Node" left="2580" top="2160" width="0" height="0">
+   <BOUNDS type="Node" left="3000" top="2160" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -237,11 +239,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="145">
-   <BOUNDS type="Box" left="2580" top="1650" width="795" height="240">
+   <BOUNDS type="Box" left="3000" top="1590" width="1080" height="300">
    </BOUNDS>
-   <BOUNDS type="Node" left="2580" top="1650" width="0" height="0">
+   <BOUNDS type="Node" left="3000" top="1590" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.74">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -253,13 +255,15 @@
    </PIN>
    <PIN pinname="Maximum" slicecount="1" values="3">
    </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="149">
    <BOUNDS type="Box" left="5970" top="3270" width="480" height="480">
    </BOUNDS>
    <BOUNDS type="Node" left="5970" top="3270" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -269,7 +273,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="ShowAll">
    </PIN>
@@ -709,9 +713,9 @@
    <NODE systemname="CUE_TIMELINER (Preset)" filename="vl\VVVV.Preset.CueTimeliner.vl" nodename="CUE_TIMELINER (Preset)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="525" top="6345" width="4650" height="270">
    </BOUNDS>
-   <PIN pinname="Clear" slicecount="1" visible="-1" values="0" pintype="Input">
+   <PIN pinname="Clear" slicecount="1" visible="-1" pintype="Input" values="0">
    </PIN>
-   <PIN pinname="SetDefault" slicecount="1" visible="-1" values="0" pintype="Input">
+   <PIN pinname="SetDefault" slicecount="1" visible="-1" pintype="Input" values="0">
    </PIN>
    <PIN pinname="Default" visible="1" slicecount="1" values="||">
    </PIN>
@@ -719,7 +723,7 @@
    </PIN>
    <PIN pinname="List Bin Size" visible="1">
    </PIN>
-   <PIN pinname="Remove" slicecount="1" visible="-1" values="0" pintype="Input">
+   <PIN pinname="Remove" slicecount="1" visible="-1" pintype="Input" values="0">
    </PIN>
    <PIN pinname="Insert" slicecount="1" visible="1" values="0">
    </PIN>
@@ -729,17 +733,17 @@
    </PIN>
    <PIN pinname="KeysToEdit" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="SetName" slicecount="1" visible="-1" values="0" pintype="Input">
+   <PIN pinname="SetName" slicecount="1" visible="-1" pintype="Input" values="0">
    </PIN>
-   <PIN pinname="EditPosition" visible="-1" slicecount="1" values="0" pintype="Input">
+   <PIN pinname="EditPosition" visible="-1" slicecount="1" pintype="Input" values="0">
    </PIN>
-   <PIN pinname="EditFadeTime" visible="-1" slicecount="1" values="0" pintype="Input">
+   <PIN pinname="EditFadeTime" visible="-1" slicecount="1" pintype="Input" values="0">
    </PIN>
    <PIN pinname="Undo" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Redo" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="EditValues" visible="-1" slicecount="1" values="0" pintype="Input">
+   <PIN pinname="EditValues" visible="-1" slicecount="1" pintype="Input" values="0">
    </PIN>
    <PIN pinname="Keyboard" visible="1" slicecount="1" values="||">
    </PIN>
@@ -755,9 +759,9 @@
    </PIN>
    <PIN pinname="MoveGroup" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Copy" visible="-1" slicecount="1" values="0" pintype="Input">
+   <PIN pinname="Copy" visible="-1" slicecount="1" pintype="Input" values="0">
    </PIN>
-   <PIN pinname="Add" visible="-1" slicecount="1" values="0" pintype="Input">
+   <PIN pinname="Add" visible="-1" slicecount="1" pintype="Input" values="0">
    </PIN>
    <PIN pinname="File Path" visible="1" slicecount="1" values="Files\Testi.Project">
    </PIN>
@@ -795,9 +799,9 @@
    </PIN>
    <PIN pinname="PlayerPos" visible="1">
    </PIN>
-   <PIN pinname="GoToInit" visible="-1" slicecount="1" values="0" pintype="Input">
+   <PIN pinname="GoToInit" visible="-1" slicecount="1" pintype="Input" values="0">
    </PIN>
-   <PIN pinname="GoToPointer" visible="-1" slicecount="1" values="0" pintype="Input">
+   <PIN pinname="GoToPointer" visible="-1" slicecount="1" pintype="Input" values="0">
    </PIN>
    <PIN pinname="Round" visible="1" slicecount="1" values="||">
    </PIN>
@@ -823,9 +827,9 @@
    </PIN>
    <PIN pinname="TextRes" visible="1">
    </PIN>
-   <PIN pinname="ScreenToPointer" visible="-1" slicecount="1" values="0" pintype="Input">
+   <PIN pinname="ScreenToPointer" visible="-1" slicecount="1" pintype="Input" values="0">
    </PIN>
-   <PIN pinname="ScreenToInit" visible="-1" slicecount="1" values="0" pintype="Input">
+   <PIN pinname="ScreenToInit" visible="-1" slicecount="1" pintype="Input" values="0">
    </PIN>
    <PIN pinname="GoToID" visible="1" slicecount="1" values="||">
    </PIN>
@@ -931,7 +935,7 @@
    </PIN>
    <PIN pinname="MoveMultiple" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="FollowPointer" visible="-1" slicecount="1" values="0" pintype="Input">
+   <PIN pinname="FollowPointer" visible="-1" slicecount="1" pintype="Input" values="0">
    </PIN>
    <PIN pinname="LaunchControlXLRaw" visible="1" slicecount="1" values="||">
    </PIN>
@@ -963,11 +967,11 @@
    </PIN>
    <PIN pinname="MasterFade" visible="1">
    </PIN>
-   <PIN pinname="Default Bin Size" slicecount="1" values="-1" visible="-1" pintype="Input">
+   <PIN pinname="Default Bin Size" slicecount="1" visible="-1" pintype="Input" values="-1">
    </PIN>
    <PIN pinname="Controllers" visible="-1" pintype="Output">
    </PIN>
-   <PIN pinname="MasterAsPitch" slicecount="1" values="1" visible="1">
+   <PIN pinname="MasterAsPitch" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Filter Time" visible="1">
    </PIN>
@@ -997,15 +1001,15 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Write" linkstyle="VHV">
-   <LINKPOINT x="505" y="3978">
+   <LINKPOINT x="505" y="3938">
    </LINKPOINT>
-   <LINKPOINT x="590" y="4273">
+   <LINKPOINT x="590" y="4253">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="79" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Length" linkstyle="VHV">
-   <LINKPOINT x="1695" y="4110">
+   <LINKPOINT x="1725" y="4070">
    </LINKPOINT>
-   <LINKPOINT x="1470" y="4110">
+   <LINKPOINT x="1485" y="4090">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="93" srcpinname="Y Output Value" dstnodeid="2" dstpinname="ToGroup" linkstyle="VHV">
@@ -1015,15 +1019,15 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="2" dstpinname="ZoomOut" linkstyle="VHV">
-   <LINKPOINT x="2535" y="4525">
+   <LINKPOINT x="2815" y="4525">
    </LINKPOINT>
-   <LINKPOINT x="1995" y="4205">
+   <LINKPOINT x="2135" y="4205">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="145" srcpinname="Y Output Value" dstnodeid="2" dstpinname="TrackSize" linkstyle="VHV">
-   <LINKPOINT x="2475" y="4293">
+   <LINKPOINT x="2755" y="4253">
    </LINKPOINT>
-   <LINKPOINT x="1080" y="3973">
+   <LINKPOINT x="1220" y="3953">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="149" srcpinname="Y Output Value" dstnodeid="2" dstpinname="ShowAll" linkstyle="VHV">
@@ -1113,9 +1117,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Read" linkstyle="VHV">
-   <LINKPOINT x="900" y="4230">
+   <LINKPOINT x="900" y="4190">
    </LINKPOINT>
-   <LINKPOINT x="855" y="4230">
+   <LINKPOINT x="855" y="4210">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="415" srcpinname="Y Output Value" dstnodeid="2" dstpinname="EnableEdit" linkstyle="VHV">

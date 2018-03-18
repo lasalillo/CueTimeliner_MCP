@@ -452,4 +452,18 @@
    </LINK>
    <LINK srcnodeid="33" srcpinname="OnChange" dstnodeid="46" dstpinname="Send">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="51">
+   <BOUNDS type="Box" left="3870" top="3675" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3870" top="3675" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="AudioFile" dstnodeid="51" dstpinname="Input String">
+   </LINK>
    </PATCH>

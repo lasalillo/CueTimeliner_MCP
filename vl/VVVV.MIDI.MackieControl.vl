@@ -6044,6 +6044,14 @@
                 <p:ValueBoxSettings />
               </Pad>
               <ControlPoint Id="HOLXzuseYryNE7fuNJ6BfU" Bounds="1013,182" />
+              <Pad Id="MkRAE99QhdIQORIuAuwYmz" SlotId="QSykhdwWyjSQVIR8iw3vJF" Bounds="817,252">
+                <p:ValueBoxSettings />
+              </Pad>
+              <ControlPoint Id="MIwlJy0IUvVQXWzZtdZJSa" Bounds="814,182" />
+              <Pad Id="NJs9zW0UXoYOVBgdirYX3N" SlotId="HYvBnyCZ9cvOPmJZyw1nLp" Bounds="902,252">
+                <p:ValueBoxSettings />
+              </Pad>
+              <ControlPoint Id="HF2tQ1cFjJcOrV7ZBDq2xT" Bounds="902,182" />
             </Canvas>
             <Patch Id="OfcmpUySsqeMo7OMsDFn2j" Name="Create" />
             <Patch Id="SvaFqXolLK5L0G7b8JJhIK" Name="Update" />
@@ -6107,6 +6115,8 @@
               <Fragment Id="TEUqFxbdvXYMXg28mTAcEe" Patch="HSoGluN9xx3P3eK5yzmq5F" Enabled="true" />
               <Fragment Id="NNBepjf5aw1P5CzuSPBwZ5" Patch="EZwTHZqeiDvMjU0aCRcJ5a" Enabled="true" />
               <Fragment Id="KEm3XmCxRH2LppQ0XUzLNc" Patch="GucADfH3mheNJGLjex3BYz" Enabled="true" />
+              <Fragment Id="GpCdYTX5t02ONfzW6jTGez" Patch="IdnowjdJkz9NUYGanxRtdA" Enabled="true" />
+              <Fragment Id="AXJeCwxKO5EPXxYF5rCl1q" Patch="KX79HOOTUNINfRRQFXr1Fw" Enabled="true" />
             </ProcessDefinition>
             <Link Id="QNSujbw2s5VM9OL9PER9z0" Ids="HAf284UVVFeLMUfCYJGKP2,U25ByL4JNA9N5RKSm3hrrM" IsHidden="true" />
             <Link Id="Mv8bpTUb6z8NXDr6VbgMUS" Ids="Q6BjceQLQTFMinVJa9mtvj,MxiacuSFsOAN61vMEHDX53" IsHidden="true" />
@@ -7108,6 +7118,16 @@
             <Patch Id="GucADfH3mheNJGLjex3BYz" Name="SetRec">
               <Pin Id="HroHaQGQNA6MfWIvkFAgzb" Name="Rec" Kind="InputPin" />
             </Patch>
+            <Link Id="PBgmXX3yjxZOl4o2KQTVDi" Ids="MIwlJy0IUvVQXWzZtdZJSa,MkRAE99QhdIQORIuAuwYmz" />
+            <Link Id="IZgF1I1JIWTQDAH0LT7gel" Ids="HF2tQ1cFjJcOrV7ZBDq2xT,NJs9zW0UXoYOVBgdirYX3N" />
+            <Patch Id="IdnowjdJkz9NUYGanxRtdA" Name="SetRew">
+              <Pin Id="P0AE5eWn64sMlwTsXbzFzg" Name="Rew" Kind="InputPin" />
+            </Patch>
+            <Link Id="FHKfKIHIa0eMttG2ClnWNd" Ids="P0AE5eWn64sMlwTsXbzFzg,MIwlJy0IUvVQXWzZtdZJSa" IsHidden="true" />
+            <Patch Id="KX79HOOTUNINfRRQFXr1Fw" Name="SetFF">
+              <Pin Id="IPUCTHhy1AMNEPsiVdb9hL" Name="FF" Kind="InputPin" />
+            </Patch>
+            <Link Id="GEmZQ1ba3wIMAWE6TPfUKr" Ids="IPUCTHhy1AMNEPsiVdb9hL,HF2tQ1cFjJcOrV7ZBDq2xT" IsHidden="true" />
           </Patch>
         </Node>
         <!--

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_CUETIMELINER_MCP\Subs\Renderer_CueTimeliner.v4p" systemname="Renderer_CueTimeliner" filename="D:\_VVVV\_Projects\_CUETIMELINER\Subs\Renderer_CueTimeliner.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="D:\_CueTimeliner_MCP\Subs\Renderer_CueTimeliner.v4p" systemname="Renderer_CueTimeliner" filename="D:\_VVVV\_Projects\_CUETIMELINER\Subs\Renderer_CueTimeliner.v4p" scrollx="0" scrolly="-360">
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="3330" top="5115" width="100" height="100">
    </BOUNDS>
@@ -41,7 +41,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1725" top="4575" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="-225" width="28800" height="6090">
+   <BOUNDS type="Window" left="0" top="0" width="28800" height="6090">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -93,7 +93,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4455" top="4380" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="5955" width="6465" height="9645">
+   <BOUNDS type="Window" left="0" top="5955" width="4725" height="9645">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -304,7 +304,7 @@
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
-   <PACK Name="addonpack" Version="35.9.0">
+   <PACK Name="addonpack" Version="36.0.0">
    </PACK>
    <NODE nodename="Group (DX11.Layer)" id="28">
    <BOUNDS type="Node" left="1890" top="4050" width="0" height="0">
@@ -571,7 +571,7 @@
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="4650" top="5955" width="19965" height="9645">
+   <BOUNDS type="Window" left="4890" top="9150" width="19965" height="9645">
    </BOUNDS>
    <PIN pinname="Apply" visible="1" slicecount="1" values="1">
    </PIN>
