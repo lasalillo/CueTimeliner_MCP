@@ -41,7 +41,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1725" top="4575" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="28800" height="6090">
+   <BOUNDS type="Window" left="0" top="0" width="28800" height="6075">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -189,7 +189,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Cursor (DX11)" filename="%VVVV%\packs\dx11\nodes\modules\Cursor (DX11).v4p" nodename="Cursor (DX11)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="5805" top="3540" width="100" height="100">
+   <BOUNDS type="Node" left="5010" top="3540" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -300,7 +300,7 @@
    </LINK>
    <LINK srcnodeid="28" srcpinname="Output Node" dstnodeid="25" dstpinname="Input Node">
    </LINK>
-   <BOUNDS type="Window" left="8850" top="6180" width="9615" height="8685">
+   <BOUNDS type="Window" left="8850" top="6180" width="8490" height="7530">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -549,6 +549,8 @@
    </PIN>
    <PIN pinname="ControllerEnable" visible="1">
    </PIN>
+   <PIN pinname="TextSize" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="43" srcpinname="Output Node" dstnodeid="47" dstpinname="Input">
    </LINK>
@@ -571,7 +573,7 @@
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="4890" top="9150" width="19965" height="9645">
+   <BOUNDS type="Window" left="4680" top="4995" width="17355" height="9645">
    </BOUNDS>
    <PIN pinname="Apply" visible="1" slicecount="1" values="1">
    </PIN>
@@ -583,5 +585,21 @@
    <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Evaluate">
    </LINK>
    <LINK srcnodeid="47" srcpinname="DrawDataTimeline" dstnodeid="32" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48">
+   <BOUNDS type="Box" left="4545" top="525" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4545" top="525" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.5">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="TextSize">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="47" dstpinname="TextSize">
    </LINK>
    </PATCH>

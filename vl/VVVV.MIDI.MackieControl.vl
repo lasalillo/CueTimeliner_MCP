@@ -2740,7 +2740,7 @@
                 </p:NodeReference>
                 <Patch Id="DpGEPUyCWnsNW3Xro9a5OH" IsGeneric="true">
                   <Canvas Id="TCynTpd3hGcPpp2Vj25Iio">
-                    <Node Bounds="394,463,555,597" Id="IqE8WEnw9FtPiOwtL13t6H">
+                    <Node Bounds="394,463,556,597" Id="IqE8WEnw9FtPiOwtL13t6H">
                       <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.CoreLib.vl" LastDependency="VVVV.MIDI.Novation.vl">
                         <Choice Kind="ProcessAppFlag" Name="ForEach (Keep)" />
                         <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -2924,24 +2924,14 @@
                           <Pin Id="DbgTN0dHbg9PYMUG7QkhRG" Name="Command" Kind="OutputPin" />
                         </Node>
                         <Pad Id="RHMI75eM1mYQLrL8gJiDMv" Comment="Result" Bounds="773,585,40,19" ShowValueBox="true" isIOBox="true" />
-                        <Node Bounds="508,520,69,22" Id="EVXMVwrAzrpQV2WnGyXjsX">
+                        <Node Bounds="508,533,75,22" Id="Aae1UpMDGhkNzAyzkLAcrp">
                           <p:NodeReference LastCategoryFullName="IO.Midi.Messages.ChannelMessage" LastSymbolSource="VL.IO.Midi.vl" LastDependency="VVVV.MIDI.MackieControl.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                            <Choice Kind="OperationCallFlag" Name="Data2" />
-                            <CategoryReference Kind="RecordType" Name="ChannelMessage" NeedsToBeDirectParent="true" />
+                            <Choice Kind="OperationCallFlag" Name="GetPitchWheel" />
                           </p:NodeReference>
-                          <Pin Id="E8lZkhfkT9IP9o40xskTXZ" Name="Input" Kind="StateInputPin" />
-                          <Pin Id="A9YX2jfoWwCMWyVWpZyGi6" Name="Data 2" Kind="OutputPin" />
+                          <Pin Id="N0RuN6yAzeSMpefZ4kbx2Z" Name="Result" Kind="OutputPin" />
+                          <Pin Id="QNmtRq3enPMOaFbGklHBTY" Name="Input" Kind="InputPin" />
                         </Node>
-                        <Node Bounds="508,614,76,13" Id="IX4alJaC5buNWsXFP42F2P">
-                          <p:NodeReference LastCategoryFullName="IO.Midi.Messages" LastSymbolSource="VL.IO.Midi.vl" LastDependency="VVVV.MIDI.MackieControl.vl">
-                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                            <Choice Kind="OperationCallFlag" Name="MidiIntToFloat" />
-                          </p:NodeReference>
-                          <Pin Id="DcFhAI9GSYMPA1WWpbxgjf" Name="Value" Kind="InputPin" />
-                          <Pin Id="LToEMWEV7fJPenQUWT0Y1F" Name="Result" Kind="OutputPin" />
-                        </Node>
-                        <Pad Id="I8Njt4zUAMOLZkrKavVWvd" Comment="Data 2" Bounds="525,568,30,19" ShowValueBox="true" isIOBox="true" />
                       </Patch>
                     </Node>
                     <ControlPoint Id="Q5H2yxCOXDeOufLCiVRO7Q" Bounds="392,284" />
@@ -2991,7 +2981,8 @@
                       <Pin Id="GPt4o27qWJdOUJemUFBt8M" Name="Result" Kind="OutputPin" />
                     </Node>
                     <ControlPoint Id="M1SIYprkOnwL0AYs5Bzyss" Bounds="625,289" />
-                    <Pad Id="E4BgMK3kbLkPRQu9rghtx1" Bounds="1210,497,177,42" ShowValueBox="true" isIOBox="true" Value="&quot;pitch wheel data not stable, no 10bits :( &quot;">
+                    <Pad Id="GH2t6neWRj4OyX9eWAK4Ei" Comment="On Data" Bounds="460,1114,40,19" ShowValueBox="true" isIOBox="true" />
+                    <Pad Id="OUb2Z805DpROyFGwS2uxno" Bounds="393,551,97,22" ShowValueBox="true" isIOBox="true" Value="&quot;10 bits Values&quot;">
                       <p:ValueBoxSettings>
                         <p:fontsize p:Type="Int32">9</p:fontsize>
                         <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
@@ -3000,7 +2991,6 @@
                         <Choice Kind="TypeFlag" Name="String" />
                       </p:TypeAnnotation>
                     </Pad>
-                    <Pad Id="GH2t6neWRj4OyX9eWAK4Ei" Comment="On Data" Bounds="460,1114,40,19" ShowValueBox="true" isIOBox="true" />
                   </Canvas>
                   <Patch Id="O99lecOJSQKNGSmXvvATtS" Name="Create" ParticipatingElements="Q9p9cWzqOi5Ok0nPowbfmv">
                     <Pin Id="JV8Hbg7HsLzLzQsIvOgZBs" Name="Count" Kind="InputPin" Bounds="599,315" />
@@ -3067,13 +3057,11 @@
                   <Link Id="KH9fvtRXuCiNNKiUUyFnI9" Ids="GPt4o27qWJdOUJemUFBt8M,HGMkjDPaLXGMUEZcDYx1Sr" />
                   <Link Id="G9PhtMyIfwEMDDYNPBTTwE" Ids="M1SIYprkOnwL0AYs5Bzyss,P6ktlkGOvifO8zmpjLMtUu" />
                   <Link Id="DDWvu8KuutBPtyEBZkCjUQ" Ids="JV8Hbg7HsLzLzQsIvOgZBs,M1SIYprkOnwL0AYs5Bzyss" IsHidden="true" />
-                  <Link Id="EYLypRF0LZ8MTAXJiuAMGm" Ids="AypBi0clNc2Nb6JRuNW5dr,E8lZkhfkT9IP9o40xskTXZ" />
-                  <Link Id="AohrrvxUyXjMvZONyToWRI" Ids="A9YX2jfoWwCMWyVWpZyGi6,DcFhAI9GSYMPA1WWpbxgjf" />
-                  <Link Id="S6mPbsFDI6fOmWi1X71OPo" Ids="A9YX2jfoWwCMWyVWpZyGi6,I8Njt4zUAMOLZkrKavVWvd" />
                   <Link Id="OC1t1y5BLQtPXEVSIo2XXe" Ids="EjCA4r1STruO4XXBlLShf7,GH2t6neWRj4OyX9eWAK4Ei" />
                   <Link Id="Guo3VVQv0svQHrRMXSEdBX" Ids="UsI9uk1HXWFONAYNNf4GQB,UJiMPaikWaoLchELcDmkvK" />
                   <Link Id="SjEE0JHUzkaOAWuGlP8zE1" Ids="KzgJtdn6jUdPIeYCcpNtlE,DM7Fks8ceUUMF7n3DEHN7o" />
-                  <Link Id="HscGfAyr703M99j5a0MzRr" Ids="LToEMWEV7fJPenQUWT0Y1F,L3YaD7EtfrxOwtiJpILZwU" />
+                  <Link Id="G4MJFGtOfi0LnzmtJV4JMX" Ids="AypBi0clNc2Nb6JRuNW5dr,QNmtRq3enPMOaFbGklHBTY" />
+                  <Link Id="DeYJgrMytFPL6JqGBTLbiP" Ids="N0RuN6yAzeSMpefZ4kbx2Z,L3YaD7EtfrxOwtiJpILZwU" />
                 </Patch>
               </Node>
               <!--
