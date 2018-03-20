@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\_CueTimeliner_MCP\Timeliner.v4p" systemname="Test" filename="D:\_VVVV\_Projects\_CUETIMELINER\Test.v4p" scrollx="0" scrolly="0" locked="0">
+   <PATCH nodename="D:\_Schumann\CueTimeliner_MCP\Timeliner.v4p" systemname="Test" filename="D:\_VVVV\_Projects\_CUETIMELINER\Test.v4p" scrollx="0" scrolly="0" locked="0">
    <BOUNDS type="Window" left="4560" top="5955" width="11685" height="9645">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
@@ -69,7 +69,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="720" top="780" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Files\OCHATE.Project">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Files\Schumann_All.Project">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -131,7 +131,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1935" top="1590" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="222.39">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5285.068">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -243,7 +243,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3210" top="1590" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.7">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -263,7 +263,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6180" top="3270" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -273,7 +273,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="ShowAll">
    </PIN>
@@ -329,7 +329,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="840" top="2505" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="F:\ZA!\ZA_01v1_Ochate_ISRC-000000000000.wav">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\Schumann_Repo\Schumann_vvvv\assets\music\das_paradies_und_die_peri.mp3">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -384,48 +384,6 @@
    <PIN pinname="Size" slicecount="1" values="12">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer_CueTimeliner" filename="Subs\Renderer_CueTimeliner.v4p" nodename="Subs\Renderer_CueTimeliner.v4p" componentmode="Hidden" id="267" debug="0" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="855" top="8070" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="855" top="8070" width="7515" height="6870">
-   </BOUNDS>
-   <BOUNDS type="Window" left="8850" top="6180" width="8490" height="7530">
-   </BOUNDS>
-   <PIN pinname="Enabled" visible="1">
-   </PIN>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   <PIN pinname="Timeline" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Apply" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Controler" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="ApplyControler" visible="1">
-   </PIN>
-   <PIN pinname="RenderResol_Controler" visible="1">
-   </PIN>
-   <PIN pinname="RenderResol_TImeline" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="LaunchControlXLRaw" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="GridEnable" visible="1">
-   </PIN>
-   <PIN pinname="ControlerEnable" visible="1">
-   </PIN>
-   <PIN pinname="ControllerUI" visible="1">
-   </PIN>
-   <PIN pinname="TextSize" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="87" srcpinname="Device" dstnodeid="267" dstpinname="Mouse" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="2010" y="6825">
-   </LINKPOINT>
-   <LINKPOINT x="1320" y="6825">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="268" hiddenwhenlocked="1">
    <BOUNDS type="Box" left="2535" top="7290" width="480" height="480">
    </BOUNDS>
@@ -446,12 +404,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
    </PIN>
    </NODE>
-   <LINK srcnodeid="268" srcpinname="Y Output Value" dstnodeid="267" dstpinname="Enabled" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="2565" y="7920">
-   </LINKPOINT>
-   <LINKPOINT x="2625" y="7920">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="271">
    <BOUNDS type="Box" left="6960" top="3270" width="615" height="240">
    </BOUNDS>
@@ -525,7 +477,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="675" top="7305" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -535,7 +487,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="GridEnable">
    </PIN>
@@ -642,12 +594,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="288" srcpinname="Y Output Value" dstnodeid="267" dstpinname="GridEnable" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="705" y="7965">
-   </LINKPOINT>
-   <LINKPOINT x="1755" y="7965">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="415">
    <BOUNDS type="Box" left="510" top="5130" width="780" height="480">
    </BOUNDS>
@@ -706,12 +652,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="433" srcpinname="Y Output Value" dstnodeid="267" dstpinname="ControllerUI" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="1635" y="7898">
-   </LINKPOINT>
-   <LINKPOINT x="2160" y="7898">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="CUE_TIMELINER (Preset)" filename="vl\VVVV.Preset.CueTimeliner.vl" nodename="CUE_TIMELINER (Preset)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="735" top="6345" width="4650" height="270">
    </BOUNDS>
@@ -829,7 +769,7 @@
    </PIN>
    <PIN pinname="TextRes" visible="1">
    </PIN>
-   <PIN pinname="ScreenToPointer" visible="-1" slicecount="1" pintype="Input" values="0">
+   <PIN pinname="ScreenToPointer" visible="1" slicecount="1" pintype="Input" values="0">
    </PIN>
    <PIN pinname="ScreenToInit" visible="-1" slicecount="1" pintype="Input" values="0">
    </PIN>
@@ -1058,16 +998,6 @@
    <LINKPOINT x="4735" y="4310">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="267" srcpinname="RenderResol_Controler" dstnodeid="2" dstpinname="ResSliderXY">
-   </LINK>
-   <LINK srcnodeid="267" srcpinname="RenderResol_TImeline" dstnodeid="2" dstpinname="ResolXY">
-   </LINK>
-   <LINK srcnodeid="267" srcpinname="TimelineEnable" dstnodeid="2" dstpinname="KMActive">
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="Draw Description Layer" dstnodeid="267" dstpinname="Draw Description Layer">
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="Draw Description Controller" dstnodeid="267" dstpinname="Draw Description Controller">
-   </LINK>
    <LINK srcnodeid="271" srcpinname="Y Output Value" dstnodeid="2" dstpinname="PrevCue" linkstyle="VHV">
    <LINKPOINT x="6960" y="4913">
    </LINKPOINT>
@@ -1086,13 +1016,7 @@
    <LINKPOINT x="4440" y="3975">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="2" srcpinname="Active" dstnodeid="267" dstpinname="ApplyControler">
-   </LINK>
    <LINK srcnodeid="288" srcpinname="Y Output Value" dstnodeid="2" dstpinname="GridEnable">
-   </LINK>
-   <LINK srcnodeid="267" srcpinname="RenderResol_TImeline" dstnodeid="2" dstpinname="TimelineResXY">
-   </LINK>
-   <LINK srcnodeid="267" srcpinname="RenderResol_Controler" dstnodeid="2" dstpinname="ControlerResXY">
    </LINK>
    <LINK srcnodeid="59" srcpinname="Output String" dstnodeid="2" dstpinname="File Path">
    </LINK>
@@ -1137,12 +1061,6 @@
    <LINK srcnodeid="430" srcpinname="Path" dstnodeid="2" dstpinname="vvvvSelf">
    </LINK>
    <LINK srcnodeid="430" srcpinname="Path" dstnodeid="2" dstpinname="Location" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="MainOut" dstnodeid="267" dstpinname="Input" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="2295" y="6780">
-   </LINKPOINT>
-   <LINKPOINT x="885" y="6780">
-   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="445">
    <BOUNDS type="Box" left="6570" top="6975" width="480" height="480">
@@ -1596,12 +1514,6 @@
    <PIN pinname="Size" slicecount="1" values="9">
    </PIN>
    </NODE>
-   <LINK srcnodeid="493" srcpinname="Y Output Value" dstnodeid="267" dstpinname="TextSize" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="4320" y="6905">
-   </LINKPOINT>
-   <LINKPOINT x="1815" y="6910">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="370" srcpinname="Y Output Value" dstnodeid="2" dstpinname="RemoveSelectedGroup" linkstyle="VHV">
    <LINKPOINT x="8490" y="4920">
    </LINKPOINT>
@@ -1610,4 +1522,158 @@
    </LINK>
    <LINK srcnodeid="467" srcpinname="Output" dstnodeid="448" dstpinname="Input 1">
    </LINK>
+   <NODE id="267" componentmode="Hidden" systemname="Renderer_CueTimeliner" filename="Subs\Renderer_CueTimeliner.v4p" nodename="Subs\Renderer_CueTimeliner.v4p" debug="0" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="855" top="8070" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="855" top="8070" width="7515" height="6870">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8850" top="6180" width="8490" height="7530">
+   </BOUNDS>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Timeline" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Apply" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Controler" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="ApplyControler" visible="1">
+   </PIN>
+   <PIN pinname="RenderResol_Controler" visible="1">
+   </PIN>
+   <PIN pinname="RenderResol_TImeline" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="LaunchControlXLRaw" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="GridEnable" visible="1">
+   </PIN>
+   <PIN pinname="ControlerEnable" visible="1">
+   </PIN>
+   <PIN pinname="ControllerUI" visible="1">
+   </PIN>
+   <PIN pinname="TextSize" visible="1">
+   </PIN>
+   <PIN pinname="Reload" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="493" srcpinname="Y Output Value" dstnodeid="267" dstpinname="TextSize" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="4320" y="6905">
+   </LINKPOINT>
+   <LINKPOINT x="1815" y="6910">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="MainOut" dstnodeid="267" dstpinname="Input" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="2295" y="6780">
+   </LINKPOINT>
+   <LINKPOINT x="885" y="6780">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="267" srcpinname="RenderResol_Controler" dstnodeid="2" dstpinname="ControlerResXY">
+   </LINK>
+   <LINK srcnodeid="267" srcpinname="RenderResol_TImeline" dstnodeid="2" dstpinname="TimelineResXY">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Active" dstnodeid="267" dstpinname="ApplyControler">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Draw Description Controller" dstnodeid="267" dstpinname="Draw Description Controller">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Draw Description Layer" dstnodeid="267" dstpinname="Draw Description Layer">
+   </LINK>
+   <LINK srcnodeid="267" srcpinname="TimelineEnable" dstnodeid="2" dstpinname="KMActive">
+   </LINK>
+   <LINK srcnodeid="267" srcpinname="RenderResol_TImeline" dstnodeid="2" dstpinname="ResolXY">
+   </LINK>
+   <LINK srcnodeid="267" srcpinname="RenderResol_Controler" dstnodeid="2" dstpinname="ResSliderXY">
+   </LINK>
+   <LINK srcnodeid="433" srcpinname="Y Output Value" dstnodeid="267" dstpinname="ControllerUI" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="1635" y="7898">
+   </LINKPOINT>
+   <LINKPOINT x="2160" y="7898">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="288" srcpinname="Y Output Value" dstnodeid="267" dstpinname="GridEnable" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="705" y="7965">
+   </LINKPOINT>
+   <LINKPOINT x="1755" y="7965">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="268" srcpinname="Y Output Value" dstnodeid="267" dstpinname="Enabled" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="2565" y="7920">
+   </LINKPOINT>
+   <LINKPOINT x="2625" y="7920">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="87" srcpinname="Device" dstnodeid="267" dstpinname="Mouse" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="2010" y="6825">
+   </LINKPOINT>
+   <LINKPOINT x="1320" y="6825">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="494">
+   <BOUNDS type="Box" left="3990" top="2160" width="285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3990" top="2160" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ScreenToPointer">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="494" srcpinname="Y Output Value" dstnodeid="2" dstpinname="ScreenToPointer" linkstyle="VHV">
+   <LINKPOINT x="4020" y="3345">
+   </LINKPOINT>
+   <LINKPOINT x="2145" y="3345">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="495">
+   <BOUNDS type="Box" left="2085" top="7455" width="285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2085" top="7455" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="495" srcpinname="Y Output Value" dstnodeid="267" dstpinname="Reload" linkstyle="VHV">
+   <LINKPOINT x="2145" y="7773">
+   </LINKPOINT>
+   <LINKPOINT x="2025" y="7963">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="496">
+   <BOUNDS type="Node" left="3450" top="480" width="1455" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3450" top="480" width="1455" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|auto write at close|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_CUETIMELINER\Audio\MultiAudioTexture.v4p" systemname="MultiAudioTexture" filename="D:\_VVVV\_Projects\_CUETIMELINER\Audio\MultiAudioTexture.v4p">
+   <PATCH nodename="D:\_Schumann\CueTimeliner_MCP\Audio\MultiAudioTexture.v4p" systemname="MultiAudioTexture" filename="D:\_VVVV\_Projects\_CUETIMELINER\Audio\MultiAudioTexture.v4p" scrollx="0" scrolly="0">
    <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1695" top="2280" width="100" height="100">
    </BOUNDS>
@@ -13,41 +13,37 @@
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="1875" top="4695" width="100" height="100">
+   <BOUNDS type="Node" left="1710" top="4875" width="100" height="100">
    </BOUNDS>
    <PIN pinname="TranslateY" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="CenterX" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="ScaleX" visible="1">
+   <PIN pinname="ScaleX" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    <PIN pinname="TranslateX" visible="1">
    </PIN>
-   <PIN pinname="ScaleY" slicecount="1" values="2">
+   <PIN pinname="ScaleY" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="2115" top="4140" width="100" height="100">
+   <BOUNDS type="Node" left="2160" top="3780" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Spread Count" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="2">
+   <PIN pinname="Width" slicecount="1" values="1">
    </PIN>
-   </NODE>
-   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="2310" top="3585" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Alignment" slicecount="1" values="Centered">
    </PIN>
-   <PIN pinname="Output" visible="1">
+   <PIN pinname="Phase" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Input" slicecount="1" values="2">
+   <PIN pinname="Input" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="4">
@@ -67,15 +63,17 @@
    </PIN>
    <PIN pinname="Texture Transform" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Color" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,0.35789|">
+   </PIN>
    </NODE>
    <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="1335" top="4545" width="100" height="100">
+   <BOUNDS type="Node" left="780" top="4575" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1335" top="4545" width="3000" height="3000">
+   <BOUNDS type="Box" left="780" top="4575" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Mode" slicecount="1" values="Blend">
+   <PIN pinname="Mode" slicecount="1" values="AlphaAdd">
    </PIN>
    </NODE>
    <NODE systemname="Sampler (DX11 Advanced)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Sampler (DX11 Advanced)" componentmode="Hidden" id="7">
@@ -189,6 +187,8 @@
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="14" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="1875" top="6165" width="795" height="240">
@@ -220,23 +220,15 @@
    </LINK>
    <LINK srcnodeid="7" srcpinname="Sampler" dstnodeid="4" dstpinname="Sampler State">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="13" dstpinname="Layer 1">
-   </LINK>
    <LINK srcnodeid="13" srcpinname="Layer Out" dstnodeid="14" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="15" srcpinname="Output Node" dstnodeid="1" dstpinname="Transform In">
    </LINK>
-   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="1" dstpinname="TranslateX">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="1" dstpinname="ScaleX">
-   </LINK>
    <LINK srcnodeid="0" srcpinname="File Count" dstnodeid="2" dstpinname="Spread Count">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="File Count" dstnodeid="3" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="8" srcpinname="Output Enum" dstnodeid="7" dstpinname="Filter Mode">
    </LINK>
-   <BOUNDS type="Window" left="17640" top="2175" width="6015" height="7920">
+   <BOUNDS type="Window" left="22005" top="6030" width="7380" height="7500">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.4">
    </PACK>
@@ -266,12 +258,54 @@
    </NODE>
    <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Enabled">
    </LINK>
-   <NODE systemname="FileTexture (DX11 2d.Pooled)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d.Pooled)" componentmode="Hidden" id="5">
+   <NODE systemname="Switch (DX11.Texture 2d)" nodename="Switch (DX11.Texture 2d)" componentmode="Hidden" id="18" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll">
+   <BOUNDS type="Node" left="1500" top="3735" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="4" dstpinname="Texture">
+   </LINK>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="13" dstpinname="Layer 1">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="19">
+   <BOUNDS type="Box" left="3165" top="4470" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3165" top="4470" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Transform|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="4" dstpinname="Texture Transform">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="20">
+   <BOUNDS type="Box" left="3480" top="5085" width="2250" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3480" top="5085" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,0.97081|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Color">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Color Output" dstnodeid="4" dstpinname="Color">
+   </LINK>
+   <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="5">
    <BOUNDS type="Node" left="1695" top="3030" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1695" top="3030" width="3000" height="3000">
    </BOUNDS>
-   <PIN pinname="Filename" visible="1" slicecount="1" values="||">
+   <PIN pinname="Filename" visible="1" slicecount="32" values="..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_00_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_01_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_02_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_03_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_04_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_05_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_06_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_07_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_08_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_09_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_10_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_11_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_12_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_13_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_14_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_15_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_16_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_17_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_18_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_19_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_20_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_21_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_22_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_23_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_24_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_25_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_26_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_27_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_28_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_29_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_30_.png,..\..\Schumann_Repo\Schumann_vvvv\assets\music\Pics\das_paradies_und_die_peri_31_.png">
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
@@ -283,29 +317,33 @@
    </PIN>
    <PIN pinname="Keep In Memory" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="SizeXY" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Filenames" dstnodeid="5" dstpinname="Filename">
-   </LINK>
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Load In Background">
-   </LINK>
-   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Reload">
    </LINK>
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="5" dstpinname="No Mips">
    </LINK>
-   <NODE systemname="Switch (DX11.Texture 2d)" nodename="Switch (DX11.Texture 2d)" componentmode="Hidden" id="18" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll">
-   <BOUNDS type="Node" left="1500" top="3735" width="100" height="100">
+   <LINK srcnodeid="5" srcpinname="Texture Out" dstnodeid="18" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Filenames" dstnodeid="5" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Reload">
+   </LINK>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="26">
+   <BOUNDS type="Node" left="2220" top="4380" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Switch" visible="1">
-   </PIN>
    <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Switch">
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="1" dstpinname="TranslateX">
    </LINK>
-   <LINK srcnodeid="5" srcpinname="Texture Out" dstnodeid="18" dstpinname="Input 2">
+   <LINK srcnodeid="0" srcpinname="File Count" dstnodeid="26" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="4" dstpinname="Texture">
+   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="1" dstpinname="ScaleX">
    </LINK>
    </PATCH>
