@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\_CueTimeliner_MCP\SendReceiveModules\Receive_Raw_Topic (Network.ZeroMQ Raw).v4p" systemname="Receive_Raw (Network.ZeroMQ Raw)" filename="C:\_ARI\_Timeliner\_LaunchPad-Mini\SendReceiveModules\Receive_Raw (Network.ZeroMQ Raw).v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\SendReceiveModules\Receive_Raw_Topic (Network.ZeroMQ Raw).v4p" systemname="Receive_Raw (Network.ZeroMQ Raw)" filename="C:\_ARI\_Timeliner\_LaunchPad-Mini\SendReceiveModules\Receive_Raw (Network.ZeroMQ Raw).v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="6600" top="6690" width="8130" height="7890">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
@@ -79,7 +79,7 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   <PIN pinname="Pin Visibility" slicecount="1" values="True">
    </PIN>
    </NODE>
    <NODE systemname="S+H (Raw)" nodename="S+H (Raw)" componentmode="Hidden" id="158">

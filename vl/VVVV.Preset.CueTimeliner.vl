@@ -49852,11 +49852,6 @@
                     <Pin Id="FaAZeEcmCNKLLcXreXchf1" Name="Enable1" Kind="OutputPin" Bounds="206,603" />
                     <Pin Id="Kw9z5YXVV3XMshaAlMncdr" Name="Enable2" Kind="OutputPin" Bounds="266,606" />
                   </Patch>
-                  <!--
-
-    ************************  ************************
-
--->
                   <ProcessDefinition Id="Hiy0eraSK1cNqqDxZ7u6Em">
                     <Fragment Id="Ja7ceQq6zZlMFZMBkZDN2i" Patch="M4l5ngPTaywPetJLpjnXOQ" Enabled="true" />
                     <Fragment Id="StJo8IbKcWkNw2DfGnt2ND" Patch="QefwbxP2jstMjaPJroHtSy" Enabled="true" />
@@ -50932,7 +50927,6 @@
               <Pin Id="BHBkfRpkUQJQR9HLVaEs2h" Name="Input" Kind="InputPin" />
               <Pin Id="Cf8snQPTfj5M17WzzFk63H" Name="Input 2" Kind="InputPin" />
               <Pin Id="Qd8F1iTxC6HOdXub2MsRw5" Name="Result" Kind="OutputPin" />
-              <Pin Id="OXIz0o9BPkKMyCJMHH6HHV" Name="Input 3" Kind="InputPin" />
             </Node>
             <ControlPoint Id="AYe4g3k5xYcMdjGPLxeSNq" Bounds="535,1724" />
             <Node Bounds="826,285,25,13" Id="CEfNDbZdAsUQcm5iqWHHXV">
@@ -51228,7 +51222,7 @@
             <Pad Id="DuoKYwog1D6O7qBy73QvFb" Bounds="557,1280">
               <p:ValueBoxSettings />
             </Pad>
-            <ControlPoint Id="AtSnO7B07eJNe4gKO537Dq" Bounds="639,1728" />
+            <ControlPoint Id="AtSnO7B07eJNe4gKO537Dq" Bounds="679,1723" />
             <Node Bounds="706,778,97,13" Id="PdB2cl5qzs6M35MIx2o75f">
               <p:NodeReference LastCategoryFullName="VVVV.MIDI.MackieControl" LastSymbolSource="VVVV.MIDI.MackieControl.vl" LastDependency="VVVV.Preset.CueTimeliner.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -51248,7 +51242,7 @@
               <Pin Id="SI2a54Gc7O1N2JZBhfFY07" Name="KnobsPush" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="NVeagxEHC7OL79PKpeBPAA" Bounds="868,1350" />
-            <ControlPoint Id="AYEMg0XXZ4iMsJdVDwVNXC" Bounds="638,1656" />
+            <ControlPoint Id="AYEMg0XXZ4iMsJdVDwVNXC" Bounds="678,1654" />
             <Pad Id="RurPQTPzGoIN6jHqQXTUIk" Bounds="1549,251,200,22" ShowValueBox="true" isIOBox="true" Value="&quot;Stop hold=Go to init, Zoom out&quot;">
               <p:ValueBoxSettings>
                 <p:fontsize p:Type="Int32">9</p:fontsize>
@@ -51339,6 +51333,7 @@
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pad>
+            <ControlPoint Id="KGc5drXPTn0MEgIMsUJMEd" Bounds="585,1724" />
           </Canvas>
           <Link Id="T33pDNfNKYiNjuExhEmIht" Ids="AOY5biIv8V0MvXHgaxGnu3,PxYL4V3l7VXMnQ85LbBAQa" />
           <Link Id="ENaZL0sG4t4P8oBOap8iX4" Ids="UQH89XJO4DoNlFKMdRqkcW,PaNUZiRhlPPQQPu9y5UK9p" />
@@ -51496,6 +51491,7 @@
             <Pin Id="QQHOnRzX9VsNT1EJqAHcLD" Name="MasterAsPitch" Kind="InputPin" Bounds="649,1496" />
             <Pin Id="QVbC6AugpRrMwLQaW7GAUs" Name="Controllers" Kind="OutputPin" Bounds="618,1748" />
             <Pin Id="DmiqNMTcr8GONZ5Abnk33R" Name="Filter Time" Kind="InputPin" Bounds="808,1359" />
+            <Pin Id="DdVk4uru0cpNBlaRSVpkHm" Name="InterpolatedRaw" Kind="OutputPin" Bounds="585,1724" />
           </Patch>
           <ProcessDefinition Id="GFHgWaBVRzBPhxo1aNjK8F">
             <Fragment Id="LDDmFBOnmtCL2Br6q7MNkI" Patch="VyJ0tUlL4PVLZRiTwSkwA9" Enabled="true" />
@@ -51529,7 +51525,6 @@
           <Link Id="D5hFR2R34IhLr0yIeXrRCl" Ids="NOtAXgvqFw4O4wdFGzgIOD,L0pis9Rug0xLCmspyXLSMd" />
           <Link Id="BW8L2rtUddBMzjgWZPhnLy" Ids="EmlE6CMxvU2LRNBuV9xhlz,GrzV3WBptFSPCavPfxI6Yw" />
           <Link Id="RlwR440ni6mPPSM2g6CWj1" Ids="Kwer96pqsHqPiyPbXvgiyn,IwNgP0WhYeKQNrkUudQpuz" />
-          <Link Id="Rq97cgzEDC3LSmKwyA9vJa" Ids="J9iQRpHmoV1PYbeJaS5qIK,OXIz0o9BPkKMyCJMHH6HHV" />
           <Link Id="UNYDKEgx4zON6rgh5FfGBr" Ids="QKDPBbXJ7w0P6OrHr5xQFX,Cf8snQPTfj5M17WzzFk63H" />
           <Link Id="QVppohgorWmPxBWN3eceLB" Ids="IGltJ4mp4OzPx80Gsi7DYk,AVI2QSSjCB4MAIaJhfrIbO" IsHidden="true" />
           <Link Id="CoArw8YRfkYPzLYfBlUNDR" Ids="AVI2QSSjCB4MAIaJhfrIbO,PPnDtYB1jCUPXyxDGzZuUZ" />
@@ -51570,6 +51565,8 @@
           <Link Id="KWGSKsAguCMMOiFCXe3g36" Ids="A8CXA7eX9MrPTEeQwQf51p,Jdpc7cU4DzlP1FgcdjKAaE" />
           <Link Id="MRk2pOJPXJqLfOIUHOrPE3" Ids="A8CXA7eX9MrPTEeQwQf51p,JP0Hmyj8yahPCzxYTnYXLB" />
           <Link Id="TgykQFlTmCiOXu1w0N1lrZ" Ids="GZAT8BSnoN8MKb7x2vhrPF,DgPMU28DcgwQB4VzoWzPt2" />
+          <Link Id="VRA0l5bJYzINSurQRWQMpp" Ids="J9iQRpHmoV1PYbeJaS5qIK,KGc5drXPTn0MEgIMsUJMEd" />
+          <Link Id="SmGwu9qoJs8O7KYJEO6WaO" Ids="KGc5drXPTn0MEgIMsUJMEd,DdVk4uru0cpNBlaRSVpkHm" IsHidden="true" />
         </Patch>
       </Node>
       <!--

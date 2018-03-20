@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
    <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Timeliner.v4p" systemname="Test" filename="D:\_VVVV\_Projects\_CUETIMELINER\Test.v4p" scrollx="0" scrolly="0" locked="0">
-   <BOUNDS type="Window" left="4560" top="5955" width="11685" height="9645">
+   <BOUNDS type="Window" left="4530" top="5955" width="11685" height="9645">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -1131,6 +1131,8 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6840" top="780">
    </BOUNDS>
+   <PIN pinname="Server" visible="1" slicecount="1" values="127.0.0.1">
+   </PIN>
    </NODE>
    <NODE systemname="FromRaw (MIDI.ControllerSystem)" filename="vl\VVVV.MIDI.Controllers.vl" nodename="FromRaw (MIDI.ControllerSystem)" componentmode="Hidden" id="461">
    <BOUNDS type="Node" left="6855" top="1590" width="100" height="100">
@@ -1143,11 +1145,11 @@
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="463" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="3315" top="7230" width="705" height="675">
+   <BOUNDS type="Box" left="3300" top="7215" width="705" height="675">
    </BOUNDS>
-   <BOUNDS type="Node" left="3315" top="7230" width="0" height="0">
+   <BOUNDS type="Node" left="3300" top="7215" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="3" visible="1" values="Audio,MidiOut,List">
+   <PIN pinname="Input String" slicecount="2" visible="1" values="Audio,MidiOut">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1155,7 +1157,7 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
+   <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
@@ -1163,7 +1165,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Send_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Send_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Send_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="462">
-   <BOUNDS type="Node" left="3330" top="8070" width="100" height="100">
+   <BOUNDS type="Node" left="3315" top="8055" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="11100" top="2070" width="10275" height="11385">
    </BOUNDS>
@@ -1177,13 +1179,15 @@
    </PIN>
    <PIN pinname="Success" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="3330" top="8070">
+   <BOUNDS type="Box" left="3315" top="8055">
    </BOUNDS>
+   <PIN pinname="Server" visible="1" slicecount="1" values="127.0.0.1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="463" srcpinname="Output String" dstnodeid="462" dstpinname="Topic" linkstyle="VHV">
-   <LINKPOINT x="3350" y="7980">
+   <LINKPOINT x="3335" y="7965">
    </LINKPOINT>
-   <LINKPOINT x="3340" y="7995">
+   <LINKPOINT x="3325" y="7980">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="465">
@@ -1222,12 +1226,6 @@
    <LINKPOINT x="5490" y="6810">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="2" srcpinname="Raw" dstnodeid="462" dstpinname="Raw" linkstyle="VHV">
-   <LINKPOINT x="2295" y="6990">
-   </LINKPOINT>
-   <LINKPOINT x="4275" y="6990">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="AsValue (Raw)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="AsValue (Raw)" componentmode="Hidden" id="475">
    <BOUNDS type="Node" left="5010" top="1170" width="100" height="100">
    </BOUNDS>
@@ -1249,12 +1247,14 @@
    </PIN>
    <PIN pinname="OnData" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="6600" top="6690" width="8130" height="7890">
+   <BOUNDS type="Window" left="12510" top="6735" width="8130" height="7890">
    </BOUNDS>
    <PIN pinname="Enable" slicecount="1" values="1">
    </PIN>
    <BOUNDS type="Box" left="5010" top="780">
    </BOUNDS>
+   <PIN pinname="Server" visible="1" slicecount="1" values="127.0.0.1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="476">
    <BOUNDS type="Box" left="5010" top="225" width="990" height="240">
@@ -1327,9 +1327,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="483">
-   <BOUNDS type="Box" left="4440" top="7275" width="480" height="480">
+   <BOUNDS type="Box" left="4425" top="7260" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4440" top="7275" width="0" height="0">
+   <BOUNDS type="Node" left="4425" top="7260" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -1345,9 +1345,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="483" srcpinname="Y Output Value" dstnodeid="462" dstpinname="Send" linkstyle="VHV">
-   <LINKPOINT x="4500" y="7905">
+   <LINKPOINT x="4485" y="7890">
    </LINKPOINT>
-   <LINKPOINT x="4710" y="7905">
+   <LINKPOINT x="4695" y="7890">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="484">
@@ -1662,18 +1662,64 @@
    <LINKPOINT x="2025" y="7963">
    </LINKPOINT>
    </LINK>
-   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="496">
-   <BOUNDS type="Node" left="8325" top="7785" width="1455" height="270">
+   <NODE systemname="Send_Raw (Network.ZeroMQ Raw)" filename="SendReceiveModules\Send_Raw (Network.ZeroMQ Raw).v4p" nodename="Send_Raw (Network.ZeroMQ Raw)" componentmode="Hidden" id="500">
+   <BOUNDS type="Node" left="8355" top="7875" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="8325" top="7785" width="1455" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|auto write at close|">
+   <PIN pinname="Raw" visible="1">
    </PIN>
-   <PIN pinname="Output String" visible="0">
+   <PIN pinname="Server" slicecount="1" visible="1" values="192.168.2.5">
    </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   <PIN pinname="Send" visible="1">
    </PIN>
    </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="501">
+   <BOUNDS type="Box" left="9495" top="7275" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9495" top="7275" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="501" srcpinname="Y Output Value" dstnodeid="500" dstpinname="Send">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="502">
+   <BOUNDS type="Box" left="8520" top="6900" width="1335" height="255">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8520" top="6900" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="192.168.178.34">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="GraphicsIP">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="502" srcpinname="Output String" dstnodeid="500" dstpinname="Server">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Raw" dstnodeid="462" dstpinname="Raw" linkstyle="VHV">
+   <LINKPOINT x="3870" y="7140">
+   </LINKPOINT>
+   <LINKPOINT x="4380" y="7140">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="InterpolatedRaw" dstnodeid="500" dstpinname="Raw" linkstyle="VHV">
+   <LINKPOINT x="7755" y="7485">
+   </LINKPOINT>
+   <LINKPOINT x="9135" y="7485">
+   </LINKPOINT>
+   </LINK>
    </PATCH>

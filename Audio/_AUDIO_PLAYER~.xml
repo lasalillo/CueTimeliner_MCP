@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\_CueTimeliner_MCP\Audio\_AUDIO_PLAYER.v4p" systemname="_AUDIO_PLAYER" filename="D:\_VVVV\_Projects\_CUETIMELINER\Audio\_AUDIO_PLAYER.v4p" bgcolor="15452804" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Audio\_AUDIO_PLAYER.v4p" systemname="_AUDIO_PLAYER" filename="D:\_VVVV\_Projects\_CUETIMELINER\Audio\_AUDIO_PLAYER.v4p" bgcolor="15452804" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="22560" top="5940" width="6240" height="4845">
    </BOUNDS>
    <NODE nodename="S (Value)" id="15" systemname="S (Value)">
@@ -197,9 +197,9 @@
    <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Foreground FPS">
    </LINK>
    <NODE systemname="AsRaw (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="AsRaw (Value)" componentmode="Hidden" id="30">
-   <BOUNDS type="Node" left="1185" top="2910" width="100" height="100">
+   <BOUNDS type="Node" left="1260" top="3420" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1185" top="2910" width="3000" height="3000">
+   <BOUNDS type="Box" left="1260" top="3420" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -365,6 +365,8 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Server" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="44" srcpinname="Output" dstnodeid="0" dstpinname="Raw">
    </LINK>
@@ -385,7 +387,7 @@
    <LINK srcnodeid="45" srcpinname="Output String" dstnodeid="44" dstpinname="Topic">
    </LINK>
    <NODE systemname="Send_Raw_Topic (Network.ZeroMQ Raw)" filename="..\SendReceiveModules\Send_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Send_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="46">
-   <BOUNDS type="Node" left="255" top="3450" width="100" height="100">
+   <BOUNDS type="Node" left="255" top="3765" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Topic" slicecount="1" visible="1" values="AudioLength">
    </PIN>
@@ -394,6 +396,8 @@
    <PIN pinname="Send" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Enable" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Server" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="30" srcpinname="Output" dstnodeid="46" dstpinname="Raw">
@@ -415,9 +419,9 @@
    <LINK srcnodeid="47" srcpinname="Output String" dstnodeid="46" dstpinname="Topic">
    </LINK>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="48">
-   <BOUNDS type="Box" left="1635" top="2700" width="1590" height="270">
+   <BOUNDS type="Box" left="1815" top="2940" width="840" height="255">
    </BOUNDS>
-   <BOUNDS type="Node" left="1635" top="2700" width="0" height="0">
+   <BOUNDS type="Node" left="1815" top="2940" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="Double">
    </PIN>
@@ -465,5 +469,25 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="AudioFile" dstnodeid="51" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="52">
+   <BOUNDS type="Box" left="3915" top="195" width="1350" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3915" top="195" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="127.0.0.1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="52" srcpinname="Output String" dstnodeid="44" dstpinname="Server">
+   </LINK>
+   <LINK srcnodeid="52" srcpinname="Output String" dstnodeid="46" dstpinname="Server">
    </LINK>
    </PATCH>

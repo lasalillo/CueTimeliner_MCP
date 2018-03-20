@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\_CueTimeliner_MCP\SendReceiveModules\Network.v4p" systemname="NETWORK" filename="C:\Projects\merck\SYSTEM\NETWORK.v4p" bgcolor="8973311">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\SendReceiveModules\Network.v4p" systemname="NETWORK" filename="C:\Projects\merck\SYSTEM\NETWORK.v4p" bgcolor="8973311" scrollx="0" scrolly="75">
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="0" systemname="IOBox (Enumerations)">
    <BOUNDS type="Box" left="240" top="1650" width="600" height="240">
    </BOUNDS>
@@ -11,11 +11,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1215" top="1650" width="795" height="240">
+   <BOUNDS type="Box" left="1215" top="1650" width="1305" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="1215" top="1650" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="localhost">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="127.0.0.1">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="localhost">
    </PIN>
@@ -109,9 +109,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2415" top="1650" width="285" height="240">
+   <BOUNDS type="Box" left="2670" top="1710" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2415" top="1650" width="0" height="0">
+   <BOUNDS type="Node" left="2670" top="1710" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -149,7 +149,7 @@
    <NODE systemname="XPublisher (Network.ZeroMQ)" filename="%VVVV%\packs\vvvv-ZeroMQ_Release_x64\nodes\plugins\VVVV.ZeroMQ.dll" nodename="XPublisher (Network.ZeroMQ)" componentmode="Hidden" id="9">
    <BOUNDS type="Node" left="1635" top="2565" width="825" height="270">
    </BOUNDS>
-   <PIN pinname="Server" visible="1">
+   <PIN pinname="Server" visible="1" slicecount="1" values="192.168.178.1">
    </PIN>
    <PIN pinname="Sockets" visible="1">
    </PIN>
@@ -191,8 +191,6 @@
    <LINK srcnodeid="8" srcpinname="Valid" dstnodeid="3" dstpinname="Y Input Value" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Output Enum" dstnodeid="9" dstpinname="Protocol" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="9" dstpinname="Server" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Port">
    </LINK>
@@ -288,4 +286,34 @@
    <PIN pinname="Show in Tray" slicecount="1" values="1">
    </PIN>
    </NODE>
+   <NODE systemname="IP (Network)" nodename="IP (Network)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="2205" top="540" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="IP" visible="1">
+   </PIN>
+   <PIN pinname="Standard Gateway" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="16">
+   <BOUNDS type="Box" left="2100" top="885" width="1530" height="525">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2100" top="885" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="IP">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Standard Gateway" dstnodeid="16" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="9" dstpinname="Server" hiddenwhenlocked="1">
+   </LINK>
    </PATCH>
