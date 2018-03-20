@@ -243,7 +243,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3210" top="1590" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.91">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -329,7 +329,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="840" top="2505" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\Schumann_vvvv\Schumann_vvvv\assets\music\das_paradies_und_die_peri.mp3">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\Schumann\Schumann_vvvv\assets\music\das_paradies_und_die_peri.mp3">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
