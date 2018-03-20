@@ -1459,9 +1459,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="491" srcpinname="Y Output Value" dstnodeid="2" dstpinname="MasterAsPitch" linkstyle="VHV">
-   <LINKPOINT x="9835" y="5990">
+   <LINKPOINT x="9765" y="5955">
    </LINKPOINT>
-   <LINKPOINT x="5135" y="6145">
+   <LINKPOINT x="7605" y="5955">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="492">
@@ -1665,9 +1665,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="502">
-   <BOUNDS type="Box" left="8955" top="7260" width="1335" height="255">
+   <BOUNDS type="Box" left="8955" top="7500" width="1335" height="255">
    </BOUNDS>
-   <BOUNDS type="Node" left="8955" top="7260" width="0" height="0">
+   <BOUNDS type="Node" left="8955" top="7500" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="192.168.178.34">
    </PIN>
@@ -1689,13 +1689,13 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="IP (Network)" nodename="IP (Network)" componentmode="Hidden" id="508">
-   <BOUNDS type="Node" left="8265" top="6465" width="100" height="100">
+   <BOUNDS type="Node" left="8265" top="6705" width="100" height="100">
    </BOUNDS>
    <PIN pinname="IP" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="CAR (String)" nodename="CAR (String)" componentmode="Hidden" id="509">
-   <BOUNDS type="Node" left="8955" top="6885" width="100" height="100">
+   <BOUNDS type="Node" left="8955" top="7125" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1707,9 +1707,9 @@
    <LINK srcnodeid="509" srcpinname="First Slice" dstnodeid="502" dstpinname="Input String">
    </LINK>
    <NODE id="504" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Box" left="9195" top="7950" width="795" height="240">
+   <BOUNDS type="Box" left="9225" top="7995" width="570" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9195" top="7950" width="0" height="0">
+   <BOUNDS type="Node" left="9225" top="7995" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="10001">
    </PIN>
@@ -1963,9 +1963,9 @@
    <LINK srcnodeid="503" srcpinname="Y Output Value" dstnodeid="500" dstpinname="Send">
    </LINK>
    <LINK srcnodeid="504" srcpinname="Y Output Value" dstnodeid="500" dstpinname="Port" linkstyle="VHV">
-   <LINKPOINT x="9225" y="8288">
+   <LINKPOINT x="9245" y="8318">
    </LINKPOINT>
-   <LINKPOINT x="9255" y="8288">
+   <LINKPOINT x="9265" y="8303">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="2" srcpinname="InterpolatedRaw" dstnodeid="500" dstpinname="Raw" linkstyle="VHV">
@@ -1975,9 +1975,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="502" srcpinname="Output String" dstnodeid="500" dstpinname="Server" linkstyle="VHV">
-   <LINKPOINT x="8985" y="7950">
+   <LINKPOINT x="8985" y="8110">
    </LINKPOINT>
-   <LINKPOINT x="8985" y="7950">
+   <LINKPOINT x="8985" y="8030">
    </LINKPOINT>
    </LINK>
    </PATCH>
