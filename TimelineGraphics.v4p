@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\_Schumann\CueTimeliner_MCP\TimelineGraphics.v4p" systemname="TimelineGraphics" filename="D:\_VVVV\_Projects\_CUETIMELINER\TimelineGraphics.v4p" scrollx="0" scrolly="1170">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_CUETIMELINER_MCP\TimelineGraphics.v4p" systemname="TimelineGraphics" filename="D:\_VVVV\_Projects\_CUETIMELINER\TimelineGraphics.v4p" scrollx="0" scrolly="3600">
    <NODE id="1" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Input">
    </PIN>
@@ -1026,10 +1026,6 @@
    </LINK>
    <LINK srcnodeid="19" srcpinname="Layer Out" dstnodeid="47" dstpinname="Layer 6">
    </LINK>
-   <LINK srcnodeid="101" srcpinname="Layer Out" dstnodeid="47" dstpinname="Layer 4">
-   </LINK>
-   <LINK srcnodeid="100" srcpinname="Layer Out" dstnodeid="47" dstpinname="Layer 5">
-   </LINK>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="112">
    <BOUNDS type="Node" left="9300" top="8235" width="100" height="100">
    </BOUNDS>
@@ -1135,9 +1131,9 @@
    <LINK srcnodeid="15" srcpinname="AudioTexturePos" dstnodeid="123" dstpinname="Transform">
    </LINK>
    <NODE systemname="FileTexture (DX11 2d.Pooled)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d.Pooled)" componentmode="Hidden" id="122">
-   <BOUNDS type="Node" left="6915" top="9180" width="100" height="100">
+   <BOUNDS type="Node" left="6735" top="9105" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6915" top="9180" width="3000" height="3000">
+   <BOUNDS type="Box" left="6735" top="9105" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
@@ -1167,7 +1163,7 @@
    <LINK srcnodeid="118" srcpinname="Color Output" dstnodeid="123" dstpinname="Color">
    </LINK>
    <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="124">
-   <BOUNDS type="Node" left="7650" top="8805" width="100" height="100">
+   <BOUNDS type="Node" left="6795" top="8145" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Directory" visible="1">
    </PIN>
@@ -1181,10 +1177,6 @@
    <LINK srcnodeid="96" srcpinname="Path" dstnodeid="124" dstpinname="Directory">
    </LINK>
    <LINK srcnodeid="114" srcpinname="Y Output Value" dstnodeid="124" dstpinname="Update">
-   </LINK>
-   <LINK srcnodeid="124" srcpinname="Filenames" dstnodeid="122" dstpinname="Filename">
-   </LINK>
-   <LINK srcnodeid="123" srcpinname="Layer" dstnodeid="47" dstpinname="Layer 3">
    </LINK>
    <LINK srcnodeid="112" srcpinname="Transform Out" dstnodeid="123" dstpinname="Texture Transform">
    </LINK>
@@ -1203,5 +1195,25 @@
    <LINK srcnodeid="125" srcpinname="Y Output Value" dstnodeid="112" dstpinname="TranslateX">
    </LINK>
    <LINK srcnodeid="114" srcpinname="Y Output Value" dstnodeid="122" dstpinname="Reload">
+   </LINK>
+   <LINK srcnodeid="123" srcpinname="Layer" dstnodeid="47" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="101" srcpinname="Layer Out" dstnodeid="47" dstpinname="Layer 4">
+   </LINK>
+   <LINK srcnodeid="100" srcpinname="Layer Out" dstnodeid="47" dstpinname="Layer 5">
+   </LINK>
+   <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="126">
+   <BOUNDS type="Node" left="6945" top="8700" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="124" srcpinname="Filenames" dstnodeid="126" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="126" srcpinname="Output" dstnodeid="122" dstpinname="Filename">
    </LINK>
    </PATCH>
