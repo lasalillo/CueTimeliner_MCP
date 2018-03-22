@@ -749,7 +749,7 @@
    </PIN>
    <PIN pinname="Quad" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Interpolated" visible="-1" pintype="Output">
+   <PIN pinname="Interpolated" visible="1" pintype="Output">
    </PIN>
    <PIN pinname="Fade" visible="1">
    </PIN>
