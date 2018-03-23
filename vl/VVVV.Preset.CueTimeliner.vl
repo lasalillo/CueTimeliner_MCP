@@ -39854,8 +39854,8 @@
                 <Pin Id="NFrOJk5jIMBMN6wocMAqKN" Name="Output" Kind="OutputPin" />
                 <Pin Id="EaT6tZ5LWv0PpgS24MwPcN" Name="Values" Kind="OutputPin" />
                 <Pin Id="Sv6cgyiuSOvLIA2G4R2Ktn" Name="Mode" Kind="OutputPin" />
-                <Pin Id="JpV7gcDQdAdQRChklQA2U3" Name="Left Pressed" Kind="OutputPin" />
                 <Pin Id="RN8yBpYgiRALm4ojySMT3E" Name="Update" Kind="OutputPin" />
+                <Pin Id="JpV7gcDQdAdQRChklQA2U3" Name="Left Pressed" Kind="OutputPin" />
               </Node>
               <Pad Id="GLWhE3wIT0KLDaXdSAL6Y4" Comment="Border" Bounds="1063,1126,33,38" ShowValueBox="true" isIOBox="true" Value="new vec(0.005,0.002)">
                 <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="VL.CoreLib.vl">
