@@ -507,11 +507,13 @@
    <LINK srcnodeid="30" srcpinname="Inverse Output" dstnodeid="18" dstpinname="Enable">
    </LINK>
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="31">
-   <BOUNDS type="Node" left="3360" top="210" width="100" height="100">
+   <BOUNDS type="Node" left="3360" top="210" width="750" height="270">
    </BOUNDS>
-   <PIN pinname="Period" slicecount="1" values="10">
+   <PIN pinname="Period" slicecount="1" values="5">
    </PIN>
    <PIN pinname="Change" visible="1">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="Change" dstnodeid="15" dstpinname="Update">

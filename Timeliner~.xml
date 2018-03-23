@@ -1164,34 +1164,6 @@
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <NODE systemname="Send_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Send_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Send_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="462">
-   <BOUNDS type="Node" left="3180" top="8055" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Window" left="11100" top="2070" width="10275" height="11385">
-   </BOUNDS>
-   <PIN pinname="Send" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Topic" slicecount="1" visible="1" values="sss">
-   </PIN>
-   <PIN pinname="Raw" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Enable" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Success" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="3180" top="8055">
-   </BOUNDS>
-   <PIN pinname="Server" visible="1" slicecount="1" values="127.0.0.1">
-   </PIN>
-   <PIN pinname="Port" visible="1" slicecount="1" values="20000">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="463" srcpinname="Output String" dstnodeid="462" dstpinname="Topic" linkstyle="VHV">
-   <LINKPOINT x="3220" y="7965">
-   </LINKPOINT>
-   <LINKPOINT x="3200" y="7980">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="465">
    <BOUNDS type="Box" left="6840" top="225" width="585" height="240">
    </BOUNDS>
@@ -1346,12 +1318,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="483" srcpinname="Y Output Value" dstnodeid="462" dstpinname="Send" linkstyle="VHV">
-   <LINKPOINT x="4570" y="7780">
-   </LINKPOINT>
-   <LINKPOINT x="4670" y="7835">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="484">
    <BOUNDS type="Box" left="8790" top="5400" width="795" height="240">
    </BOUNDS>
@@ -1682,18 +1648,12 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="Raw" dstnodeid="462" dstpinname="Raw" linkstyle="VHV">
-   <LINKPOINT x="3825" y="7140">
-   </LINKPOINT>
-   <LINKPOINT x="4290" y="7140">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="IP (Network)" nodename="IP (Network)" componentmode="Hidden" id="508">
-   <BOUNDS type="Node" left="8250" top="6390" width="100" height="100">
+   <BOUNDS type="Node" left="8250" top="6495" width="100" height="100">
    </BOUNDS>
    <PIN pinname="IP" visible="1">
    </PIN>
-   <PIN pinname="Update" slicecount="1" values="0">
+   <PIN pinname="Update" slicecount="1" values="0" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="CAR (String)" nodename="CAR (String)" componentmode="Hidden" id="509">
@@ -1713,7 +1673,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9225" top="7995" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="10001">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="10002">
    </PIN>
    <PIN pinname="Units" slicecount="1" pintype="Configuration" values="||">
    </PIN>
@@ -1784,42 +1744,6 @@
    <PIN pinname="Y Output Value" pintype="Output" visible="1">
    </PIN>
    <PIN pinname="Changed" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
-   <NODE id="500" systemname="Send_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Send_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Send_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="8685" top="8385" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="8685" top="8385" width="4800" height="3600">
-   </BOUNDS>
-   <PIN pinname="Enable" slicecount="1" pintype="Input" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Topic" visible="1" pintype="Input" slicecount="1" values="topic">
-   </PIN>
-   <PIN pinname="Raw" visible="1" pintype="Input" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Server" slicecount="1" visible="1" pintype="Input" values="192.168.2.5">
-   </PIN>
-   <PIN pinname="Send" visible="1" pintype="Input">
-   </PIN>
-   <PIN pinname="Port" visible="1" pintype="Input">
-   </PIN>
-   <BOUNDS type="Window" left="11100" top="2070" width="10275" height="11385">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Protocol" pintype="Input" slicecount="1" values="tcp">
-   </PIN>
-   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Window Handle" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Patch" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Success" pintype="Output" visible="1">
    </PIN>
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
@@ -1956,32 +1880,6 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="507" srcpinname="Output String" dstnodeid="500" dstpinname="Topic" linkstyle="VHV">
-   <LINKPOINT x="8345" y="8278">
-   </LINKPOINT>
-   <LINKPOINT x="8860" y="8283">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="503" srcpinname="Y Output Value" dstnodeid="500" dstpinname="Send">
-   </LINK>
-   <LINK srcnodeid="504" srcpinname="Y Output Value" dstnodeid="500" dstpinname="Port" linkstyle="VHV">
-   <LINKPOINT x="9245" y="8318">
-   </LINKPOINT>
-   <LINKPOINT x="9265" y="8303">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="InterpolatedRaw" dstnodeid="500" dstpinname="Raw" linkstyle="VHV">
-   <LINKPOINT x="7755" y="7905">
-   </LINKPOINT>
-   <LINKPOINT x="9825" y="7905">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="502" srcpinname="Output String" dstnodeid="500" dstpinname="Server" linkstyle="VHV">
-   <LINKPOINT x="8985" y="8110">
-   </LINKPOINT>
-   <LINKPOINT x="8985" y="8030">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="510">
    <BOUNDS type="Node" left="9105" top="7155" width="100" height="100">
    </BOUNDS>
@@ -2011,6 +1909,118 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="511" srcpinname="Output String" dstnodeid="510" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="512">
+   <BOUNDS type="Node" left="7905" top="6195" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Change" visible="1">
+   </PIN>
+   <PIN pinname="Period" slicecount="1" values="5">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="512" srcpinname="Change" dstnodeid="508" dstpinname="Update">
+   </LINK>
+   <NODE systemname="Send_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Send_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Send_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="462">
+   <BOUNDS type="Node" left="3180" top="8055" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11100" top="2070" width="10275" height="11385">
+   </BOUNDS>
+   <PIN pinname="Send" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Topic" slicecount="1" visible="1" values="sss">
+   </PIN>
+   <PIN pinname="Raw" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enable" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Success" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="3180" top="8055">
+   </BOUNDS>
+   <PIN pinname="Server" visible="1" slicecount="1" values="127.0.0.1">
+   </PIN>
+   <PIN pinname="Port" visible="1" slicecount="1" values="20000">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="463" srcpinname="Output String" dstnodeid="462" dstpinname="Topic" linkstyle="VHV">
+   <LINKPOINT x="3220" y="7965">
+   </LINKPOINT>
+   <LINKPOINT x="3200" y="7980">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="483" srcpinname="Y Output Value" dstnodeid="462" dstpinname="Send" linkstyle="VHV">
+   <LINKPOINT x="4570" y="7780">
+   </LINKPOINT>
+   <LINKPOINT x="4670" y="7835">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Raw" dstnodeid="462" dstpinname="Raw" linkstyle="VHV">
+   <LINKPOINT x="3825" y="7140">
+   </LINKPOINT>
+   <LINKPOINT x="4290" y="7140">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="500" systemname="Send_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Send_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Send_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="8685" top="8385" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8685" top="8385" width="4800" height="3600">
+   </BOUNDS>
+   <PIN pinname="Enable" slicecount="1" pintype="Input" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Topic" visible="1" pintype="Input" slicecount="1" values="topic">
+   </PIN>
+   <PIN pinname="Raw" visible="1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Server" slicecount="1" visible="1" pintype="Input" values="192.168.2.5">
+   </PIN>
+   <PIN pinname="Send" visible="1" pintype="Input">
+   </PIN>
+   <PIN pinname="Port" visible="1" pintype="Input">
+   </PIN>
+   <BOUNDS type="Window" left="11100" top="2070" width="10275" height="11385">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Protocol" pintype="Input" slicecount="1" values="tcp">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Patch" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Success" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="507" srcpinname="Output String" dstnodeid="500" dstpinname="Topic" linkstyle="VHV">
+   <LINKPOINT x="8345" y="8278">
+   </LINKPOINT>
+   <LINKPOINT x="8860" y="8283">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="503" srcpinname="Y Output Value" dstnodeid="500" dstpinname="Send">
+   </LINK>
+   <LINK srcnodeid="504" srcpinname="Y Output Value" dstnodeid="500" dstpinname="Port" linkstyle="VHV">
+   <LINKPOINT x="9245" y="8318">
+   </LINKPOINT>
+   <LINKPOINT x="9265" y="8303">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="InterpolatedRaw" dstnodeid="500" dstpinname="Raw" linkstyle="VHV">
+   <LINKPOINT x="7755" y="7905">
+   </LINKPOINT>
+   <LINKPOINT x="9825" y="7905">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="502" srcpinname="Output String" dstnodeid="500" dstpinname="Server" linkstyle="VHV">
+   <LINKPOINT x="8985" y="8110">
+   </LINKPOINT>
+   <LINKPOINT x="8985" y="8030">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="510" srcpinname="Inverse Output" dstnodeid="500" dstpinname="Enable">
    </LINK>
