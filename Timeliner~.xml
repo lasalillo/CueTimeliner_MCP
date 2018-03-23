@@ -1689,13 +1689,15 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="IP (Network)" nodename="IP (Network)" componentmode="Hidden" id="508">
-   <BOUNDS type="Node" left="8265" top="6705" width="100" height="100">
+   <BOUNDS type="Node" left="8250" top="6390" width="100" height="100">
    </BOUNDS>
    <PIN pinname="IP" visible="1">
    </PIN>
+   <PIN pinname="Update" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE systemname="CAR (String)" nodename="CAR (String)" componentmode="Hidden" id="509">
-   <BOUNDS type="Node" left="8955" top="7125" width="100" height="100">
+   <BOUNDS type="Node" left="8940" top="6810" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1979,5 +1981,37 @@
    </LINKPOINT>
    <LINKPOINT x="8985" y="8030">
    </LINKPOINT>
+   </LINK>
+   <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="510">
+   <BOUNDS type="Node" left="9105" top="7155" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="509" srcpinname="First Slice" dstnodeid="510" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="511">
+   <BOUNDS type="Box" left="9570" top="6795" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9570" top="6795" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="0.0.0.0">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="511" srcpinname="Output String" dstnodeid="510" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="510" srcpinname="Inverse Output" dstnodeid="500" dstpinname="Enable">
    </LINK>
    </PATCH>
