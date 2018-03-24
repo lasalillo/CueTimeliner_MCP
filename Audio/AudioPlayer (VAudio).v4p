@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\_CueTimeliner_MCP\Audio\AudioPlayer (VAudio).v4p" systemname="AudioPlayer" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\AudioPlayer.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Audio\AudioPlayer (VAudio).v4p" systemname="AudioPlayer" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\AudioPlayer.v4p" scrollx="0" scrolly="0">
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="1155" top="3540" width="795" height="240">
    </BOUNDS>
@@ -651,5 +651,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Speed">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="61">
+   <BOUNDS type="Box" left="645" top="4560" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="645" top="4560" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Audio Out|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Audio Out" dstnodeid="61" dstpinname="Input Node">
    </LINK>
    </PATCH>

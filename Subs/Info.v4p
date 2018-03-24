@@ -1,13 +1,13 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\_CueTimeliner_MCP\Subs\Info.v4p" systemname="Info" filename="D:\_VVVV\_Projects\_CUETIMELINER\Subs\Info.v4p" bgcolor="4010496" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Subs\Info.v4p" systemname="Info" filename="D:\_VVVV\_Projects\_CUETIMELINER\Subs\Info.v4p" bgcolor="4010496" scrollx="0" scrolly="0">
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">
    <BOUNDS type="Node" left="360" top="225" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="360" top="225" width="3045" height="4515">
+   <BOUNDS type="Box" left="360" top="225" width="3150" height="5310">
    </BOUNDS>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" values="|SpaceBar=Play/Stop&cr;&lf;HZScrool=RB+Move&cr;&lf;(+Shift=Fast)&cr;&lf;VtScrool=MouseWheel&cr;&lf;Zoom=Z+MouseWheel&cr;&lf;(+Shift=Fast)&cr;&lf;LoopOn/OFF=Shif+L    LoopPointsEdit:   &cr;&lf;LB+L=Start &cr;&lf;RB+L=End   &cr;&lf;RB+Ctr=SelectTrack&cr;&lf;LB=SetPlayerPointer&cr;&lf;Alt+Z=UnDo&cr;&lf;Alt+Y=ReDo|">
+   <PIN pinname="Input String" slicecount="1" values="|SpaceBar=Play/Stop&cr;&lf;HZScrool=RB+Move&cr;&lf;(+Shift=Fast)&cr;&lf;VtScrool=MouseWheel&cr;&lf;Zoom=Z+MouseWheel&cr;&lf;(+Shift=Fast)&cr;&lf;LoopOn/OFF=Shif+L    LoopPointsEdit:   &cr;&lf;LB+L=Start &cr;&lf;RB+L=End   &cr;&lf;RB+Ctr=SelectTrack&cr;&lf;LB=SetPlayerPointer&cr;&lf;Alt+Z=UnDo&cr;&lf;Alt+Y=ReDo&cr;&lf;&cr;&lf;Auto Back every 2 minutes on Back Folder|">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="12">
    </PIN>

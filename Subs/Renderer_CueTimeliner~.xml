@@ -41,7 +41,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1725" top="4575" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="-105" top="0" width="38505" height="6045">
+   <BOUNDS type="Window" left="0" top="0" width="22380" height="6045">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>

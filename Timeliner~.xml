@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Timeliner.v4p" systemname="Test" filename="D:\_VVVV\_Projects\_CUETIMELINER\Test.v4p" scrollx="0" scrolly="0" locked="0">
+   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Timeliner.v4p" systemname="Test" filename="D:\_VVVV\_Projects\_CUETIMELINER\Test.v4p" scrollx="0" scrolly="-360" locked="0">
    <BOUNDS type="Window" left="4530" top="5955" width="11685" height="9645">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
@@ -175,7 +175,7 @@
    </PIN>
    <PIN pinname="Present UpFront" slicecount="1" visible="1" pintype="Input" values="1">
    </PIN>
-   <PIN pinname="Time Mode" slicecount="1" values="Raw">
+   <PIN pinname="Time Mode" slicecount="1" values="Filtered">
    </PIN>
    <PIN pinname="Increase Timing Precision" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
@@ -243,7 +243,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3210" top="1590" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.91">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.37">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -924,6 +924,8 @@
    <PIN pinname="Raw Bin Size" visible="-1" pintype="Output">
    </PIN>
    <PIN pinname="RemoveSelectedGroup" visible="1">
+   </PIN>
+   <PIN pinname="AutoBackOn" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="50" srcpinname="Y Output Value" dstnodeid="2" dstpinname="FromGroup" linkstyle="VHV">
@@ -1649,11 +1651,11 @@
    </PIN>
    </NODE>
    <NODE systemname="IP (Network)" nodename="IP (Network)" componentmode="Hidden" id="508">
-   <BOUNDS type="Node" left="8250" top="6495" width="100" height="100">
+   <BOUNDS type="Node" left="8460" top="6450" width="100" height="100">
    </BOUNDS>
    <PIN pinname="IP" visible="1">
    </PIN>
-   <PIN pinname="Update" slicecount="1" values="0" visible="1">
+   <PIN pinname="Update" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="CAR (String)" nodename="CAR (String)" componentmode="Hidden" id="509">
@@ -1673,7 +1675,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9225" top="7995" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="10002">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="10001">
    </PIN>
    <PIN pinname="Units" slicecount="1" pintype="Configuration" values="||">
    </PIN>
@@ -1829,9 +1831,9 @@
    </PIN>
    </NODE>
    <NODE id="507" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Box" left="8460" top="7965" width="375" height="240">
+   <BOUNDS type="Box" left="8460" top="7995" width="375" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8460" top="7965" width="0" height="0">
+   <BOUNDS type="Node" left="8460" top="7995" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" pintype="Input" values="List">
    </PIN>
@@ -1911,7 +1913,7 @@
    <LINK srcnodeid="511" srcpinname="Output String" dstnodeid="510" dstpinname="Input 2">
    </LINK>
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="512">
-   <BOUNDS type="Node" left="7905" top="6195" width="100" height="100">
+   <BOUNDS type="Node" left="8115" top="6150" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Change" visible="1">
    </PIN>
@@ -2023,5 +2025,29 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="510" srcpinname="Inverse Output" dstnodeid="500" dstpinname="Enable">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="516">
+   <BOUNDS type="Box" left="150" top="2085" width="285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="150" top="2085" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="AutoBack">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="516" srcpinname="Y Output Value" dstnodeid="2" dstpinname="AutoBackOn" linkstyle="VHV">
+   <LINKPOINT x="150" y="6610">
+   </LINKPOINT>
+   <LINKPOINT x="7935" y="6440">
+   </LINKPOINT>
    </LINK>
    </PATCH>

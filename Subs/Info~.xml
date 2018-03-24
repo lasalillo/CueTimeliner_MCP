@@ -25,7 +25,7 @@
    </BOUNDS>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" values="|Shift+T=EditTrackName&cr;&lf;A+RB=AddCue (With the current UI Values)&cr;&lf;A+RB+Ctr=AddCueOnNewTrack&cr;&lf;D+OnSelectedCue+RB=DeleteCue &cr;&lf;C+OnSelectedCue+RB=CloneCue (to any track)  M+RB+OnSelectedCue=MoveCue (+Ctr=Snap)  &cr;&lf;F+MouseWheel+OnSelectedCue=EditFadeTime Alt+N=EditName&cr;&lf;Alt+V OnSelectedCue=EditValues&cr;&lf;&cr;&lf;OnControllerUI:&cr;&lf;LB=EditValue   &cr;&lf;LB+Shift=Slow  &cr;&lf;LB+Ctr=Multiple   &cr;&lf;RB+Ctr= Lin,Exp,Start,End (OnEditMode)&cr;&lf;&cr;&lf;EditMulti:&cr;&lf;Shift+E=MoveMulti&cr;&lf;Shift+C=CopyMulti&cr;&lf;Shif+RB=SelectTracks&cr;&lf;Ctr+RB=MoveCues&cr;&lf;LoopPoints=SelectArea|">
+   <PIN pinname="Input String" slicecount="1" values="|Shift+T=EditTrackName&cr;&lf;A+RB=AddCue (With the current UI Values)&cr;&lf;A+RB+Ctr=Add Cue On NEW TRACK&cr;&lf;D+OnSelectedCue+RB=DeleteCue &cr;&lf;C+OnSelectedCue+RB=CloneCue (to any track)  M+RB+OnSelectedCue=MoveCue (+Ctr=Snap)  &cr;&lf;F+MouseWheel+OnSelectedCue=EditFadeTime Alt+N=EditName&cr;&lf;Alt+V OnSelectedCue=EditValues&cr;&lf;&cr;&lf;OnControllerUI:&cr;&lf;LB=EditValue   &cr;&lf;LB+Shift=Slow  &cr;&lf;LB+Ctr=Multiple   &cr;&lf;RB+Ctr= Lin,Exp,Start,End (OnEditMode)&cr;&lf;&cr;&lf;EditMulti:&cr;&lf;Shift+E=MoveMulti&cr;&lf;Shift+C=CopyMulti&cr;&lf;Shif+RB=SelectTracks&cr;&lf;Ctr+RB=MoveCues&cr;&lf;LoopPoints=SelectArea|">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="12">
    </PIN>
