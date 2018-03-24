@@ -1120,22 +1120,6 @@
    <LINKPOINT x="5565" y="2295">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Receive_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Receive_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Receive_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="460">
-   <BOUNDS type="Node" left="6840" top="780" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Topic" slicecount="1" visible="1" values="MidiIn">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="OnData" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="6600" top="6690" width="8130" height="7890">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6840" top="780">
-   </BOUNDS>
-   <PIN pinname="Server" visible="1" slicecount="1" values="127.0.0.1">
-   </PIN>
-   </NODE>
    <NODE systemname="FromRaw (MIDI.ControllerSystem)" filename="vl\VVVV.MIDI.Controllers.vl" nodename="FromRaw (MIDI.ControllerSystem)" componentmode="Hidden" id="461">
    <BOUNDS type="Node" left="6855" top="1590" width="100" height="100">
    </BOUNDS>
@@ -1184,8 +1168,6 @@
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
    </NODE>
-   <LINK srcnodeid="465" srcpinname="Output String" dstnodeid="460" dstpinname="Topic">
-   </LINK>
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="467">
    <BOUNDS type="Node" left="5460" top="6960" width="100" height="100">
    </BOUNDS>
@@ -1207,29 +1189,11 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5010" top="1170" width="3000" height="3000">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Format Bin Size" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Receive_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Receive_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Receive_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="477">
-   <BOUNDS type="Node" left="5010" top="780" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Topic" slicecount="1" visible="1" values="MidiIn">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="OnData" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="12510" top="6735" width="8130" height="7890">
-   </BOUNDS>
-   <PIN pinname="Enable" slicecount="1" values="1">
-   </PIN>
-   <BOUNDS type="Box" left="5010" top="780">
-   </BOUNDS>
-   <PIN pinname="Server" visible="1" slicecount="1" values="127.0.0.1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="476">
@@ -1250,12 +1214,6 @@
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
    </NODE>
-   <LINK srcnodeid="476" srcpinname="Output String" dstnodeid="477" dstpinname="Topic">
-   </LINK>
-   <LINK srcnodeid="477" srcpinname="Output" dstnodeid="475" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="460" srcpinname="Output" dstnodeid="461" dstpinname="Raw">
-   </LINK>
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="478">
    <BOUNDS type="Node" left="5010" top="1590" width="100" height="100">
    </BOUNDS>
@@ -1350,20 +1308,6 @@
    </NODE>
    <LINK srcnodeid="479" srcpinname="Out" dstnodeid="481" dstpinname="Default">
    </LINK>
-   <NODE systemname="Receive_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Receive_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Receive_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="486">
-   <BOUNDS type="Node" left="6840" top="780" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Topic" slicecount="1" visible="1" values="MidiIn">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="OnData" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="6600" top="6690" width="8130" height="7890">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6840" top="780">
-   </BOUNDS>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="485">
    <BOUNDS type="Box" left="6840" top="225" width="585" height="240">
    </BOUNDS>
@@ -1382,8 +1326,6 @@
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
    </NODE>
-   <LINK srcnodeid="485" srcpinname="Output String" dstnodeid="486" dstpinname="Topic">
-   </LINK>
    <NODE systemname="Default" filename="Default.v4p" nodename="Default.v4p" componentmode="Hidden" id="489">
    <BOUNDS type="Node" left="2405" top="4485" width="0" height="0">
    </BOUNDS>
@@ -2049,5 +1991,63 @@
    </LINKPOINT>
    <LINKPOINT x="7935" y="6440">
    </LINKPOINT>
+   </LINK>
+   <NODE systemname="Receive_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Receive_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Receive_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="486">
+   <BOUNDS type="Node" left="6840" top="780" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Topic" slicecount="1" visible="1" values="MidiIn">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="OnData" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="6600" top="6690" width="8130" height="7890">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6840" top="780">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="485" srcpinname="Output String" dstnodeid="486" dstpinname="Topic">
+   </LINK>
+   <NODE systemname="Receive_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Receive_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Receive_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="477">
+   <BOUNDS type="Node" left="5010" top="780" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Topic" slicecount="1" visible="1" values="MidiIn">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="OnData" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="12510" top="6735" width="8130" height="7890">
+   </BOUNDS>
+   <PIN pinname="Enable" slicecount="1" values="1">
+   </PIN>
+   <BOUNDS type="Box" left="5010" top="780">
+   </BOUNDS>
+   <PIN pinname="Server" visible="1" slicecount="1" values="127.0.0.1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="476" srcpinname="Output String" dstnodeid="477" dstpinname="Topic">
+   </LINK>
+   <LINK srcnodeid="477" srcpinname="Output" dstnodeid="475" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Receive_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Receive_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Receive_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="460">
+   <BOUNDS type="Node" left="6840" top="780" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Topic" slicecount="1" visible="1" values="MidiIn">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="OnData" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="6600" top="6690" width="8130" height="7890">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6840" top="780">
+   </BOUNDS>
+   <PIN pinname="Server" visible="1" slicecount="1" values="127.0.0.1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="465" srcpinname="Output String" dstnodeid="460" dstpinname="Topic">
+   </LINK>
+   <LINK srcnodeid="460" srcpinname="Output" dstnodeid="461" dstpinname="Raw">
    </LINK>
    </PATCH>
