@@ -519,7 +519,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="57">
-   <BOUNDS type="Box" left="390" top="5265" width="1065" height="255">
+   <BOUNDS type="Box" left="390" top="5265" width="720" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="390" top="5265" width="0" height="0">
    </BOUNDS>
