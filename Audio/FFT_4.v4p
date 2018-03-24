@@ -53,6 +53,8 @@
    </BOUNDS>
    <PIN pinname="Bin Size" slicecount="1" values="-1">
    </PIN>
+   <PIN pinname="Error Handling Style" slicecount="1" values="Ignore">
+   </PIN>
    </NODE>
    <LINK dstnodeid="59" dstpinname="Input" srcnodeid="63" srcpinname="Output">
    </LINK>
@@ -64,6 +66,8 @@
    <BOUNDS height="0" left="3915" top="5130" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Bin Size" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Error Handling Style" slicecount="1" values="Ignore">
    </PIN>
    </NODE>
    <LINK dstnodeid="58" dstpinname="Input" srcnodeid="62" srcpinname="Output">
@@ -77,6 +81,8 @@
    </BOUNDS>
    <PIN pinname="Bin Size" slicecount="1" values="-1">
    </PIN>
+   <PIN pinname="Error Handling Style" slicecount="1" values="Ignore">
+   </PIN>
    </NODE>
    <LINK dstnodeid="57" dstpinname="Input" srcnodeid="61" srcpinname="Output">
    </LINK>
@@ -88,6 +94,8 @@
    <BOUNDS height="0" left="6105" top="5100" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Bin Size" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Error Handling Style" slicecount="1" values="Ignore">
    </PIN>
    </NODE>
    <LINK dstnodeid="64" dstpinname="Index" srcnodeid="56" srcpinname="Output">

@@ -1407,7 +1407,7 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="491">
-   <BOUNDS type="Box" left="9735" top="5340" width="480" height="480">
+   <BOUNDS type="Box" left="9735" top="5340" width="285" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="9735" top="5340" width="0" height="0">
    </BOUNDS>
