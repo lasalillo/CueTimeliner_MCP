@@ -1633,9 +1633,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="502">
-   <BOUNDS type="Box" left="8955" top="7500" width="1335" height="255">
+   <BOUNDS type="Box" left="9525" top="7515" width="1335" height="255">
    </BOUNDS>
-   <BOUNDS type="Node" left="8955" top="7500" width="0" height="0">
+   <BOUNDS type="Node" left="9525" top="7515" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="192.168.178.34">
    </PIN>
@@ -1651,7 +1651,7 @@
    </PIN>
    </NODE>
    <NODE systemname="IP (Network)" nodename="IP (Network)" componentmode="Hidden" id="508">
-   <BOUNDS type="Node" left="8460" top="6450" width="100" height="100">
+   <BOUNDS type="Node" left="9030" top="6465" width="100" height="100">
    </BOUNDS>
    <PIN pinname="IP" visible="1">
    </PIN>
@@ -1659,7 +1659,7 @@
    </PIN>
    </NODE>
    <NODE systemname="CAR (String)" nodename="CAR (String)" componentmode="Hidden" id="509">
-   <BOUNDS type="Node" left="8940" top="6810" width="100" height="100">
+   <BOUNDS type="Node" left="9510" top="6825" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1671,9 +1671,9 @@
    <LINK srcnodeid="509" srcpinname="First Slice" dstnodeid="502" dstpinname="Input String">
    </LINK>
    <NODE id="504" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Box" left="9225" top="7995" width="570" height="240">
+   <BOUNDS type="Box" left="9795" top="8010" width="570" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9225" top="7995" width="0" height="0">
+   <BOUNDS type="Node" left="9795" top="8010" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="10001">
    </PIN>
@@ -1755,9 +1755,9 @@
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="1">
    </PIN>
-   <BOUNDS type="Box" left="10050" top="7995" width="285" height="240">
+   <BOUNDS type="Box" left="10620" top="8010" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="10050" top="7995" width="0" height="0">
+   <BOUNDS type="Node" left="10620" top="8010" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" pintype="Configuration" values="Boolean">
    </PIN>
@@ -1831,9 +1831,9 @@
    </PIN>
    </NODE>
    <NODE id="507" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Box" left="8460" top="7995" width="375" height="240">
+   <BOUNDS type="Box" left="9030" top="8010" width="375" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8460" top="7995" width="0" height="0">
+   <BOUNDS type="Node" left="9030" top="8010" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" pintype="Input" values="List">
    </PIN>
@@ -1883,7 +1883,7 @@
    </PIN>
    </NODE>
    <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="510">
-   <BOUNDS type="Node" left="9105" top="7155" width="100" height="100">
+   <BOUNDS type="Node" left="9675" top="7170" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -1895,9 +1895,9 @@
    <LINK srcnodeid="509" srcpinname="First Slice" dstnodeid="510" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="511">
-   <BOUNDS type="Box" left="9570" top="6795" width="795" height="240">
+   <BOUNDS type="Box" left="10140" top="6810" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9570" top="6795" width="0" height="0">
+   <BOUNDS type="Node" left="10140" top="6810" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="0.0.0.0">
    </PIN>
@@ -1913,7 +1913,7 @@
    <LINK srcnodeid="511" srcpinname="Output String" dstnodeid="510" dstpinname="Input 2">
    </LINK>
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="512">
-   <BOUNDS type="Node" left="8115" top="6150" width="100" height="100">
+   <BOUNDS type="Node" left="8685" top="6165" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Change" visible="1">
    </PIN>
@@ -1963,9 +1963,9 @@
    </LINKPOINT>
    </LINK>
    <NODE id="500" systemname="Send_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Send_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Send_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="8685" top="8385" width="100" height="100">
+   <BOUNDS type="Node" left="9255" top="8400" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="8685" top="8385" width="4800" height="3600">
+   <BOUNDS type="Box" left="9255" top="8400" width="4800" height="3600">
    </BOUNDS>
    <PIN pinname="Enable" slicecount="1" pintype="Input" visible="1" values="1">
    </PIN>
@@ -1999,29 +1999,29 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="507" srcpinname="Output String" dstnodeid="500" dstpinname="Topic" linkstyle="VHV">
-   <LINKPOINT x="8345" y="8278">
+   <LINKPOINT x="8915" y="8293">
    </LINKPOINT>
-   <LINKPOINT x="8860" y="8283">
+   <LINKPOINT x="9430" y="8298">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="503" srcpinname="Y Output Value" dstnodeid="500" dstpinname="Send">
    </LINK>
    <LINK srcnodeid="504" srcpinname="Y Output Value" dstnodeid="500" dstpinname="Port" linkstyle="VHV">
-   <LINKPOINT x="9245" y="8318">
+   <LINKPOINT x="9815" y="8333">
    </LINKPOINT>
-   <LINKPOINT x="9265" y="8303">
+   <LINKPOINT x="9835" y="8318">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="2" srcpinname="InterpolatedRaw" dstnodeid="500" dstpinname="Raw" linkstyle="VHV">
-   <LINKPOINT x="7755" y="7905">
+   <LINKPOINT x="7945" y="7910">
    </LINKPOINT>
-   <LINKPOINT x="9825" y="7905">
+   <LINKPOINT x="10205" y="7915">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="502" srcpinname="Output String" dstnodeid="500" dstpinname="Server" linkstyle="VHV">
-   <LINKPOINT x="8985" y="8110">
+   <LINKPOINT x="9555" y="8125">
    </LINKPOINT>
-   <LINKPOINT x="8985" y="8030">
+   <LINKPOINT x="9555" y="8045">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="510" srcpinname="Inverse Output" dstnodeid="500" dstpinname="Enable">

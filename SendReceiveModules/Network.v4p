@@ -198,7 +198,7 @@
    </LINK>
    <LINK srcnodeid="9" srcpinname="Valid" dstnodeid="4" dstpinname="Y Input Value" hiddenwhenlocked="1">
    </LINK>
-   <BOUNDS type="Window" left="22215" top="3960" width="6585" height="4470">
+   <BOUNDS type="Window" left="22200" top="3960" width="6600" height="4470">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.4">
    </PACK>
