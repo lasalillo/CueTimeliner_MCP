@@ -1389,7 +1389,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9615" top="1905" width="3100" height="3100">
    </BOUNDS>
-   <BOUNDS type="Window" left="8370" top="6495" width="20430" height="8835">
+   <BOUNDS type="Window" left="8370" top="4800" width="20430" height="10800">
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="493">
