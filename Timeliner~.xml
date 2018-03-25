@@ -1260,24 +1260,6 @@
    <LINKPOINT x="1830" y="5813">
    </LINKPOINT>
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="483">
-   <BOUNDS type="Box" left="4620" top="7095" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="4620" top="7095" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="484">
    <BOUNDS type="Box" left="8790" top="5400" width="795" height="240">
    </BOUNDS>
@@ -1892,12 +1874,6 @@
    <LINKPOINT x="3200" y="7980">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="483" srcpinname="Y Output Value" dstnodeid="462" dstpinname="Send" linkstyle="VHV">
-   <LINKPOINT x="4570" y="7780">
-   </LINKPOINT>
-   <LINKPOINT x="4670" y="7835">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="2" srcpinname="Raw" dstnodeid="462" dstpinname="Raw" linkstyle="VHV">
    <LINKPOINT x="3825" y="7140">
    </LINKPOINT>
@@ -1955,9 +1931,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="2" srcpinname="InterpolatedRaw" dstnodeid="500" dstpinname="Raw" linkstyle="VHV">
-   <LINKPOINT x="7945" y="7910">
+   <LINKPOINT x="5655" y="6780">
    </LINKPOINT>
-   <LINKPOINT x="10205" y="7915">
+   <LINKPOINT x="10395" y="6780">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="502" srcpinname="Output String" dstnodeid="500" dstpinname="Server" linkstyle="VHV">
@@ -1984,6 +1960,8 @@
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="AutoBack">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="516" srcpinname="Y Output Value" dstnodeid="2" dstpinname="AutoBackOn" linkstyle="VHV">
@@ -2049,5 +2027,29 @@
    <LINK srcnodeid="465" srcpinname="Output String" dstnodeid="460" dstpinname="Topic">
    </LINK>
    <LINK srcnodeid="460" srcpinname="Output" dstnodeid="461" dstpinname="Raw">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="517">
+   <BOUNDS type="Box" left="4605" top="7500" width="285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4605" top="7500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="517" srcpinname="Y Output Value" dstnodeid="462" dstpinname="Send" linkstyle="VHV">
+   <LINKPOINT x="4620" y="7898">
+   </LINKPOINT>
+   <LINKPOINT x="4590" y="7898">
+   </LINKPOINT>
    </LINK>
    </PATCH>
