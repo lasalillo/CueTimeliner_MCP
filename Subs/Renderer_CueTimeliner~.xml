@@ -41,7 +41,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1725" top="4575" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="22380" height="6045">
+   <BOUNDS type="Window" left="0" top="0" width="27645" height="6060">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -539,17 +539,17 @@
    </PIN>
    <PIN pinname="DrawDataTimeline" visible="1">
    </PIN>
-   <PIN pinname="ResSliderXY" visible="1">
+   <PIN pinname="ResSliderXY" visible="1" slicecount="2" values="299,604">
    </PIN>
-   <PIN pinname="ResolXY" visible="1">
+   <PIN pinname="ResolXY" visible="1" slicecount="2" values="1911,362">
    </PIN>
-   <PIN pinname="GridEnable" visible="1">
+   <PIN pinname="GridEnable" visible="1" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="TimelineEnable" visible="1">
+   <PIN pinname="TimelineEnable" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="ControllerEnable" visible="1">
+   <PIN pinname="ControllerEnable" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="TextSize" visible="1">
+   <PIN pinname="TextSize" visible="1" slicecount="1" values="1.15">
    </PIN>
    </NODE>
    <LINK srcnodeid="43" srcpinname="Output Node" dstnodeid="47" dstpinname="Input">
