@@ -652,4 +652,16 @@
    </NODE>
    <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Speed">
    </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="61">
+   <BOUNDS type="Box" left="645" top="4560" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="645" top="4560" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Audio Out|">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Audio Out" dstnodeid="61" dstpinname="Input Node">
+   </LINK>
    </PATCH>

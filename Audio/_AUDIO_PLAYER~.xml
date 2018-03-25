@@ -65,13 +65,13 @@
    </PIN>
    </NODE>
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="6" debug="0">
-   <BOUNDS type="Node" left="1845" top="1800" width="100" height="100">
+   <BOUNDS type="Node" left="1740" top="1800" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="1845" top="1800">
+   <BOUNDS type="Box" left="1740" top="1800">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="9" dstpinname="Y Input Value">
@@ -91,9 +91,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="510" top="90" width="480" height="480">
+   <BOUNDS type="Box" left="525" top="225" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="510" top="90" width="0" height="0">
+   <BOUNDS type="Node" left="525" top="225" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -301,9 +301,9 @@
    <LINK srcnodeid="2" srcpinname="Pointer" dstnodeid="38" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="39">
-   <BOUNDS type="Box" left="1050" top="360" width="795" height="240">
+   <BOUNDS type="Box" left="1065" top="495" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1050" top="360" width="0" height="0">
+   <BOUNDS type="Node" left="1065" top="495" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.5">
    </PIN>
@@ -447,9 +447,9 @@
    <LINK srcnodeid="2" srcpinname="AudioFile" dstnodeid="33" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="51">
-   <BOUNDS type="Box" left="4470" top="3645" width="795" height="240">
+   <BOUNDS type="Box" left="4845" top="3330" width="540" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4470" top="3645" width="0" height="0">
+   <BOUNDS type="Node" left="4845" top="3330" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -477,31 +477,19 @@
    </PIN>
    </NODE>
    <NODE systemname="AudioAnalysis" filename="AudioAnalysis.v4p" nodename="AudioAnalysis.v4p" componentmode="Hidden" id="54">
-   <BOUNDS type="Node" left="165" top="1830" width="0" height="0">
+   <BOUNDS type="Node" left="165" top="1800" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="0" top="280" width="3100" height="3100">
+   <BOUNDS type="Box" left="165" top="1800" width="3100" height="3100">
    </BOUNDS>
    <BOUNDS type="Window" left="15870" top="8550" width="11205" height="5355">
    </BOUNDS>
-   <PIN pinname="Input1" visible="1">
+   <PIN pinname="Input1" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Input2" visible="1">
+   <PIN pinname="Input2" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Raw" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Audio Out" dstnodeid="54" dstpinname="Input1" linkstyle="VHV">
-   <LINKPOINT x="685" y="1350">
-   </LINKPOINT>
-   <LINKPOINT x="0" y="1410">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Audio Out" dstnodeid="54" dstpinname="Input2" linkstyle="VHV">
-   <LINKPOINT x="685" y="1410">
-   </LINKPOINT>
-   <LINKPOINT x="5" y="1470">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="30" srcpinname="Output" dstnodeid="46" dstpinname="Raw">
    </LINK>
    <NODE systemname="Send_Raw_Topic (Network.ZeroMQ Raw)" filename="..\SendReceiveModules\Send_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Send_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="58">
@@ -689,5 +677,21 @@
    <LINK srcnodeid="45" srcpinname="Output String" dstnodeid="44" dstpinname="Topic">
    </LINK>
    <LINK srcnodeid="52" srcpinname="Output String" dstnodeid="44" dstpinname="Server">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="69">
+   <BOUNDS type="Box" left="165" top="1410" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="165" top="1410" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="69" srcpinname="Output Node" dstnodeid="54" dstpinname="Input2">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Audio Out" dstnodeid="69" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="69" srcpinname="Output Node" dstnodeid="54" dstpinname="Input1">
    </LINK>
    </PATCH>
