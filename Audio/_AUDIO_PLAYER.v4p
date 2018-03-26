@@ -377,7 +377,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Send_Raw_Topic (Network.ZeroMQ Raw)" filename="..\SendReceiveModules\Send_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Send_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="46">
-   <BOUNDS type="Node" left="2385" top="4080" width="100" height="100">
+   <BOUNDS type="Node" left="2385" top="5265" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Topic" slicecount="1" visible="1" values="AudioLength">
    </PIN>
@@ -391,9 +391,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="47">
-   <BOUNDS type="Box" left="2370" top="3510" width="1065" height="255">
+   <BOUNDS type="Box" left="2400" top="4635" width="1065" height="255">
    </BOUNDS>
-   <BOUNDS type="Node" left="2370" top="3510" width="0" height="0">
+   <BOUNDS type="Node" left="2400" top="4635" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="AudioLength">
    </PIN>
@@ -493,7 +493,7 @@
    <LINK srcnodeid="30" srcpinname="Output" dstnodeid="46" dstpinname="Raw">
    </LINK>
    <NODE systemname="Send_Raw_Topic (Network.ZeroMQ Raw)" filename="..\SendReceiveModules\Send_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Send_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="58">
-   <BOUNDS type="Node" left="405" top="5970" width="100" height="100">
+   <BOUNDS type="Node" left="225" top="5310" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Topic" slicecount="1" visible="1" values="AudioLength">
    </PIN>
@@ -509,9 +509,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="57">
-   <BOUNDS type="Box" left="390" top="5265" width="720" height="240">
+   <BOUNDS type="Box" left="210" top="4605" width="720" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="390" top="5265" width="0" height="0">
+   <BOUNDS type="Node" left="210" top="4605" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Analysis">
    </PIN>
@@ -528,56 +528,6 @@
    </NODE>
    <LINK srcnodeid="57" srcpinname="Output String" dstnodeid="58" dstpinname="Topic">
    </LINK>
-   <NODE systemname="IP (Network)" nodename="IP (Network)" componentmode="Hidden" id="63">
-   <BOUNDS type="Node" left="180" top="3765" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="IP" visible="1">
-   </PIN>
-   <PIN pinname="Update" slicecount="1" visible="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE systemname="CAR (String)" nodename="CAR (String)" componentmode="Hidden" id="62">
-   <BOUNDS type="Node" left="840" top="4080" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="First Slice" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="63" srcpinname="IP" dstnodeid="62" dstpinname="Input">
-   </LINK>
-   <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="61">
-   <BOUNDS type="Node" left="825" top="4455" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Inverse Output" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="62" srcpinname="First Slice" dstnodeid="61" dstpinname="Input 1">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="60">
-   <BOUNDS type="Box" left="1050" top="3810" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1050" top="3810" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="0.0.0.0">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="Multiline">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="60" srcpinname="Output String" dstnodeid="61" dstpinname="Input 2">
-   </LINK>
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="59">
    <BOUNDS type="Node" left="150" top="3105" width="100" height="100">
    </BOUNDS>
@@ -588,14 +538,10 @@
    <PIN pinname="Reset" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="59" srcpinname="Change" dstnodeid="63" dstpinname="Update">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="First Slice" dstnodeid="58" dstpinname="Server">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="64">
-   <BOUNDS type="Box" left="975" top="5640" width="795" height="240">
+   <BOUNDS type="Box" left="795" top="4980" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="975" top="5640" width="0" height="0">
+   <BOUNDS type="Node" left="795" top="4980" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10001">
    </PIN>
@@ -609,38 +555,20 @@
    <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="58" dstpinname="Port">
    </LINK>
    <LINK srcnodeid="54" srcpinname="Raw" dstnodeid="58" dstpinname="Raw" linkstyle="VHV">
-   <LINKPOINT x="390" y="2580">
+   <LINKPOINT x="330" y="2360">
    </LINKPOINT>
-   <LINKPOINT x="1575" y="2820">
+   <LINKPOINT x="1455" y="2380">
    </LINKPOINT>
    </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="65">
-   <BOUNDS type="Node" left="1785" top="5385" width="100" height="100">
+   <BOUNDS type="Node" left="1605" top="4725" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
    <PIN pinname="Simulate" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="67">
-   <BOUNDS type="Box" left="405" top="4800" width="1410" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="405" top="4800" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="Multiline">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="62" srcpinname="First Slice" dstnodeid="67" dstpinname="Input String">
-   </LINK>
    <LINK srcnodeid="65" srcpinname="Bang" dstnodeid="58" dstpinname="Send">
-   </LINK>
-   <LINK srcnodeid="61" srcpinname="Inverse Output" dstnodeid="58" dstpinname="Enable">
    </LINK>
    <LINK srcnodeid="59" srcpinname="Change" dstnodeid="65" dstpinname="Simulate">
    </LINK>
@@ -693,5 +621,21 @@
    <LINK srcnodeid="3" srcpinname="Audio Out" dstnodeid="69" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="69" srcpinname="Output Node" dstnodeid="54" dstpinname="Input1">
+   </LINK>
+   <NODE systemname="GetIP" filename="..\SendReceiveModules\GetIP.v4p" nodename="..\SendReceiveModules\GetIP.v4p" componentmode="Hidden" id="71">
+   <BOUNDS type="Node" left="510" top="4125" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Update" visible="1">
+   </PIN>
+   <PIN pinname="IP" visible="1">
+   </PIN>
+   <PIN pinname="Enable" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="59" srcpinname="Change" dstnodeid="71" dstpinname="Update">
+   </LINK>
+   <LINK srcnodeid="71" srcpinname="IP" dstnodeid="58" dstpinname="Server">
+   </LINK>
+   <LINK srcnodeid="71" srcpinname="Enable" dstnodeid="58" dstpinname="Enable">
    </LINK>
    </PATCH>
