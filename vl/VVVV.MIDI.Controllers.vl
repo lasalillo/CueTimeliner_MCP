@@ -349,7 +349,7 @@
                 <p:NodeReference>
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Default" />
-                  <CategoryReference Kind="ContainerTypeFlag" Name="In" NeedsToBeDirectParent="true">
+                  <CategoryReference Kind="ContainerType" Name="In" NeedsToBeDirectParent="true">
                     <p:OuterCategoryReference Kind="Category" Name="MackieControl" NeedsToBeDirectParent="true" />
                   </CategoryReference>
                 </p:NodeReference>
@@ -945,7 +945,7 @@
                 <p:NodeReference LastCategoryFullName="VVVV.MIDI.MackieControl.In" LastSymbolSource="VVVV.MIDI.MackieControl.vl" LastDependency="VVVV.MIDI.Controllers.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Default" />
-                  <CategoryReference Kind="ContainerTypeFlag" Name="In" NeedsToBeDirectParent="true">
+                  <CategoryReference Kind="ContainerType" Name="In" NeedsToBeDirectParent="true">
                     <p:OuterCategoryReference Kind="Category" Name="MackieControl" NeedsToBeDirectParent="true" />
                   </CategoryReference>
                 </p:NodeReference>
@@ -1045,7 +1045,7 @@
                 <p:NodeReference LastCategoryFullName="VVVV.MIDI.MackieControl.In" LastSymbolSource="VVVV.MIDI.MackieControl.vl" LastDependency="VVVV.MIDI.Controllers.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Default" />
-                  <CategoryReference Kind="ContainerTypeFlag" Name="In" NeedsToBeDirectParent="true">
+                  <CategoryReference Kind="ContainerType" Name="In" NeedsToBeDirectParent="true">
                     <p:OuterCategoryReference Kind="Category" Name="MackieControl" NeedsToBeDirectParent="true" />
                   </CategoryReference>
                 </p:NodeReference>

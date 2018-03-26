@@ -167,7 +167,7 @@
    <LINK srcnodeid="24" srcpinname="Output" dstnodeid="25" dstpinname="Raw">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="44">
-   <BOUNDS type="Box" left="1155" top="1260" width="1020" height="240">
+   <BOUNDS type="Box" left="1155" top="1260" width="1335" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="1155" top="1260" width="0" height="0">
    </BOUNDS>

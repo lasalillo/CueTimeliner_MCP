@@ -259,9 +259,9 @@
    <LINK srcnodeid="3" srcpinname="Raw" dstnodeid="5" dstpinname="Raw">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="11">
-   <BOUNDS type="Box" left="885" top="2340" width="795" height="240">
+   <BOUNDS type="Box" left="585" top="2325" width="1335" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="885" top="2340" width="0" height="0">
+   <BOUNDS type="Node" left="585" top="2325" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="127.0.0.1">
    </PIN>
@@ -274,4 +274,40 @@
    </NODE>
    <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="5" dstpinname="Server">
    </LINK>
+   <NODE id="12" systemname="Split (Preset.Utils Globals)" filename="vl\VVVV.Preset.CueTimeliner.vl" nodename="Split (Preset.Utils Globals)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="2370" top="1635" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="0" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="TracksCount" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="TrackSize" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Length" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="LoopPointsXY" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="TrackNames" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="TrackNames Bin Size" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="AudioFile" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="AudioOffset_" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
    </PATCH>
