@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
    <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Subs\Renderer_CueTimeliner.v4p" systemname="Renderer_CueTimeliner" filename="D:\_VVVV\_Projects\_CUETIMELINER\Subs\Renderer_CueTimeliner.v4p" scrollx="0" scrolly="-360">
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="3330" top="5115" width="100" height="100">
@@ -624,4 +624,6 @@
    </NODE>
    <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Reload">
    </LINK>
+   <PACK Name="dx11" Version="1.0.4">
+   </PACK>
    </PATCH>

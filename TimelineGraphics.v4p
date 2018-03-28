@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\TimelineGraphics.v4p" systemname="TimelineGraphics" filename="D:\_VVVV\_Projects\_CUETIMELINER\TimelineGraphics.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\TimelineGraphics.v4p" systemname="TimelineGraphics" filename="D:\_VVVV\_Projects\_CUETIMELINER\TimelineGraphics.v4p" scrollx="75" scrolly="2175">
    <NODE id="1" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Input">
    </PIN>
@@ -10,7 +10,7 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="4680" top="4995" width="17355" height="9645">
+   <BOUNDS type="Window" left="4590" top="5955" width="17355" height="9645">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -1033,11 +1033,13 @@
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="ScaleY" slicecount="1" values="0.248">
+   <PIN pinname="ScaleY" slicecount="1" values="0.556" visible="1">
    </PIN>
-   <PIN pinname="TranslateY" slicecount="1" values="-0.278">
+   <PIN pinname="TranslateY" slicecount="1" values="-0.029" visible="1">
    </PIN>
    <PIN pinname="TranslateX" slicecount="1" visible="1" values="0.005">
+   </PIN>
+   <PIN pinname="ScaleX" slicecount="1" visible="1" values="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="114">
@@ -1127,6 +1129,8 @@
    </PIN>
    <PIN pinname="Texture Transform" visible="1">
    </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="40" srcpinname="Render State" dstnodeid="123" dstpinname="Render State">
    </LINK>
@@ -1159,6 +1163,10 @@
    </PIN>
    <PIN pinname="Filter Mode" slicecount="1" values="MinMagMipPoint">
    </PIN>
+   <PIN pinname="Address V" slicecount="1" values="Border">
+   </PIN>
+   <PIN pinname="Address U" slicecount="1" values="Border">
+   </PIN>
    </NODE>
    <LINK srcnodeid="121" srcpinname="Sampler" dstnodeid="123" dstpinname="Sampler State">
    </LINK>
@@ -1187,7 +1195,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9855" top="7695" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.0053">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1217,5 +1225,49 @@
    <LINK srcnodeid="124" srcpinname="Filenames" dstnodeid="126" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="126" srcpinname="Output" dstnodeid="122" dstpinname="Filename">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="127">
+   <BOUNDS type="Box" left="11160" top="7530" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11160" top="7530" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="112" dstpinname="ScaleX">
+   </LINK>
+   <PACK Name="dx11" Version="1.0.4">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="128">
+   <BOUNDS type="Box" left="12900" top="7320" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12900" top="7320" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.5">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="128" srcpinname="Y Output Value" dstnodeid="112" dstpinname="ScaleY">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="129">
+   <BOUNDS type="Box" left="12570" top="6570" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12570" top="6570" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.079">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="129" srcpinname="Y Output Value" dstnodeid="112" dstpinname="TranslateY">
    </LINK>
    </PATCH>
