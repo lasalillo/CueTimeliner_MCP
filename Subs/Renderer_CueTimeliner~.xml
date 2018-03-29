@@ -573,7 +573,7 @@
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="4680" top="4995" width="17355" height="9645">
+   <BOUNDS type="Window" left="4590" top="5955" width="17355" height="9645">
    </BOUNDS>
    <PIN pinname="Apply" visible="1" slicecount="1" values="1">
    </PIN>

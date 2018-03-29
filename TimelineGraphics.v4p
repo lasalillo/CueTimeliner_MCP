@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\TimelineGraphics.v4p" systemname="TimelineGraphics" filename="D:\_VVVV\_Projects\_CUETIMELINER\TimelineGraphics.v4p" scrollx="75" scrolly="2175">
+   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\TimelineGraphics.v4p" systemname="TimelineGraphics" filename="D:\_VVVV\_Projects\_CUETIMELINER\TimelineGraphics.v4p" scrollx="0" scrolly="0">
    <NODE id="1" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Input">
    </PIN>
@@ -1033,9 +1033,9 @@
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="ScaleY" slicecount="1" values="0.556" visible="1">
+   <PIN pinname="ScaleY" slicecount="1" visible="1" values="0.556">
    </PIN>
-   <PIN pinname="TranslateY" slicecount="1" values="-0.029" visible="1">
+   <PIN pinname="TranslateY" slicecount="1" visible="1" values="-0.029">
    </PIN>
    <PIN pinname="TranslateX" slicecount="1" visible="1" values="0.005">
    </PIN>
@@ -1106,8 +1106,6 @@
    <PIN pinname="Color Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="118" srcpinname="Color Output" dstnodeid="116" dstpinname="Color">
-   </LINK>
    <LINK srcnodeid="118" srcpinname="Color Output" dstnodeid="55" dstpinname="Color">
    </LINK>
    <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="123">
@@ -1247,7 +1245,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="12900" top="7320" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.5">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.78">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1269,5 +1267,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="129" srcpinname="Y Output Value" dstnodeid="112" dstpinname="TranslateY">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="130">
+   <BOUNDS type="Box" left="7350" top="7350" width="2250" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7350" top="7350" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,0.39750|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="130" srcpinname="Color Output" dstnodeid="116" dstpinname="Color">
    </LINK>
    </PATCH>
