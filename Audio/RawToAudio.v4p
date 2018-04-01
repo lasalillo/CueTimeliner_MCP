@@ -1,0 +1,93 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
+   <PATCH nodename="D:\_SCHUMANN\CueTimeliner_MCP\Audio\RawToAudio.v4p" scrollx="0" scrolly="0" systemname="RawToAudio" filename="D:\_SCHUMANN\CueTimeliner_MCP\Audio\RawToAudio.v4p">
+   <NODE systemname="FromRawAudioPlayer (Preset.Serialize)" filename="..\vl\VVVV.Preset.CueTimeliner.vl" nodename="FromRawAudioPlayer (Preset.Serialize)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="675" top="1305" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Raw" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="675" top="1305">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="SplitAudioPlayer (Preset.Utils)" filename="..\vl\VVVV.Preset.CueTimeliner.vl" nodename="SplitAudioPlayer (Preset.Utils)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="675" top="2250" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="675" top="2250">
+   </BOUNDS>
+   <PIN pinname="Play" visible="1">
+   </PIN>
+   <PIN pinname="Loop" visible="1">
+   </PIN>
+   <PIN pinname="Pointer" visible="1">
+   </PIN>
+   <PIN pinname="Speed" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="675" top="1905" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="675" top="1905">
+   </BOUNDS>
+   </NODE>
+   <NODE id="3" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Raw">
+   </PIN>
+   <BOUNDS type="Box" left="675" top="590" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="675" top="590" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="0" dstpinname="Raw">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="1" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="2" dstpinname="Input">
+   </LINK>
+   <BOUNDS type="Window" left="11625" top="4275" width="3525" height="5025">
+   </BOUNDS>
+   <NODE nodename="S (Value)" id="5" systemname="S (Value)">
+   <BOUNDS type="Node" left="675" top="2745" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="Play">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Play" dstnodeid="5" dstpinname="Input Value">
+   </LINK>
+   <NODE nodename="S (Value)" id="6" systemname="S (Value)">
+   <BOUNDS type="Node" left="900" top="3045" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="Loop">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Loop" dstnodeid="6" dstpinname="Input Value">
+   </LINK>
+   <NODE nodename="S (Value)" id="7" systemname="S (Value)">
+   <BOUNDS type="Node" left="1275" top="3390" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="Pointer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Pointer" dstnodeid="7" dstpinname="Input Value">
+   </LINK>
+   <NODE nodename="S (Value)" id="8" systemname="S (Value)">
+   <BOUNDS type="Node" left="1995" top="2955" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="Speed">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Speed" dstnodeid="8" dstpinname="Input Value">
+   </LINK>
+   <PACK Name="dx11" Version="1.0.4">
+   </PACK>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   </PATCH>
