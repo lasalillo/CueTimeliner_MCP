@@ -599,7 +599,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="510" top="5130" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -611,7 +611,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="EnableEdit">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Self (VVVV)" nodename="Self (VVVV)" componentmode="Hidden" id="429" hiddenwhenlocked="1">

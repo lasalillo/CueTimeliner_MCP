@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Audio\AudioAnalysis.v4p" systemname="AudioAnalysis" filename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Audio\AudioAnalysis.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Audio\AudioAnalysis.v4p" systemname="AudioAnalysis" filename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Audio\AudioAnalysis.v4p" scrollx="0" scrolly="45">
    <NODE systemname="JoinAudioAnalysis (Preset.Utils)" filename="..\vl\VVVV.Preset.CueTimeliner.vl" nodename="JoinAudioAnalysis (Preset.Utils)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="540" top="2985" width="100" height="100">
    </BOUNDS>
@@ -157,7 +157,7 @@
    <LINK srcnodeid="8" srcpinname="Output" dstnodeid="0" dstpinname="Gist_2">
    </LINK>
    <NODE systemname="Mean (Spectral)" nodename="Mean (Spectral)" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="2250" top="1830" width="100" height="100">
+   <BOUNDS type="Node" left="7935" top="2580" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -166,12 +166,10 @@
    <PIN pinname="Error Handling Style" slicecount="1" values="Ignore">
    </PIN>
    </NODE>
-   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="9" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="9" srcpinname="Output" dstnodeid="0" dstpinname="Mean_2">
    </LINK>
    <NODE systemname="Mean (Spectral)" nodename="Mean (Spectral)" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="600" top="1830" width="100" height="100">
+   <BOUNDS type="Node" left="5685" top="2595" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
@@ -180,8 +178,6 @@
    <PIN pinname="Error Handling Style" slicecount="1" values="Ignore">
    </PIN>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="10" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="10" srcpinname="Output" dstnodeid="0" dstpinname="Mean">
    </LINK>
    <NODE systemname="FFT_4" filename="FFT_4.v4p" nodename="FFT_4" componentmode="Hidden" id="12">
@@ -478,16 +474,6 @@
    </LINK>
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Gist_2 Bin Size">
    </LINK>
-   <NODE systemname="AsRaw (Preset.Serialize AudioAnalysis)" filename="..\vl\VVVV.Preset.CueTimeliner.vl" nodename="AsRaw (Preset.Serialize AudioAnalysis)" componentmode="Hidden" id="29">
-   <BOUNDS type="Node" left="600" top="3525" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Raw" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="29" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="30">
    <BOUNDS type="Box" left="615" top="3975" width="795" height="240">
    </BOUNDS>
@@ -495,9 +481,9 @@
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Raw">
    </PIN>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="29" srcpinname="Raw" dstnodeid="30" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="31">
    <BOUNDS type="Node" left="510" top="525" width="100" height="100">
    </BOUNDS>
@@ -525,5 +511,45 @@
    <LINK srcnodeid="32" srcpinname="Output" dstnodeid="4" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="32" srcpinname="Output" dstnodeid="6" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="10" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Output" dstnodeid="9" dstpinname="Input">
+   </LINK>
+   <NODE systemname="AsRawAsync (Preset.Serialize AudioAnalysis)" filename="..\vl\VVVV.Preset.CueTimeliner.vl" nodename="AsRawAsync (Preset.Serialize AudioAnalysis)" componentmode="Hidden" id="33">
+   <BOUNDS type="Node" left="630" top="3495" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Messages" visible="1">
+   </PIN>
+   <PIN pinname="Raw" visible="1">
+   </PIN>
+   <PIN pinname="Send" visible="1">
+   </PIN>
+   </NODE>
+   <PACK Name="dx11" Version="1.0.4">
+   </PACK>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="33" dstpinname="Messages">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Raw" dstnodeid="30" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="34">
+   <BOUNDS type="Box" left="4635" top="1500" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4635" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Send">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Send">
    </LINK>
    </PATCH>

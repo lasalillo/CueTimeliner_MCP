@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Audio\_AUDIO_PLAYER.v4p" systemname="_AUDIO_PLAYER" filename="D:\_VVVV\_Projects\_CUETIMELINER\Audio\_AUDIO_PLAYER.v4p" bgcolor="15452804" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Audio\_AUDIO_PLAYER.v4p" systemname="_AUDIO_PLAYER" filename="D:\_VVVV\_Projects\_CUETIMELINER\Audio\_AUDIO_PLAYER.v4p" bgcolor="15452804" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="22200" top="8310" width="6600" height="7290">
    </BOUNDS>
    <NODE nodename="S (Value)" id="15" systemname="S (Value)">
@@ -165,9 +165,9 @@
    </PIN>
    <PIN pinname="Maximum Foreground FPS" visible="1">
    </PIN>
-   <PIN pinname="Time Mode" slicecount="1" values="Raw">
+   <PIN pinname="Time Mode" slicecount="1" values="Filtered">
    </PIN>
-   <PIN pinname="Present UpFront" slicecount="1" visible="1" pintype="Input" values="0">
+   <PIN pinname="Present UpFront" slicecount="1" visible="1" pintype="Input" values="1">
    </PIN>
    <PIN pinname="Increase Timing Precision" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
@@ -476,10 +476,10 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="AudioAnalysis" filename="AudioAnalysis.v4p" nodename="AudioAnalysis.v4p" componentmode="Hidden" id="54">
-   <BOUNDS type="Node" left="390" top="1845" width="0" height="0">
+   <NODE systemname="AudioAnalysis" filename="AudioAnalysis.v4p" nodename="AudioAnalysis.v4p" componentmode="Hidden" id="54" debug="0">
+   <BOUNDS type="Node" left="390" top="2040" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="390" top="1845" width="3100" height="3100">
+   <BOUNDS type="Box" left="390" top="2040" width="3100" height="3100">
    </BOUNDS>
    <BOUNDS type="Window" left="15870" top="8550" width="11205" height="5355">
    </BOUNDS>
@@ -488,6 +488,8 @@
    <PIN pinname="Input2" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Raw" visible="1">
+   </PIN>
+   <PIN pinname="Send" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="30" srcpinname="Output" dstnodeid="46" dstpinname="Raw">
@@ -555,9 +557,9 @@
    <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="58" dstpinname="Port">
    </LINK>
    <LINK srcnodeid="54" srcpinname="Raw" dstnodeid="58" dstpinname="Raw" linkstyle="VHV">
-   <LINKPOINT x="330" y="2360">
+   <LINKPOINT x="330" y="2490">
    </LINKPOINT>
-   <LINKPOINT x="1455" y="2380">
+   <LINKPOINT x="1455" y="2445">
    </LINKPOINT>
    </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="65">
@@ -622,7 +624,7 @@
    </LINK>
    <LINK srcnodeid="69" srcpinname="Output Node" dstnodeid="54" dstpinname="Input1">
    </LINK>
-   <NODE systemname="GetIP" filename="..\SendReceiveModules\GetIP.v4p" nodename="..\SendReceiveModules\GetIP.v4p" componentmode="InAWindow" id="71">
+   <NODE systemname="GetIP" filename="..\SendReceiveModules\GetIP.v4p" nodename="..\SendReceiveModules\GetIP.v4p" componentmode="Hidden" id="71">
    <BOUNDS type="Node" left="510" top="4125" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Update" visible="1">
@@ -638,4 +640,6 @@
    </LINK>
    <LINK srcnodeid="71" srcpinname="Enable" dstnodeid="58" dstpinname="Enable">
    </LINK>
+   <PACK Name="dx11" Version="1.0.4">
+   </PACK>
    </PATCH>
