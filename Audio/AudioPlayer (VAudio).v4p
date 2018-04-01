@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
    <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Audio\AudioPlayer (VAudio).v4p" systemname="AudioPlayer" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\AudioPlayer.v4p" scrollx="0" scrolly="0">
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="1155" top="3540" width="795" height="240">
@@ -634,22 +634,6 @@
    </LINK>
    <LINK srcnodeid="59" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Y Input Value">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="60">
-   <BOUNDS type="Box" left="5850" top="615" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5850" top="615" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Speed">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Speed">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="61">
    <BOUNDS type="Box" left="645" top="4560" width="795" height="240">
    </BOUNDS>
@@ -674,4 +658,16 @@
    </LINK>
    <LINK srcnodeid="62" srcpinname="Output" dstnodeid="2" dstpinname="Input">
    </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="63">
+   <BOUNDS type="Node" left="480" top="975" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="Speed">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="63" srcpinname="Input Value" dstnodeid="0" dstpinname="Speed">
+   </LINK>
+   <PACK Name="dx11" Version="1.0.4">
+   </PACK>
    </PATCH>
