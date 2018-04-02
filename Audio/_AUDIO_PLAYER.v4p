@@ -519,7 +519,7 @@
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
-   <PIN pinname="Receive String" slicecount="1" values="AudioFile" visible="1">
+   <PIN pinname="Receive String" slicecount="1" visible="1" values="AudioFile">
    </PIN>
    </NODE>
    <LINK srcnodeid="73" srcpinname="Input Value" dstnodeid="33" dstpinname="Input">
