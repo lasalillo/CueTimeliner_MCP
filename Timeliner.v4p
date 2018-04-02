@@ -1263,9 +1263,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="484">
-   <BOUNDS type="Box" left="8790" top="5400" width="795" height="240">
+   <BOUNDS type="Box" left="6945" top="5610" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8790" top="5400" width="0" height="0">
+   <BOUNDS type="Node" left="6945" top="5610" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4">
    </PIN>
@@ -1277,9 +1277,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="484" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Filter Time" linkstyle="VHV">
-   <LINKPOINT x="8960" y="5890">
+   <LINKPOINT x="7730" y="6030">
    </LINKPOINT>
-   <LINKPOINT x="5215" y="6065">
+   <LINKPOINT x="4600" y="6135">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Default (MIDI.ControllerSystem)" filename="vl\VVVV.MIDI.Controllers.vl" nodename="Default (MIDI.ControllerSystem)" componentmode="Hidden" id="479">
@@ -1333,9 +1333,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="491">
-   <BOUNDS type="Box" left="9735" top="5340" width="285" height="240">
+   <BOUNDS type="Box" left="7890" top="5610" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9735" top="5340" width="0" height="0">
+   <BOUNDS type="Node" left="7890" top="5610" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -1353,9 +1353,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="491" srcpinname="Y Output Value" dstnodeid="2" dstpinname="MasterAsPitch" linkstyle="VHV">
-   <LINKPOINT x="9765" y="5955">
+   <LINKPOINT x="8535" y="6095">
    </LINKPOINT>
-   <LINKPOINT x="7605" y="5955">
+   <LINKPOINT x="6990" y="6025">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="492">
@@ -1657,9 +1657,9 @@
    </PIN>
    </NODE>
    <NODE id="503" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="X Input Value" slicecount="1" pintype="Input" visible="-1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" pintype="Input" visible="-1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="1">
    </PIN>
    <BOUNDS type="Box" left="10185" top="7665" width="285" height="240">
    </BOUNDS>
@@ -1901,9 +1901,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="516" srcpinname="Y Output Value" dstnodeid="2" dstpinname="AutoBackOn" linkstyle="VHV">
-   <LINKPOINT x="150" y="6610">
+   <LINKPOINT x="180" y="6285">
    </LINKPOINT>
-   <LINKPOINT x="7935" y="6440">
+   <LINKPOINT x="5655" y="6285">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Receive_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Receive_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Receive_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="486">
@@ -2013,9 +2013,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="2" srcpinname="RawOut" dstnodeid="500" dstpinname="Raw" linkstyle="VHV">
-   <LINKPOINT x="5790" y="7320">
+   <LINKPOINT x="4680" y="7425">
    </LINKPOINT>
-   <LINKPOINT x="9930" y="7320">
+   <LINKPOINT x="9960" y="7425">
    </LINKPOINT>
    </LINK>
    </PATCH>
