@@ -166,26 +166,12 @@
    <PIN pinname="Device" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
-   <BOUNDS type="Node" left="10275" top="900" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Maximum Foreground FPS" visible="1">
-   </PIN>
-   <PIN pinname="Maximum Background FPS" visible="1">
-   </PIN>
-   <PIN pinname="Present UpFront" slicecount="1" visible="1" pintype="Input" values="1">
-   </PIN>
-   <PIN pinname="Time Mode" slicecount="1" values="Filtered">
-   </PIN>
-   <PIN pinname="Increase Timing Precision" visible="1" pintype="Input" slicecount="1" values="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="88">
    <BOUNDS type="Box" left="10275" top="510" width="285" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="10275" top="510" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="70">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="66">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -196,10 +182,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="88" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Foreground FPS">
-   </LINK>
-   <LINK srcnodeid="88" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Background FPS">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="93">
    <BOUNDS type="Box" left="10530" top="3765" width="480" height="435">
    </BOUNDS>
@@ -2017,5 +1999,23 @@
    </LINKPOINT>
    <LINKPOINT x="9960" y="7425">
    </LINKPOINT>
+   </LINK>
+   <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
+   <BOUNDS type="Node" left="10275" top="900" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Maximum Foreground FPS" visible="1">
+   </PIN>
+   <PIN pinname="Maximum Background FPS" visible="1">
+   </PIN>
+   <PIN pinname="Present UpFront" slicecount="1" visible="1" pintype="Input" values="1">
+   </PIN>
+   <PIN pinname="Time Mode" slicecount="1" values="Filtered">
+   </PIN>
+   <PIN pinname="Increase Timing Precision" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="88" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Foreground FPS">
+   </LINK>
+   <LINK srcnodeid="88" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Background FPS">
    </LINK>
    </PATCH>

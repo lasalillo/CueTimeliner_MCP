@@ -33,19 +33,19 @@
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="3">
    <BOUNDS type="Node" left="10260" top="225" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="10260" top="225" width="9600" height="1005">
+   <BOUNDS type="Box" left="10260" top="225" width="9600" height="1575">
    </BOUNDS>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" values="|If TrackName=V-Name:  CueName=Last Founded (not Empty)&cr;&lf;Do name the first and leave the rest empty to animate along the same name. &cr;&lf;PresetPos=VideoPlayerPointer&cr;&lf; |">
+   <PIN pinname="Input String" slicecount="1" values="|If TrackName=V-Name:  CueName=Last Founded (not Empty)&cr;&lf;Do name the first and leave the rest empty to animate along the same name. &cr;&lf;PresetPos=VideoPlayerPointer&cr;&lf;&cr;&lf;HH:MM:SS:FF  (Frame=30Fps)|">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="12">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="4">
-   <BOUNDS type="Node" left="10275" top="2130" width="100" height="100">
+   <BOUNDS type="Node" left="10275" top="2595" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="10275" top="2130" width="4515" height="3735">
+   <BOUNDS type="Box" left="10275" top="2595" width="4515" height="3735">
    </BOUNDS>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
@@ -55,9 +55,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="5">
-   <BOUNDS type="Node" left="14835" top="2130" width="100" height="100">
+   <BOUNDS type="Node" left="14835" top="2595" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="14835" top="2130" width="2265" height="2010">
+   <BOUNDS type="Box" left="14835" top="2595" width="2265" height="2010">
    </BOUNDS>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
@@ -67,9 +67,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="7">
-   <BOUNDS type="Node" left="10275" top="1695" width="100" height="100">
+   <BOUNDS type="Node" left="10275" top="2160" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="10275" top="1695" width="2235" height="375">
+   <BOUNDS type="Box" left="10275" top="2160" width="2235" height="375">
    </BOUNDS>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>

@@ -37,7 +37,7 @@
    </BOUNDS>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" values="|If TrackName=V-Name:  CueName=Last Founded (not Empty)&cr;&lf;Do name the first and leave the rest empty to animate along the same name. &cr;&lf;PresetPos=VideoPlayerPointer&cr;&lf;&cr;&lf;HH:MM:SS:FF  (Frame=30Fps)|">
+   <PIN pinname="Input String" slicecount="1" values="|If TrackName=V-Name:  CueName=Last Founded (not Empty)&cr;&lf;Do name the first and leave the rest empty to animate along the same name. &cr;&lf;PresetPos=VideoPlayerPointer&cr;&lf;&cr;&lf;HH:MM:SS:FF  (Frame=100)|">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="12">
    </PIN>
