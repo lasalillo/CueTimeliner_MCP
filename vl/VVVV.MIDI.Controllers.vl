@@ -212,7 +212,7 @@
                 <Pin Id="VA2oNLFbXz1PlFmwO0Jimm" Name="On Data" Kind="OutputPin" />
                 <Pin Id="KFdCBz4Y4PrP65E4bG8kah" Name="LaunchPad" Kind="OutputPin" />
               </Node>
-              <Node Bounds="672,498,65,13" Id="A7npDPcoLFCL3AttDpcW59">
+              <Node Bounds="672,498,20,20" Id="A7npDPcoLFCL3AttDpcW59">
                 <p:NodeReference>
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessNode" Name="In" />
@@ -349,7 +349,7 @@
                 <p:NodeReference>
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Default" />
-                  <CategoryReference Kind="ContainerType" Name="In" NeedsToBeDirectParent="true">
+                  <CategoryReference Kind="ContainerTypeFlag" Name="In" NeedsToBeDirectParent="true">
                     <p:OuterCategoryReference Kind="Category" Name="MackieControl" NeedsToBeDirectParent="true" />
                   </CategoryReference>
                 </p:NodeReference>
@@ -945,7 +945,7 @@
                 <p:NodeReference LastCategoryFullName="VVVV.MIDI.MackieControl.In" LastSymbolSource="VVVV.MIDI.MackieControl.vl" LastDependency="VVVV.MIDI.Controllers.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Default" />
-                  <CategoryReference Kind="ContainerType" Name="In" NeedsToBeDirectParent="true">
+                  <CategoryReference Kind="ContainerTypeFlag" Name="In" NeedsToBeDirectParent="true">
                     <p:OuterCategoryReference Kind="Category" Name="MackieControl" NeedsToBeDirectParent="true" />
                   </CategoryReference>
                 </p:NodeReference>
@@ -1045,7 +1045,7 @@
                 <p:NodeReference LastCategoryFullName="VVVV.MIDI.MackieControl.In" LastSymbolSource="VVVV.MIDI.MackieControl.vl" LastDependency="VVVV.MIDI.Controllers.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Default" />
-                  <CategoryReference Kind="ContainerType" Name="In" NeedsToBeDirectParent="true">
+                  <CategoryReference Kind="ContainerTypeFlag" Name="In" NeedsToBeDirectParent="true">
                     <p:OuterCategoryReference Kind="Category" Name="MackieControl" NeedsToBeDirectParent="true" />
                   </CategoryReference>
                 </p:NodeReference>

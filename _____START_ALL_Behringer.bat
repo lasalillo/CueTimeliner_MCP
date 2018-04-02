@@ -9,11 +9,6 @@ timeout 1
 @echo OFF
  start "" "%~dp0vvvv_50beta36_x64\vvvv.exe"  /allowmultiple  /showexceptions 0  /o ..\CueTimeliner_MCP\Timeliner.v4p
 @echo OFF
-@echo --------------MIDI IN----------------
-timeout 1
-@echo OFF
-start "" "%~dp0vvvv_50beta36_x64\vvvv.exe"  /showexceptions 0 /allowmultiple /shutup  /o ..\CueTimeliner_MCP\MIDI_IN_Behringer.v4p
-@echo OFF
 @echo --------------MIDI OUT----------------
 timeout 1
 @echo OFF

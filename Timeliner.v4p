@@ -531,7 +531,7 @@
    <NODE systemname="VVVV (VVVV)" nodename="VVVV (VVVV)" componentmode="Hidden" id="-11">
    <BOUNDS type="Node" left="9615" top="525" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Application Title" slicecount="1" values="Timeliner">
+   <PIN pinname="Application Title" slicecount="1" values="MIDI_IN">
    </PIN>
    <PIN pinname="Show in Tray" slicecount="1" values="0">
    </PIN>
@@ -1106,16 +1106,6 @@
    <LINKPOINT x="5565" y="2295">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="FromRaw (MIDI.ControllerSystem)" filename="vl\VVVV.MIDI.Controllers.vl" nodename="FromRaw (MIDI.ControllerSystem)" componentmode="Hidden" id="461">
-   <BOUNDS type="Node" left="6855" top="1590" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Raw" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="6855" top="1590">
-   </BOUNDS>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="463" systemname="IOBox (String)">
    <BOUNDS type="Box" left="3165" top="7455" width="675" height="450">
    </BOUNDS>
@@ -1134,24 +1124,6 @@
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="465">
-   <BOUNDS type="Box" left="6840" top="225" width="585" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6840" top="225" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="MidiIn">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
    </NODE>
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="467">
@@ -1213,7 +1185,7 @@
    <LINK srcnodeid="475" srcpinname="Output" dstnodeid="478" dstpinname="Input">
    </LINK>
    <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="481">
-   <BOUNDS type="Node" left="6840" top="2280" width="100" height="100">
+   <BOUNDS type="Node" left="6975" top="2010" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
@@ -1221,15 +1193,13 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="6840" top="2280">
+   <BOUNDS type="Box" left="6975" top="2010">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="461" srcpinname="Output" dstnodeid="481" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="481" srcpinname="Output" dstnodeid="2" dstpinname="MidiControllers" linkstyle="VHV">
-   <LINKPOINT x="6840" y="4560">
+   <LINKPOINT x="6930" y="4380">
    </LINKPOINT>
-   <LINKPOINT x="4890" y="4470">
+   <LINKPOINT x="4935" y="4380">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="87" srcpinname="Device" dstnodeid="2" dstpinname="Mouse Device" linkstyle="VHV">
@@ -1265,33 +1235,15 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="Default (MIDI.ControllerSystem)" filename="vl\VVVV.MIDI.Controllers.vl" nodename="Default (MIDI.ControllerSystem)" componentmode="Hidden" id="479">
-   <BOUNDS type="Node" left="7710" top="1905" width="100" height="100">
+   <BOUNDS type="Node" left="7845" top="1635" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Out" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="7710" top="1905">
+   <BOUNDS type="Box" left="7845" top="1635">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="479" srcpinname="Out" dstnodeid="481" dstpinname="Default">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="485">
-   <BOUNDS type="Box" left="6840" top="225" width="585" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6840" top="225" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="MidiIn">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   </NODE>
    <NODE systemname="Default" filename="Default.v4p" nodename="Default.v4p" componentmode="Hidden" id="489">
    <BOUNDS type="Node" left="2405" top="4485" width="0" height="0">
    </BOUNDS>
@@ -1888,22 +1840,6 @@
    <LINKPOINT x="5655" y="6285">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Receive_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Receive_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Receive_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="486">
-   <BOUNDS type="Node" left="6840" top="780" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Topic" slicecount="1" visible="1" values="MidiIn">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="OnData" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="6600" top="6690" width="8130" height="7890">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6840" top="780">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="485" srcpinname="Output String" dstnodeid="486" dstpinname="Topic">
-   </LINK>
    <NODE systemname="Receive_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Receive_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Receive_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="477">
    <BOUNDS type="Node" left="5010" top="780" width="100" height="100">
    </BOUNDS>
@@ -1925,26 +1861,6 @@
    <LINK srcnodeid="476" srcpinname="Output String" dstnodeid="477" dstpinname="Topic">
    </LINK>
    <LINK srcnodeid="477" srcpinname="Output" dstnodeid="475" dstpinname="Input">
-   </LINK>
-   <NODE systemname="Receive_Raw_Topic (Network.ZeroMQ Raw)" filename="SendReceiveModules\Receive_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Receive_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="460">
-   <BOUNDS type="Node" left="6840" top="780" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Topic" slicecount="1" visible="1" values="MidiIn">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="OnData" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="6600" top="6690" width="8130" height="7890">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6840" top="780">
-   </BOUNDS>
-   <PIN pinname="Server" visible="1" slicecount="1" values="127.0.0.1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="465" srcpinname="Output String" dstnodeid="460" dstpinname="Topic">
-   </LINK>
-   <LINK srcnodeid="460" srcpinname="Output" dstnodeid="461" dstpinname="Raw">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="517">
    <BOUNDS type="Box" left="4605" top="7500" width="285" height="240">
@@ -2000,6 +1916,54 @@
    <LINKPOINT x="9960" y="7425">
    </LINKPOINT>
    </LINK>
+   <NODE systemname="MIDIIn (MIDI.ControllerSystem)" filename="vl\VVVV.MIDI.Controllers.vl" nodename="MIDIIn (MIDI.ControllerSystem)" componentmode="Hidden" id="523">
+   <BOUNDS type="Node" left="6975" top="1635" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XTouch/PlatformM+" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="6975" top="1635">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="524">
+   <BOUNDS type="Box" left="6975" top="885" width="735" height="510">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6975" top="885" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Behringer/ICON">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="524" srcpinname="Y Output Value" dstnodeid="523" dstpinname="XTouch/PlatformM+">
+   </LINK>
+   <LINK srcnodeid="523" srcpinname="Output" dstnodeid="481" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="525">
+   <BOUNDS type="Node" left="7710" top="915" width="750" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7710" top="915" width="1020" height="495">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;&lt; Select It Manually|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
    <BOUNDS type="Node" left="10275" top="900" width="100" height="100">
    </BOUNDS>
@@ -2009,7 +1973,7 @@
    </PIN>
    <PIN pinname="Present UpFront" slicecount="1" visible="1" pintype="Input" values="1">
    </PIN>
-   <PIN pinname="Time Mode" slicecount="1" values="Filtered">
+   <PIN pinname="Time Mode" slicecount="1" values="Raw">
    </PIN>
    <PIN pinname="Increase Timing Precision" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
