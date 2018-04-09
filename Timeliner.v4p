@@ -69,7 +69,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="720" top="780" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Files\Schumann_All.Project">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Files\Schumann_ARI.Project">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -225,7 +225,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3210" top="1590" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.372">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1186,24 +1186,6 @@
    </NODE>
    <LINK srcnodeid="475" srcpinname="Output" dstnodeid="478" dstpinname="Input">
    </LINK>
-   <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="481">
-   <BOUNDS type="Node" left="6975" top="2010" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Default" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="6975" top="2010">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="481" srcpinname="Output" dstnodeid="2" dstpinname="MidiControllers" linkstyle="VHV">
-   <LINKPOINT x="6930" y="4380">
-   </LINKPOINT>
-   <LINKPOINT x="4935" y="4380">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="87" srcpinname="Device" dstnodeid="2" dstpinname="Mouse Device" linkstyle="VHV">
    <LINKPOINT x="2065" y="6018">
    </LINKPOINT>
@@ -1235,16 +1217,6 @@
    </LINKPOINT>
    <LINKPOINT x="4600" y="6135">
    </LINKPOINT>
-   </LINK>
-   <NODE systemname="Default (MIDI.ControllerSystem)" filename="vl\VVVV.MIDI.Controllers.vl" nodename="Default (MIDI.ControllerSystem)" componentmode="Hidden" id="479">
-   <BOUNDS type="Node" left="7845" top="1635" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Out" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="7845" top="1635">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="479" srcpinname="Out" dstnodeid="481" dstpinname="Default">
    </LINK>
    <NODE systemname="Default" filename="Default.v4p" nodename="Default.v4p" componentmode="Hidden" id="489">
    <BOUNDS type="Node" left="2405" top="4485" width="0" height="0">
@@ -1782,7 +1754,7 @@
    </LINK>
    <LINK srcnodeid="477" srcpinname="Output" dstnodeid="475" dstpinname="Input">
    </LINK>
-   <NODE systemname="GetIP" filename="SendReceiveModules\GetIP.v4p" nodename="SendReceiveModules\GetIP.v4p" componentmode="Hidden" id="519">
+   <NODE systemname="GetIP" filename="SendReceiveModules\GetIP.v4p" nodename="SendReceiveModules\GetIP.v4p" componentmode="Hidden" id="519" debug="0">
    <BOUNDS type="Node" left="9127" top="6810" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="6960" top="4893" width="4335" height="3835">
@@ -1827,7 +1799,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6975" top="885" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1837,14 +1809,12 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Behringer/ICON">
    </PIN>
    </NODE>
    <LINK srcnodeid="524" srcpinname="Y Output Value" dstnodeid="523" dstpinname="XTouch/PlatformM+">
-   </LINK>
-   <LINK srcnodeid="523" srcpinname="Output" dstnodeid="481" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="525">
    <BOUNDS type="Node" left="7710" top="915" width="750" height="270">
@@ -1883,7 +1853,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10200" top="7725" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1893,7 +1863,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="527" srcpinname="Y Output Value" dstnodeid="500" dstpinname="Send">
@@ -1903,7 +1873,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4560" top="7695" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1913,9 +1883,15 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="528" srcpinname="Y Output Value" dstnodeid="462" dstpinname="Send">
+   </LINK>
+   <LINK srcnodeid="523" srcpinname="Output" dstnodeid="2" dstpinname="MidiControllers" linkstyle="VHV">
+   <LINKPOINT x="7005" y="4755">
+   </LINKPOINT>
+   <LINKPOINT x="5040" y="4755">
+   </LINKPOINT>
    </LINK>
    </PATCH>
