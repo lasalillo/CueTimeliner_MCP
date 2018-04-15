@@ -1839,7 +1839,7 @@
    </PIN>
    <PIN pinname="Present UpFront" slicecount="1" visible="1" pintype="Input" values="1">
    </PIN>
-   <PIN pinname="Time Mode" slicecount="1" values="Raw">
+   <PIN pinname="Time Mode" slicecount="1" values="Filtered">
    </PIN>
    <PIN pinname="Increase Timing Precision" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
