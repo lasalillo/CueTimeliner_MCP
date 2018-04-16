@@ -133,9 +133,9 @@
           </p:NodeReference>
           <Patch Id="PoomvmZwaLjMRbfx8gyQ3s">
             <Canvas Id="CSFzgMDStMFOUYFWRRYCgF">
-              <ControlPoint Id="InHelB15fpyM85MAeL8PAg" Bounds="195,177" />
-              <ControlPoint Id="P5fjAvQOqrHP4M1nG4BgCe" Bounds="289,173" />
-              <Node Bounds="18,263,52,13" Id="H3cjeKoQ14gQJJ0C95v0kA">
+              <ControlPoint Id="InHelB15fpyM85MAeL8PAg" Bounds="165,176" />
+              <ControlPoint Id="P5fjAvQOqrHP4M1nG4BgCe" Bounds="251,176" />
+              <Node Bounds="148,293,52,13" Id="H3cjeKoQ14gQJJ0C95v0kA">
                 <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl" LastDependency="VVVV.MIDI.Controllers.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="Timer" />
@@ -145,7 +145,7 @@
                 <Pin Id="ElbGOGpcyY8P23xOfjHYt3" Name="Result" Kind="OutputPin" />
                 <Pin Id="AkcRam3ng3EPeWKgqh4hiy" Name="Changed" Kind="OutputPin" />
               </Node>
-              <Node Bounds="66,223,90,13" Id="TjSzGD5bX4BOUg5hWnB1tF">
+              <Node Bounds="196,253,90,13" Id="TjSzGD5bX4BOUg5hWnB1tF">
                 <p:NodeReference LastCategoryFullName="System.TimeSpan" LastSymbolSource="VL.CoreLib.vl" LastDependency="VVVV.MIDI.Controllers.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="FromMilliseconds" />
@@ -157,12 +157,12 @@
                 </Pin>
                 <Pin Id="Eb9T24opdjfPX2J1FEJ7dv" Name="Result" Kind="OutputPin" />
               </Node>
-              <Pad Id="LJe3ZoQnSnJOluWMGvrFAi" Comment="" Bounds="69,197,39,19" ShowValueBox="true" isIOBox="true" Value="60.0">
+              <Pad Id="LJe3ZoQnSnJOluWMGvrFAi" Comment="" Bounds="199,227,39,19" ShowValueBox="true" isIOBox="true" Value="50.0">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Float64" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="156,333,253,140" Id="DziwyZ4tBHgMuutyYseReu">
+              <Node Bounds="149,336,116,160" Id="DziwyZ4tBHgMuutyYseReu">
                 <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.CoreLib.vl" LastDependency="VVVV.MIDI.Controllers.vl">
                   <Choice Kind="ProcessAppFlag" Name="ForEach" />
                   <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true">
@@ -179,9 +179,9 @@
                     <Pin Id="GFB8Gdg9WMJPYciyEXfanO" Name="Input 1" Kind="InputPin" />
                     <Pin Id="CfZ8eo0kvcnOj7vF5pdCrJ" Name="Output" Kind="OutputPin" />
                   </Patch>
-                  <ControlPoint Id="NNpuVzdFLS1Pmmv1uHJjoG" Bounds="160,339" />
-                  <ControlPoint Id="BjLeSpN5tNIMFCjnRtBsnS" Bounds="302,464" />
-                  <Node Bounds="249,421,42,13" Id="QaUcpOoPWFyNyNCPDRU9iH">
+                  <ControlPoint Id="NNpuVzdFLS1Pmmv1uHJjoG" Bounds="157,342" />
+                  <ControlPoint Id="BjLeSpN5tNIMFCjnRtBsnS" Bounds="164,487" />
+                  <Node Bounds="211,413,42,13" Id="QaUcpOoPWFyNyNCPDRU9iH">
                     <p:NodeReference>
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="Out" />
@@ -192,7 +192,7 @@
                     <Pin Id="TjT2ayFeH8HLdKDKRhIO8o" Name="Input" Kind="InputPin" />
                     <Pin Id="Lz3FqCyoykoPfm9JUDw3gc" Name="XTouch/PlatFormM+" Kind="InputPin" />
                   </Node>
-                  <Node Bounds="188,418,42,13" Id="KUKvamBXOB3Ob8rW1mq1Pf">
+                  <Node Bounds="163,413,42,13" Id="KUKvamBXOB3Ob8rW1mq1Pf">
                     <p:NodeReference LastCategoryFullName="VVVV.MIDI.LaunchPad" LastSymbolSource="VVVV.MIDI.Behringer.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="Out" />
@@ -202,7 +202,7 @@
                     </p:NodeReference>
                     <Pin Id="BovVUfYFpPNPrMzPp6BHML" Name="Input" Kind="InputPin" />
                   </Node>
-                  <Node Bounds="189,371,64,22" Id="GUzZeto8yCBLWrzGhLPtsa">
+                  <Node Bounds="164,366,64,22" Id="GUzZeto8yCBLWrzGhLPtsa">
                     <p:NodeReference LastCategoryFullName="VVVV.MIDI.ControllerSystem.MidiControllers" LastSymbolSource="VVVV.MIDI.Controllers.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="Split" />
@@ -212,7 +212,7 @@
                     <Pin Id="LPNrlzFCAPGO5afvfQjvi0" Name="LaunchPad" Kind="OutputPin" />
                     <Pin Id="NOb99WUgfGdNjijqpRsuWn" Name="MackieControl" Kind="OutputPin" />
                   </Node>
-                  <Pad Id="GXlwKHa7J8wPQm3fyuEXsr" Comment="Output" Bounds="305,426,40,19" ShowValueBox="true" isIOBox="true" Value="true">
+                  <Pad Id="GXlwKHa7J8wPQm3fyuEXsr" Comment="" Bounds="165,463,40,19" ShowValueBox="true" isIOBox="true" Value="true">
                     <p:ValueBoxSettings />
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                       <Choice Kind="TypeFlag" Name="Boolean" />
