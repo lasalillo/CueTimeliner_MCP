@@ -133,39 +133,93 @@
           </p:NodeReference>
           <Patch Id="PoomvmZwaLjMRbfx8gyQ3s">
             <Canvas Id="CSFzgMDStMFOUYFWRRYCgF">
-              <Node Bounds="353,314,42,13" Id="KUKvamBXOB3Ob8rW1mq1Pf">
-                <p:NodeReference LastCategoryFullName="VVVV.MIDI.LaunchPad" LastSymbolSource="VVVV.MIDI.Behringer.vl">
+              <ControlPoint Id="InHelB15fpyM85MAeL8PAg" Bounds="195,177" />
+              <ControlPoint Id="P5fjAvQOqrHP4M1nG4BgCe" Bounds="289,173" />
+              <Node Bounds="18,263,52,13" Id="H3cjeKoQ14gQJJ0C95v0kA">
+                <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl" LastDependency="VVVV.MIDI.Controllers.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="Out" />
-                  <CategoryReference Kind="Category" Name="LaunchPad" NeedsToBeDirectParent="true">
-                    <p:OuterCategoryReference Kind="Category" Name="MIDI" NeedsToBeDirectParent="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Timer" />
+                </p:NodeReference>
+                <Pin Id="GBVv16xXkkqO7Yeku0HCCX" Name="Due Time" Kind="InputPin" />
+                <Pin Id="VaWa53Ju7kqO5lzJJEYXk6" Name="Period" Kind="InputPin" />
+                <Pin Id="ElbGOGpcyY8P23xOfjHYt3" Name="Result" Kind="OutputPin" />
+                <Pin Id="AkcRam3ng3EPeWKgqh4hiy" Name="Changed" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="66,223,90,13" Id="TjSzGD5bX4BOUg5hWnB1tF">
+                <p:NodeReference LastCategoryFullName="System.TimeSpan" LastSymbolSource="VL.CoreLib.vl" LastDependency="VVVV.MIDI.Controllers.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="FromMilliseconds" />
+                </p:NodeReference>
+                <Pin Id="QsmQWVUvKSgO4mFtfpxlNv" Name="Value" Kind="InputPin" DefaultValue="50.0">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="Float64" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="Eb9T24opdjfPX2J1FEJ7dv" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Pad Id="LJe3ZoQnSnJOluWMGvrFAi" Comment="" Bounds="69,197,39,19" ShowValueBox="true" isIOBox="true" Value="60.0">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Float64" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Node Bounds="156,333,253,140" Id="DziwyZ4tBHgMuutyYseReu">
+                <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.CoreLib.vl" LastDependency="VVVV.MIDI.Controllers.vl">
+                  <Choice Kind="ProcessAppFlag" Name="ForEach" />
+                  <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true">
+                    <p:OuterCategoryReference Kind="Category" NeedsToBeDirectParent="true" />
                   </CategoryReference>
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 </p:NodeReference>
-                <Pin Id="BovVUfYFpPNPrMzPp6BHML" Name="Input" Kind="InputPin" />
+                <Pin Id="UM0a6RSkzQ4O0829iWgvzR" Name="Messages" Kind="InputPin" />
+                <Pin Id="MZhIx4fH2zfOauRY7Kv2y7" Name="Reset" Kind="InputPin" />
+                <Pin Id="QStqq0a2EVqOVwFTE7hzD9" Name="Result" Kind="OutputPin" />
+                <Patch Id="Op9UjEsJo9tOAzv8EH2ToU" ManuallySortedPins="true">
+                  <Patch Id="TRCSDheGGgjNkkE0Fo5eej" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="FIZAWX0Rzp0PgzJDsZuDmt" Name="Update" ManuallySortedPins="true">
+                    <Pin Id="GFB8Gdg9WMJPYciyEXfanO" Name="Input 1" Kind="InputPin" />
+                    <Pin Id="CfZ8eo0kvcnOj7vF5pdCrJ" Name="Output" Kind="OutputPin" />
+                  </Patch>
+                  <ControlPoint Id="NNpuVzdFLS1Pmmv1uHJjoG" Bounds="160,339" />
+                  <ControlPoint Id="BjLeSpN5tNIMFCjnRtBsnS" Bounds="302,464" />
+                  <Node Bounds="249,421,42,13" Id="QaUcpOoPWFyNyNCPDRU9iH">
+                    <p:NodeReference>
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="ProcessAppFlag" Name="Out" />
+                      <CategoryReference Kind="Category" Name="MackieControl" NeedsToBeDirectParent="true">
+                        <p:OuterCategoryReference Kind="Category" Name="MIDI" NeedsToBeDirectParent="true" />
+                      </CategoryReference>
+                    </p:NodeReference>
+                    <Pin Id="TjT2ayFeH8HLdKDKRhIO8o" Name="Input" Kind="InputPin" />
+                    <Pin Id="Lz3FqCyoykoPfm9JUDw3gc" Name="XTouch/PlatFormM+" Kind="InputPin" />
+                  </Node>
+                  <Node Bounds="188,418,42,13" Id="KUKvamBXOB3Ob8rW1mq1Pf">
+                    <p:NodeReference LastCategoryFullName="VVVV.MIDI.LaunchPad" LastSymbolSource="VVVV.MIDI.Behringer.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="ProcessAppFlag" Name="Out" />
+                      <CategoryReference Kind="Category" Name="LaunchPad" NeedsToBeDirectParent="true">
+                        <p:OuterCategoryReference Kind="Category" Name="MIDI" NeedsToBeDirectParent="true" />
+                      </CategoryReference>
+                    </p:NodeReference>
+                    <Pin Id="BovVUfYFpPNPrMzPp6BHML" Name="Input" Kind="InputPin" />
+                  </Node>
+                  <Node Bounds="189,371,64,22" Id="GUzZeto8yCBLWrzGhLPtsa">
+                    <p:NodeReference LastCategoryFullName="VVVV.MIDI.ControllerSystem.MidiControllers" LastSymbolSource="VVVV.MIDI.Controllers.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Split" />
+                      <CategoryReference Kind="RecordType" Name="MidiControllers" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="LM1JWrTQ3dQNjXEJjRogRv" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="LPNrlzFCAPGO5afvfQjvi0" Name="LaunchPad" Kind="OutputPin" />
+                    <Pin Id="NOb99WUgfGdNjijqpRsuWn" Name="MackieControl" Kind="OutputPin" />
+                  </Node>
+                  <Pad Id="GXlwKHa7J8wPQm3fyuEXsr" Comment="Output" Bounds="305,426,40,19" ShowValueBox="true" isIOBox="true" Value="true">
+                    <p:ValueBoxSettings />
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="Boolean" />
+                    </p:TypeAnnotation>
+                  </Pad>
+                </Patch>
               </Node>
-              <Node Bounds="397,314,42,13" Id="QaUcpOoPWFyNyNCPDRU9iH">
-                <p:NodeReference>
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="Out" />
-                  <CategoryReference Kind="Category" Name="MackieControl" NeedsToBeDirectParent="true">
-                    <p:OuterCategoryReference Kind="Category" Name="MIDI" NeedsToBeDirectParent="true" />
-                  </CategoryReference>
-                </p:NodeReference>
-                <Pin Id="TjT2ayFeH8HLdKDKRhIO8o" Name="Input" Kind="InputPin" />
-                <Pin Id="Lz3FqCyoykoPfm9JUDw3gc" Name="XTouch/PlatFormM+" Kind="InputPin" />
-              </Node>
-              <Node Bounds="353,267" Id="GUzZeto8yCBLWrzGhLPtsa">
-                <p:NodeReference LastCategoryFullName="VVVV.MIDI.ControllerSystem.MidiControllers" LastSymbolSource="VVVV.MIDI.Controllers.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Split" />
-                  <CategoryReference Kind="RecordType" Name="MidiControllers" NeedsToBeDirectParent="true" />
-                </p:NodeReference>
-                <Pin Id="LM1JWrTQ3dQNjXEJjRogRv" Name="Input" Kind="StateInputPin" />
-                <Pin Id="LPNrlzFCAPGO5afvfQjvi0" Name="LaunchPad" Kind="OutputPin" />
-                <Pin Id="NOb99WUgfGdNjijqpRsuWn" Name="MackieControl" Kind="OutputPin" />
-              </Node>
-              <ControlPoint Id="InHelB15fpyM85MAeL8PAg" Bounds="355,230" />
-              <ControlPoint Id="P5fjAvQOqrHP4M1nG4BgCe" Bounds="437,231" />
             </Canvas>
             <Patch Id="BDbTcABhYJ2PrJbPZuHSC4" Name="Create" />
             <Patch Id="AE2JIv0cDVgLRdJXl9UAwQ" Name="Update">
@@ -180,12 +234,18 @@
               <Fragment Id="NB5YDwqCxA3QBiTLraxpWL" Patch="BDbTcABhYJ2PrJbPZuHSC4" Enabled="true" />
               <Fragment Id="Cy9QG8lRYZSLb3BR2rCBc7" Patch="AE2JIv0cDVgLRdJXl9UAwQ" Enabled="true" />
             </ProcessDefinition>
-            <Link Id="EhZmw1wwIFWPNVuGx8QXXG" Ids="LPNrlzFCAPGO5afvfQjvi0,BovVUfYFpPNPrMzPp6BHML" />
-            <Link Id="GykaH9u8XDQQbjsIey9PME" Ids="NOb99WUgfGdNjijqpRsuWn,TjT2ayFeH8HLdKDKRhIO8o" />
             <Link Id="BPzQMIaQhTKLipeuCB0OaK" Ids="InHelB15fpyM85MAeL8PAg,LM1JWrTQ3dQNjXEJjRogRv" />
             <Link Id="AOCm1DycW1AM6aLIFcZLAH" Ids="EiS8QmFoYCZPpyklf5qMlk,InHelB15fpyM85MAeL8PAg" IsHidden="true" />
             <Link Id="HoxTKGMiof2OmFGa8donef" Ids="P5fjAvQOqrHP4M1nG4BgCe,Lz3FqCyoykoPfm9JUDw3gc" />
             <Link Id="KMPMiAmqcRrPogSBgef6Xv" Ids="NoiwTuIhb7dOXaPqDGhiVW,P5fjAvQOqrHP4M1nG4BgCe" IsHidden="true" />
+            <Link Id="Ov9NZvw1kOWQBPX0tzHloz" Ids="Eb9T24opdjfPX2J1FEJ7dv,VaWa53Ju7kqO5lzJJEYXk6" />
+            <Link Id="T9KDfa9Y27WNpbduGGfRQX" Ids="LJe3ZoQnSnJOluWMGvrFAi,QsmQWVUvKSgO4mFtfpxlNv" />
+            <Link Id="VF1IvjW196xOuxM2flVnXO" Ids="GFB8Gdg9WMJPYciyEXfanO,NNpuVzdFLS1Pmmv1uHJjoG" IsHidden="true" />
+            <Link Id="M55B1ZYI97sMYbC9IvxeBD" Ids="BjLeSpN5tNIMFCjnRtBsnS,CfZ8eo0kvcnOj7vF5pdCrJ" IsHidden="true" />
+            <Link Id="MNvzDMeCw5nPJpEJv9GF52" Ids="ElbGOGpcyY8P23xOfjHYt3,UM0a6RSkzQ4O0829iWgvzR" />
+            <Link Id="EhZmw1wwIFWPNVuGx8QXXG" Ids="LPNrlzFCAPGO5afvfQjvi0,BovVUfYFpPNPrMzPp6BHML" />
+            <Link Id="GykaH9u8XDQQbjsIey9PME" Ids="NOb99WUgfGdNjijqpRsuWn,TjT2ayFeH8HLdKDKRhIO8o" />
+            <Link Id="FKuC2YhS7y7LHBuxQfiByF" Ids="GXlwKHa7J8wPQm3fyuEXsr,BjLeSpN5tNIMFCjnRtBsnS" />
           </Patch>
         </Node>
         <!--
