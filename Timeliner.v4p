@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Timeliner.v4p" systemname="Test" filename="D:\_VVVV\_Projects\_CUETIMELINER\Test.v4p" scrollx="0" scrolly="0" locked="0">
-   <BOUNDS type="Window" left="4530" top="5955" width="11685" height="9645">
+   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Timeliner.v4p" systemname="Test" filename="D:\_VVVV\_Projects\_CUETIMELINER\Test.v4p" scrollx="0" scrolly="-360" locked="0">
+   <BOUNDS type="Window" left="4575" top="5955" width="11685" height="9645">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -69,7 +69,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="720" top="780" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Files\Schumann_ARI.Project">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Files\Schumann_ARI_Slow.Project">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -131,7 +131,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1935" top="1590" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5304.64">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="6071.458">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -311,7 +311,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="840" top="2505" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\Schumann\Schumann_vvvv\assets\music\das_paradies_und_die_peri.mp3">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\Schumann\Schumann_vvvv\assets\music_slow\DasParadiesUndDiePeri.mp3">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
