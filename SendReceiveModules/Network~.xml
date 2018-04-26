@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
    <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\SendReceiveModules\Network.v4p" systemname="NETWORK" filename="C:\Projects\merck\SYSTEM\NETWORK.v4p" bgcolor="8973311" scrollx="0" scrolly="-360">
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="0" systemname="IOBox (Enumerations)">
    <BOUNDS type="Box" left="360" top="1755" width="600" height="240">
@@ -478,7 +478,7 @@
    <PIN pinname="Reset" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <NODE systemname="GetIP" filename="GetIP.v4p" nodename="GetIP.v4p" componentmode="InAWindow" id="32">
+   <NODE systemname="GetIP" filename="GetIP.v4p" nodename="GetIP.v4p" componentmode="Hidden" id="32">
    <BOUNDS type="Node" left="4890" top="870" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Update" visible="1">

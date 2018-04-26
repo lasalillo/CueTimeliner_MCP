@@ -1,13 +1,13 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\_Schumann\CueTimeliner_MCP\Audio\AudioTexture_Multiple.v4p" scrollx="0" scrolly="0" systemname="AudioTexture_Multiple" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\AudioTexture_Multiple.v4p">
-   <BOUNDS type="Window" left="10080" top="8040" width="9000" height="7980">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Audio\AudioTexture_Multiple.v4p" scrollx="0" scrolly="0" systemname="AudioTexture_Multiple" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\AudioTexture_Multiple.v4p">
+   <BOUNDS type="Window" left="17655" top="4215" width="9000" height="7980">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
    <BOUNDS type="Box" left="5460" top="840" width="795" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="5460" top="840" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\Schumann_Repo\Schumann_vvvv\assets\music\das_paradies_und_die_peri.mp3">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="C:\Users\arist\Desktop\Music\DasParadiesUndDiePeri.mp3">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -341,7 +341,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3585" top="4335" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="18225" top="13410" width="16545" height="3330">
+   <BOUNDS type="Window" left="3690" top="11880" width="16545" height="3330">
    </BOUNDS>
    <PIN pinname="Show Alpha" slicecount="1" values="1">
    </PIN>

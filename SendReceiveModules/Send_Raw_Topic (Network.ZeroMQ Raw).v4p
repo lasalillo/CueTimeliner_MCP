@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
    <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\SendReceiveModules\Send_Raw_Topic (Network.ZeroMQ Raw).v4p" systemname="Send_Raw (Network.ZeroMQ Raw)" filename="C:\_ARI\_Timeliner\_LaunchPad-Mini\SendReceiveModules\Send_Raw (Network.ZeroMQ Raw).v4p" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="11100" top="2070" width="10275" height="11385">
    </BOUNDS>
@@ -62,22 +62,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="Port">
    </PIN>
    <PIN pinname="Pin Visibility" slicecount="1" values="True">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="26" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3750" top="3690" width="405" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3750" top="3690" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="46" systemname="IOBox (Value Advanced)">
@@ -233,8 +217,6 @@
    <LINK srcnodeid="20" srcpinname="Output Enum" dstnodeid="19" dstpinname="Protocol">
    </LINK>
    <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Port">
-   </LINK>
-   <LINK srcnodeid="19" srcpinname="Valid" dstnodeid="26" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="74" srcpinname="Output String" dstnodeid="19" dstpinname="Server">
    </LINK>

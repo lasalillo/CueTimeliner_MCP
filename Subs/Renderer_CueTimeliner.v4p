@@ -354,24 +354,6 @@
    </NODE>
    <LINK srcnodeid="31" srcpinname="Output Node" dstnodeid="28" dstpinname="Layer 2">
    </LINK>
-   <NODE systemname="ControlerGraphics" filename="ControlerGraphics.v4p" nodename="ControlerGraphics.v4p" componentmode="Hidden" id="33" debug="0">
-   <BOUNDS type="Node" left="3525" top="2415" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Apply" visible="1" slicecount="1" values="1">
-   </PIN>
-   <BOUNDS type="Window" left="13755" top="5085" width="11400" height="8295">
-   </BOUNDS>
-   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="33" srcpinname="Layer" dstnodeid="30" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Evaluate">
-   </LINK>
    <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Evaluate">
    </LINK>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="36">
@@ -554,8 +536,6 @@
    </NODE>
    <LINK srcnodeid="43" srcpinname="Output Node" dstnodeid="47" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="47" srcpinname="DrawDataControler" dstnodeid="33" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="8" srcpinname="Actual BackBuffer SizeXY" dstnodeid="47" dstpinname="ResSliderXY">
    </LINK>
    <LINK srcnodeid="5" srcpinname="Actual BackBuffer SizeXY" dstnodeid="47" dstpinname="ResolXY">
@@ -565,28 +545,6 @@
    <LINK srcnodeid="36" srcpinname="Output" dstnodeid="47" dstpinname="TimelineEnable">
    </LINK>
    <LINK srcnodeid="37" srcpinname="Output" dstnodeid="47" dstpinname="ControllerEnable">
-   </LINK>
-   <NODE systemname="TimelineGraphics" filename="TimelineGraphics.v4p" nodename="TimelineGraphics.v4p" componentmode="Hidden" id="32" debug="0">
-   <BOUNDS type="Node" left="2010" top="2430" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer Out" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="4590" top="5955" width="17355" height="9645">
-   </BOUNDS>
-   <PIN pinname="Apply" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Reload" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="32" srcpinname="Layer Out" dstnodeid="31" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Evaluate">
-   </LINK>
-   <LINK srcnodeid="47" srcpinname="DrawDataTimeline" dstnodeid="32" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48">
    <BOUNDS type="Box" left="4545" top="525" width="795" height="240">
@@ -622,8 +580,50 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="Reload">
    </PIN>
    </NODE>
-   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Reload">
-   </LINK>
    <PACK Name="dx11" Version="1.0.4">
    </PACK>
+   <NODE systemname="ControlerGraphics" filename="ControlerGraphics.v4p" nodename="ControlerGraphics.v4p" componentmode="Hidden" id="33" debug="0">
+   <BOUNDS type="Node" left="3525" top="2415" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Apply" visible="1" slicecount="1" values="1">
+   </PIN>
+   <BOUNDS type="Window" left="13755" top="5085" width="11400" height="8295">
+   </BOUNDS>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Layer" dstnodeid="30" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Evaluate">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="DrawDataControler" dstnodeid="33" dstpinname="Input">
+   </LINK>
+   <NODE systemname="TimelineGraphics" filename="TimelineGraphics.v4p" nodename="TimelineGraphics.v4p" componentmode="Hidden" id="32" debug="0">
+   <BOUNDS type="Node" left="2010" top="2430" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="4590" top="5955" width="17355" height="9645">
+   </BOUNDS>
+   <PIN pinname="Apply" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Reload" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="32" srcpinname="Layer Out" dstnodeid="31" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Evaluate">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="DrawDataTimeline" dstnodeid="32" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Reload">
+   </LINK>
    </PATCH>
