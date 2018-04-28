@@ -14,7 +14,7 @@ Controllers Tested:
 
 -Launchpad Mini (additional controller)
 
-Last update: vvvv_50alpha35.18_x64
+Last update: vvvv_50beta36_x64
 
 Packs:
 
