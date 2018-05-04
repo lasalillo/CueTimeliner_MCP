@@ -25,7 +25,7 @@
    </BOUNDS>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" values="|Shift+T=EditTrackName&cr;&lf;A+RMB=AddCue (With the current UI Values)&cr;&lf;A+RMB+Ctr=Add Cue On NEW TRACK&cr;&lf;D+OnSelectedCue+RMB=DeleteCue &cr;&lf;C+OnSelectedCue+RMB=CloneCue (to any track)  M+RMB+OnSelectedCue=MoveCue (+Ctr=Snap)  &cr;&lf;F+MouseWheel+OnSelectedCue=EditFadeTime Alt+N=EditName&cr;&lf;Alt+V OnSelectedCue=EditValues&cr;&lf;&cr;&lf;OnControllerUI:&cr;&lf;LMB=EditValue   &cr;&lf;LMB+Shift=Slow  &cr;&lf;LMB+Ctr=Multiple   &cr;&lf;RMB+Ctr= (OnEditMode)&cr;&lf;           -   Lin              ~   Ease IN-OUT, &cr;&lf;           (   Ease OUT     ) Ease IN, &cr;&lf;           [   Start            ] End &cr;&lf;&cr;&lf;EditMulti:&cr;&lf;Shift+E=MoveMulti&cr;&lf;Shift+C=CopyMulti&cr;&lf;Shif+RMB=SelectTracks&cr;&lf;Ctr+RMB=MoveCues&cr;&lf;LoopPoints=SelectArea|">
+   <PIN pinname="Input String" slicecount="1" values="|Shift+T=EditTrackName*&cr;&lf;A+RMB=AddCue (With the current UI Values)&cr;&lf;A+RMB+Ctr=Add Cue On NEW TRACK&cr;&lf;D+OnSelectedCue+RMB=DeleteCue &cr;&lf;C+OnSelectedCue+RMB=CloneCue (to any track)  M+RMB+OnSelectedCue=MoveCue (+Ctr=Snap)  &cr;&lf;F+MouseWheel+OnSelectedCue=EditFadeTime Alt+N=EditName*&cr;&lf;Alt+V OnSelectedCue=EditValues*&cr;&lf;&cr;&lf;OnControllerUI:&cr;&lf;LMB=EditValue   &cr;&lf;LMB+Shift=Slow  &cr;&lf;LMB+Ctr=Multiple   &cr;&lf;RMB+Ctr= (OnEditMode)&cr;&lf;           -   Lin              ~   Ease IN-OUT, &cr;&lf;           (   Ease OUT     ) Ease IN, &cr;&lf;           [   Start            ] End &cr;&lf;&cr;&lf;EditMulti:&cr;&lf;Shift+E=MoveMulti*&cr;&lf;Shift+C=CopyMulti*&cr;&lf;Shif+RMB=SelectTracks&cr;&lf;Ctr+RMB=MoveCues&cr;&lf;LoopPoints=SelectArea&cr;&lf;|">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="12">
    </PIN>
@@ -116,4 +116,16 @@
    </NODE>
    <PACK Name="dx11" Version="1.0.4">
    </PACK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="12">
+   <BOUNDS type="Node" left="3720" top="8010" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3720" top="8010" width="6180" height="750">
+   </BOUNDS>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="|*ENTER=Exit Edit mode|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="25">
+   </PIN>
+   </NODE>
    </PATCH>
