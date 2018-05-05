@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Subs\TimelineGraphics.v4p" systemname="TimelineGraphics" filename="D:\_VVVV\_Projects\_CUETIMELINER\TimelineGraphics.v4p" scrollx="0" scrolly="720">
+   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Subs\TimelineGraphics.v4p" systemname="TimelineGraphics" filename="D:\_VVVV\_Projects\_CUETIMELINER\TimelineGraphics.v4p" scrollx="0" scrolly="4290">
    <NODE id="1" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Input">
    </PIN>
@@ -10,7 +10,7 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="4590" top="5955" width="17355" height="9645">
+   <BOUNDS type="Window" left="10080" top="1875" width="17355" height="9645">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -285,7 +285,7 @@
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="6">
+   <PIN pinname="Input Count" slicecount="1" values="7">
    </PIN>
    <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
    </PIN>
@@ -294,6 +294,8 @@
    <PIN pinname="Layer 6" visible="1">
    </PIN>
    <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 7" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="46" srcpinname="Layer" dstnodeid="47" dstpinname="Layer 1">
@@ -1028,21 +1030,67 @@
    </LINK>
    <LINK srcnodeid="19" srcpinname="Layer Out" dstnodeid="47" dstpinname="Layer 6">
    </LINK>
-   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="112">
-   <BOUNDS type="Node" left="9300" top="8235" width="100" height="100">
+   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="115">
+   <BOUNDS type="Node" left="5400" top="7560" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="ScaleY" slicecount="1" visible="1" values="0.556">
-   </PIN>
-   <PIN pinname="TranslateY" slicecount="1" visible="1" values="-0.029">
-   </PIN>
-   <PIN pinname="TranslateX" slicecount="1" visible="1" values="0.005">
-   </PIN>
-   <PIN pinname="ScaleX" slicecount="1" visible="1" values="1">
+   <PIN pinname="TranslateX" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="114">
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="118">
+   <BOUNDS type="Box" left="5655" top="7065" width="2250" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5655" top="7065" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,0.39750|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="118" srcpinname="Color Output" dstnodeid="55" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="101" srcpinname="Layer Out" dstnodeid="47" dstpinname="Layer 4">
+   </LINK>
+   <PACK Name="dx11" Version="1.0.4">
+   </PACK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="130">
+   <BOUNDS type="Box" left="7350" top="7350" width="2250" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7350" top="7350" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,0.39750|">
+   </PIN>
+   </NODE>
+   <NODE systemname="MultiAudioTexture" filename="..\Audio\MultiAudioTexture.v4p" nodename="..\Audio\MultiAudioTexture.v4p" componentmode="Hidden" id="116">
+   <BOUNDS type="Node" left="4215" top="8145" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="22005" top="6030" width="7380" height="7500">
+   </BOUNDS>
+   <PIN pinname="Color" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,0.39750|">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Reload">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="97" srcpinname="Output" dstnodeid="116" dstpinname="Directory">
+   </LINK>
+   <LINK srcnodeid="99" srcpinname="Exists" dstnodeid="116" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="116" srcpinname="Layer Out" dstnodeid="100" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="116" srcpinname="Layer Out" dstnodeid="100" dstpinname="Layer In">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="Transform Out" dstnodeid="116" dstpinname="Texture Transform">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="AudioTexturePos" dstnodeid="116" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="130" srcpinname="Color Output" dstnodeid="116" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="100" srcpinname="Layer Out" dstnodeid="47" dstpinname="Layer 5">
+   </LINK>
+   <NODE id="114" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="9075" top="7035" width="480" height="480">
    </BOUNDS>
    <BOUNDS type="Node" left="9075" top="7035" width="0" height="0">
@@ -1064,218 +1112,20 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="Reload">
    </PIN>
    </NODE>
-   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="115">
-   <BOUNDS type="Node" left="5400" top="7560" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="TranslateX" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Color)" componentmode="InABox" id="118">
-   <BOUNDS type="Box" left="5655" top="7065" width="2250" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5655" top="7065" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,0.39750|">
-   </PIN>
-   <PIN pinname="Color Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="118" srcpinname="Color Output" dstnodeid="55" dstpinname="Color">
-   </LINK>
-   <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="123">
-   <BOUNDS type="Node" left="6525" top="9615" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6525" top="9615" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Color" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,0.35681|">
-   </PIN>
-   <PIN pinname="Render State" visible="1">
-   </PIN>
-   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Sampler State" visible="1">
-   </PIN>
-   <PIN pinname="Texture Transform" visible="1">
-   </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="40" srcpinname="Render State" dstnodeid="123" dstpinname="Render State">
-   </LINK>
-   <LINK srcnodeid="15" srcpinname="AudioTexturePos" dstnodeid="123" dstpinname="Transform">
-   </LINK>
-   <NODE systemname="FileTexture (DX11 2d.Pooled)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d.Pooled)" componentmode="Hidden" id="122">
-   <BOUNDS type="Node" left="6735" top="9105" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6735" top="9105" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="Filename" visible="1" slicecount="1" values="|..\_MULTIMELINER\Audio\02 - Venter (Evian Christ TF 12 Mix).png|">
-   </PIN>
-   <PIN pinname="No Mips" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Reload" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="122" srcpinname="Texture Out" dstnodeid="123" dstpinname="Texture">
-   </LINK>
-   <LINK srcnodeid="74" srcpinname="Y Output Value" dstnodeid="122" dstpinname="No Mips">
-   </LINK>
-   <NODE systemname="Sampler (DX11 Advanced)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Sampler (DX11 Advanced)" componentmode="Hidden" id="121">
-   <BOUNDS type="Node" left="8745" top="8955" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="8745" top="8955" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="Sampler" visible="1">
-   </PIN>
-   <PIN pinname="Filter Mode" slicecount="1" values="MinMagMipPoint">
-   </PIN>
-   <PIN pinname="Address V" slicecount="1" values="Border">
-   </PIN>
-   <PIN pinname="Address U" slicecount="1" values="Border">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="121" srcpinname="Sampler" dstnodeid="123" dstpinname="Sampler State">
-   </LINK>
-   <LINK srcnodeid="118" srcpinname="Color Output" dstnodeid="123" dstpinname="Color">
-   </LINK>
-   <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="124">
-   <BOUNDS type="Node" left="6795" top="8145" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Directory" visible="1">
-   </PIN>
-   <PIN pinname="Mask" slicecount="1" values="*.png">
-   </PIN>
-   <PIN pinname="Update" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Filenames" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="96" srcpinname="Path" dstnodeid="124" dstpinname="Directory">
-   </LINK>
-   <LINK srcnodeid="114" srcpinname="Y Output Value" dstnodeid="124" dstpinname="Update">
-   </LINK>
-   <LINK srcnodeid="112" srcpinname="Transform Out" dstnodeid="123" dstpinname="Texture Transform">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="125">
-   <BOUNDS type="Box" left="9855" top="7695" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="9855" top="7695" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="125" srcpinname="Y Output Value" dstnodeid="112" dstpinname="TranslateX">
-   </LINK>
-   <LINK srcnodeid="114" srcpinname="Y Output Value" dstnodeid="122" dstpinname="Reload">
-   </LINK>
-   <LINK srcnodeid="123" srcpinname="Layer" dstnodeid="47" dstpinname="Layer 3">
-   </LINK>
-   <LINK srcnodeid="101" srcpinname="Layer Out" dstnodeid="47" dstpinname="Layer 4">
-   </LINK>
-   <LINK srcnodeid="100" srcpinname="Layer Out" dstnodeid="47" dstpinname="Layer 5">
-   </LINK>
-   <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="126">
-   <BOUNDS type="Node" left="6945" top="8700" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="124" srcpinname="Filenames" dstnodeid="126" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="126" srcpinname="Output" dstnodeid="122" dstpinname="Filename">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="127">
-   <BOUNDS type="Box" left="11160" top="7530" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="11160" top="7530" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="112" dstpinname="ScaleX">
-   </LINK>
-   <PACK Name="dx11" Version="1.0.4">
-   </PACK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="128">
-   <BOUNDS type="Box" left="12900" top="7320" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="12900" top="7320" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.78">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="128" srcpinname="Y Output Value" dstnodeid="112" dstpinname="ScaleY">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="129">
-   <BOUNDS type="Box" left="12570" top="6570" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="12570" top="6570" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.079">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="129" srcpinname="Y Output Value" dstnodeid="112" dstpinname="TranslateY">
-   </LINK>
-   <NODE nodename="IOBox (Color)" componentmode="InABox" id="130">
-   <BOUNDS type="Box" left="7350" top="7350" width="2250" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7350" top="7350" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,0.39750|">
-   </PIN>
-   </NODE>
-   <NODE systemname="MultiAudioTexture" filename="..\Audio\MultiAudioTexture.v4p" nodename="..\Audio\MultiAudioTexture.v4p" componentmode="Hidden" id="116">
-   <BOUNDS type="Node" left="4215" top="8145" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Window" left="22005" top="6030" width="7380" height="7500">
-   </BOUNDS>
-   <PIN pinname="Color" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,0.39750|">
-   </PIN>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="97" srcpinname="Output" dstnodeid="116" dstpinname="Directory">
-   </LINK>
-   <LINK srcnodeid="99" srcpinname="Exists" dstnodeid="116" dstpinname="Enabled">
-   </LINK>
-   <LINK srcnodeid="116" srcpinname="Layer Out" dstnodeid="100" dstpinname="Layer 1">
-   </LINK>
-   <LINK srcnodeid="116" srcpinname="Layer Out" dstnodeid="100" dstpinname="Layer In">
-   </LINK>
    <LINK srcnodeid="114" srcpinname="Y Output Value" dstnodeid="116" dstpinname="Reload">
    </LINK>
-   <LINK srcnodeid="115" srcpinname="Transform Out" dstnodeid="116" dstpinname="Texture Transform">
+   <NODE systemname="Scenes" filename="Scenes.v4p" nodename="Scenes.v4p" componentmode="Hidden" id="175" debug="0">
+   <BOUNDS type="Node" left="9694" top="8536" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7635" top="1711" width="11235" height="13650">
+   </BOUNDS>
+   <BOUNDS type="Window" left="15000" top="1800" width="11235" height="13650">
+   </BOUNDS>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="AudioTexturePos" dstnodeid="175" dstpinname="Transform In">
    </LINK>
-   <LINK srcnodeid="15" srcpinname="AudioTexturePos" dstnodeid="116" dstpinname="Transform In">
-   </LINK>
-   <LINK srcnodeid="130" srcpinname="Color Output" dstnodeid="116" dstpinname="Color">
+   <LINK srcnodeid="175" srcpinname="Layer Out" dstnodeid="47" dstpinname="Layer 7">
    </LINK>
    </PATCH>
