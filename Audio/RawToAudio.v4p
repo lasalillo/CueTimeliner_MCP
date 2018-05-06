@@ -33,6 +33,8 @@
    </PIN>
    <PIN pinname="AudioTrackLength" visible="1">
    </PIN>
+   <PIN pinname="DoSeek" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="675" top="1905" width="100" height="100">
@@ -173,5 +175,13 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Pointer" dstnodeid="16" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="S (Value)" id="17">
+   <BOUNDS type="Node" left="1155" top="4485" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="DoSeek">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="DoSeek" dstnodeid="17" dstpinname="Input Value">
    </LINK>
    </PATCH>
