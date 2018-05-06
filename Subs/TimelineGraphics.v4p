@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Subs\TimelineGraphics.v4p" systemname="TimelineGraphics" filename="D:\_VVVV\_Projects\_CUETIMELINER\TimelineGraphics.v4p" scrollx="0" scrolly="4290">
+   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Subs\TimelineGraphics.v4p" systemname="TimelineGraphics" filename="D:\_VVVV\_Projects\_CUETIMELINER\TimelineGraphics.v4p" scrollx="45" scrolly="1980">
    <NODE id="1" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Input">
    </PIN>
@@ -10,7 +10,7 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="10080" top="1875" width="17355" height="9645">
+   <BOUNDS type="Window" left="4590" top="5955" width="17355" height="9645">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -291,7 +291,7 @@
    </PIN>
    <PIN pinname="Layer 4" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Layer 6" visible="1">
+   <PIN pinname="Layer 6" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
    </PIN>
@@ -774,22 +774,6 @@
    </LINK>
    <LINK srcnodeid="15" srcpinname="UpdateCues" dstnodeid="46" dstpinname="Apply">
    </LINK>
-   <NODE systemname="FileTexture (DX11 2d.Pooled)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d.Pooled)" componentmode="Hidden" id="56">
-   <BOUNDS type="Node" left="2730" top="7485" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2730" top="7485" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="Filename" visible="1" slicecount="1" values="|..\_MULTIMELINER\Audio\02 - Venter (Evian Christ TF 12 Mix).png|">
-   </PIN>
-   <PIN pinname="No Mips" slicecount="1" visible="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="56" srcpinname="Texture Out" dstnodeid="55" dstpinname="Texture">
-   </LINK>
-   <LINK srcnodeid="15" srcpinname="AudioTextureString" dstnodeid="56" dstpinname="Filename">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="74">
    <BOUNDS type="Box" left="3705" top="7500" width="480" height="480">
    </BOUNDS>
@@ -805,9 +789,11 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="74" srcpinname="Y Output Value" dstnodeid="56" dstpinname="No Mips">
-   </LINK>
    <NODE systemname="Sampler (DX11 Advanced)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Sampler (DX11 Advanced)" componentmode="Hidden" id="75">
    <BOUNDS type="Node" left="3045" top="7170" width="100" height="100">
    </BOUNDS>
@@ -975,7 +961,7 @@
    <LINK srcnodeid="96" srcpinname="Path" dstnodeid="97" dstpinname="Input 1">
    </LINK>
    <NODE systemname="Directory (File)" filename="%VVVV%\addonpack\lib\nodes\plugins\Directory.dll" nodename="Directory (File)" componentmode="Hidden" id="99">
-   <BOUNDS type="Node" left="4680" top="8670" width="100" height="100">
+   <BOUNDS type="Node" left="3360" top="8745" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Directory" visible="1">
    </PIN>
@@ -985,9 +971,9 @@
    <LINK srcnodeid="97" srcpinname="Output" dstnodeid="99" dstpinname="Directory">
    </LINK>
    <NODE systemname="Enabled (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Enabled (DX11.Layer)" componentmode="Hidden" id="100">
-   <BOUNDS type="Node" left="3855" top="9270" width="100" height="100">
+   <BOUNDS type="Node" left="2745" top="9405" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3855" top="9270" width="3000" height="3000">
+   <BOUNDS type="Box" left="2745" top="9405" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1">
    </PIN>
@@ -1001,9 +987,9 @@
    <LINK srcnodeid="99" srcpinname="Exists" dstnodeid="100" dstpinname="Enabled">
    </LINK>
    <NODE systemname="Enabled (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Enabled (DX11.Layer)" componentmode="Hidden" id="101">
-   <BOUNDS type="Node" left="2175" top="8910" width="100" height="100">
+   <BOUNDS type="Node" left="1950" top="9435" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2175" top="8910" width="3000" height="3000">
+   <BOUNDS type="Box" left="1950" top="9435" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1">
    </PIN>
@@ -1017,7 +1003,7 @@
    <LINK srcnodeid="55" srcpinname="Layer" dstnodeid="101" dstpinname="Layer In">
    </LINK>
    <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="102">
-   <BOUNDS type="Node" left="2865" top="8490" width="100" height="100">
+   <BOUNDS type="Node" left="2475" top="9030" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1028,8 +1014,6 @@
    </LINK>
    <LINK srcnodeid="102" srcpinname="Output" dstnodeid="101" dstpinname="Enabled">
    </LINK>
-   <LINK srcnodeid="19" srcpinname="Layer Out" dstnodeid="47" dstpinname="Layer 6">
-   </LINK>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="115">
    <BOUNDS type="Node" left="5400" top="7560" width="100" height="100">
    </BOUNDS>
@@ -1039,9 +1023,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="118">
-   <BOUNDS type="Box" left="5655" top="7065" width="2250" height="480">
+   <BOUNDS type="Box" left="5700" top="6885" width="2250" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5655" top="7065" width="0" height="0">
+   <BOUNDS type="Node" left="5700" top="6885" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,0.39750|">
    </PIN>
@@ -1055,9 +1039,9 @@
    <PACK Name="dx11" Version="1.0.4">
    </PACK>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="130">
-   <BOUNDS type="Box" left="7350" top="7350" width="2250" height="480">
+   <BOUNDS type="Box" left="7290" top="7695" width="2250" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="7350" top="7350" width="0" height="0">
+   <BOUNDS type="Node" left="7290" top="7695" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,0.39750|">
    </PIN>
@@ -1071,7 +1055,7 @@
    </PIN>
    <PIN pinname="Transform In" visible="1">
    </PIN>
-   <PIN pinname="Reload">
+   <PIN pinname="Reload" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="97" srcpinname="Output" dstnodeid="116" dstpinname="Directory">
@@ -1112,20 +1096,164 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="Reload">
    </PIN>
    </NODE>
-   <LINK srcnodeid="114" srcpinname="Y Output Value" dstnodeid="116" dstpinname="Reload">
+   <LINK srcnodeid="19" srcpinname="Layer Out" dstnodeid="47" dstpinname="Layer 7">
    </LINK>
-   <NODE systemname="Scenes" filename="Scenes.v4p" nodename="Scenes.v4p" componentmode="Hidden" id="175" debug="0">
-   <BOUNDS type="Node" left="9694" top="8536" width="0" height="0">
+   <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="179">
+   <BOUNDS type="Node" left="5865" top="10155" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="7635" top="1711" width="11235" height="13650">
+   <BOUNDS type="Box" left="5865" top="10155" width="3000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="15000" top="1800" width="11235" height="13650">
-   </BOUNDS>
-   <PIN pinname="Layer Out" visible="1">
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Color" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,0.35681|">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Sampler State" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="15" srcpinname="AudioTexturePos" dstnodeid="175" dstpinname="Transform In">
+   <LINK srcnodeid="15" srcpinname="AudioTexturePos" dstnodeid="179" dstpinname="Transform">
    </LINK>
-   <LINK srcnodeid="175" srcpinname="Layer Out" dstnodeid="47" dstpinname="Layer 7">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="177">
+   <BOUNDS type="Box" left="7575" top="9810" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7575" top="9810" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Sampler (DX11 Advanced)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Sampler (DX11 Advanced)" componentmode="Hidden" id="176">
+   <BOUNDS type="Node" left="6570" top="9405" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6570" top="9405" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Sampler" visible="1">
+   </PIN>
+   <PIN pinname="Filter Mode" slicecount="1" values="MinMagMipPoint">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="176" srcpinname="Sampler" dstnodeid="179" dstpinname="Sampler State">
+   </LINK>
+   <LINK srcnodeid="118" srcpinname="Color Output" dstnodeid="179" dstpinname="Color">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="183">
+   <BOUNDS type="Node" left="6285" top="8835" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="Scenes.png">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="96" srcpinname="Path" dstnodeid="183" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="179" srcpinname="Layer" dstnodeid="47" dstpinname="Layer 6">
+   </LINK>
+   <NODE systemname="Blend (DX11.RenderState)" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="184" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll">
+   <BOUNDS type="Node" left="5640" top="9255" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mode" slicecount="1" values="Blend">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="184" srcpinname="Render State" dstnodeid="179" dstpinname="Render State">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="185">
+   <BOUNDS type="Node" left="8280" top="8250" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="114" srcpinname="Y Output Value" dstnodeid="185" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="185" srcpinname="Output" dstnodeid="116" dstpinname="Reload">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="186">
+   <BOUNDS type="Box" left="10020" top="7635" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10020" top="7635" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="186" srcpinname="Y Output Value" dstnodeid="185" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="56">
+   <BOUNDS type="Node" left="2730" top="7485" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2730" top="7485" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Filename" visible="1" slicecount="1" values="|..\_MULTIMELINER\Audio\02 - Venter (Evian Christ TF 12 Mix).png|">
+   </PIN>
+   <PIN pinname="No Mips" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Load In Background" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Reload" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="56" srcpinname="Texture Out" dstnodeid="55" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="AudioTextureString" dstnodeid="56" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="74" srcpinname="Y Output Value" dstnodeid="56" dstpinname="No Mips">
+   </LINK>
+   <LINK srcnodeid="185" srcpinname="Output" dstnodeid="56" dstpinname="Reload">
+   </LINK>
+   <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="178">
+   <BOUNDS type="Node" left="6255" top="9720" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6255" top="9720" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Filename" visible="1" slicecount="1" values="..\..\Schumann\Schumann_vvvv\assets\music_slow\Scenes.png">
+   </PIN>
+   <PIN pinname="No Mips" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Reload" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Load In Background" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="178" srcpinname="Texture Out" dstnodeid="179" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="177" srcpinname="Y Output Value" dstnodeid="178" dstpinname="No Mips">
+   </LINK>
+   <LINK srcnodeid="185" srcpinname="Output" dstnodeid="178" dstpinname="Reload">
+   </LINK>
+   <LINK srcnodeid="183" srcpinname="Output" dstnodeid="178" dstpinname="Filename">
    </LINK>
    </PATCH>
