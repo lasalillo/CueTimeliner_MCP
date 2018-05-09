@@ -397,6 +397,8 @@
    </PIN>
    <PIN pinname="Do Seek" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Driver" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="47" dstpinname="Play">
    </LINK>
@@ -817,5 +819,21 @@
    <LINK srcnodeid="83" srcpinname="Output" dstnodeid="84" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="82" srcpinname="Up Edge" dstnodeid="77" dstpinname="Input 4">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="85">
+   <BOUNDS type="Box" left="7215" top="2025" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7215" top="2025" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="|ASIO4ALL v2|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|ASIO4ALL v2|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="85" srcpinname="Output Enum" dstnodeid="47" dstpinname="Driver">
    </LINK>
    </PATCH>
