@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Timeliner.v4p" systemname="Test" filename="D:\_VVVV\_Projects\_CUETIMELINER\Test.v4p" scrollx="0" scrolly="0" locked="0">
+   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Timeliner.v4p" systemname="Test" filename="D:\_VVVV\_Projects\_CUETIMELINER\Test.v4p" scrollx="150" scrolly="-360" locked="0">
    <BOUNDS type="Window" left="4575" top="5955" width="11685" height="9645">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
@@ -65,11 +65,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="59">
-   <BOUNDS type="Box" left="720" top="780" width="2100" height="270">
+   <BOUNDS type="Box" left="720" top="780" width="3450" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="720" top="780" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Files\Schumann_ARI_Slow.Project">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Files\_ALL.Project">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -225,7 +225,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3210" top="1590" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.55">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -355,7 +355,7 @@
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="6">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Speed">
+   <PIN pinname="Descriptive Name" slicecount="1" values="MasterFade">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -517,7 +517,7 @@
    <NODE systemname="VVVV (VVVV)" nodename="VVVV (VVVV)" componentmode="Hidden" id="-11">
    <BOUNDS type="Node" left="9615" top="525" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Application Title" slicecount="1" values="MIDI_IN">
+   <PIN pinname="Application Title" slicecount="1" values="TIMELINER">
    </PIN>
    <PIN pinname="Show in Tray" slicecount="1" values="0">
    </PIN>
@@ -1805,7 +1805,7 @@
    </BOUNDS>
    <BOUNDS type="Window" left="15240" top="8160" width="4335" height="5085">
    </BOUNDS>
-   <PIN pinname="Enable" visible="1">
+   <PIN pinname="Enable" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="512" srcpinname="Change" dstnodeid="519" dstpinname="Update">
@@ -1883,5 +1883,79 @@
    </LINKPOINT>
    <LINKPOINT x="4185" y="7050">
    </LINKPOINT>
+   </LINK>
+   <NODE systemname="MergeProjectsAsync (Preset.Utils)" filename="vl\VVVV.Preset.CueTimeliner.vl" nodename="MergeProjectsAsync (Preset.Utils)" componentmode="Hidden" id="545">
+   <BOUNDS type="Node" left="12300" top="2385" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="ProjectFiles" visible="1">
+   </PIN>
+   <PIN pinname="Append" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Merged File Path" visible="1">
+   </PIN>
+   <PIN pinname="Read" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Write" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="546">
+   <BOUNDS type="Box" left="12255" top="1035" width="2175" height="690">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12255" top="1035" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="2" visible="1" values="Files\_ARI_Cut.Project,Files\Noise2Cut.Project">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="546" srcpinname="Output String" dstnodeid="545" dstpinname="ProjectFiles">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="547">
+   <BOUNDS type="Box" left="12375" top="1815" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12375" top="1815" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Files\_ALL.Project">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="547" srcpinname="Output String" dstnodeid="545" dstpinname="Merged File Path">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="548">
+   <BOUNDS type="Box" left="12540" top="3600" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12540" top="3600" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="548" srcpinname="Y Output Value" dstnodeid="545" dstpinname="Write">
    </LINK>
    </PATCH>
