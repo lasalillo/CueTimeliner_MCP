@@ -69,7 +69,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="720" top="780" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Files\_ALL_OnSite.Project">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Files\_ALL_OnSite_18_5.Project">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -225,7 +225,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3210" top="1590" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.71">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
