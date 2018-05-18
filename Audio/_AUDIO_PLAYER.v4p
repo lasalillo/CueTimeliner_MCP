@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="D:\_SchumannPatchesAndPacks\CueTimeliner_MCP\Audio\_AUDIO_PLAYER.v4p" systemname="_AUDIO_PLAYER" filename="D:\_VVVV\_Projects\_CUETIMELINER\Audio\_AUDIO_PLAYER.v4p" bgcolor="15452804" scrollx="15" scrolly="15">
+   <PATCH nodename="D:\_SchumannPatchesAndPacks\CueTimeliner_MCP\Audio\_AUDIO_PLAYER.v4p" systemname="_AUDIO_PLAYER" filename="D:\_VVVV\_Projects\_CUETIMELINER\Audio\_AUDIO_PLAYER.v4p" bgcolor="15452804" scrollx="15" scrolly="-45">
    <BOUNDS type="Window" left="22200" top="8310" width="6600" height="7290">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" debug="0" systemname="IOBox (Value Advanced)">
@@ -261,7 +261,7 @@
    </PIN>
    <PIN pinname="Send" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Enable" slicecount="1" values="1">
+   <PIN pinname="Enable" slicecount="1" values="1" visible="1">
    </PIN>
    <PIN pinname="Server" visible="1" slicecount="1" values="127.0.0.1">
    </PIN>
@@ -373,9 +373,9 @@
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="57">
-   <BOUNDS type="Box" left="315" top="4875" width="720" height="240">
+   <BOUNDS type="Box" left="315" top="4980" width="720" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="315" top="4875" width="0" height="0">
+   <BOUNDS type="Node" left="315" top="4980" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Analysis">
    </PIN>
@@ -627,13 +627,15 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="GraphicsIP">
+   </PIN>
    </NODE>
    <LINK srcnodeid="81" srcpinname="Output String" dstnodeid="58" dstpinname="Server">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="82">
-   <BOUNDS type="Box" left="1155" top="3945" width="480" height="480">
+   <BOUNDS type="Box" left="615" top="3855" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1155" top="3945" width="0" height="0">
+   <BOUNDS type="Node" left="615" top="3855" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -647,7 +649,21 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enable">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="58" dstpinname="Enable">
+   <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="58" dstpinname="Enable" linkstyle="VHV">
+   <LINKPOINT x="825" y="4975">
+   </LINKPOINT>
+   <LINKPOINT x="1005" y="4940">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Enable" linkstyle="VHV">
+   <LINKPOINT x="855" y="4975">
+   </LINKPOINT>
+   <LINKPOINT x="3150" y="4940">
+   </LINKPOINT>
    </LINK>
    </PATCH>
