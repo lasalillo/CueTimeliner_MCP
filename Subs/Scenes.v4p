@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="D:\_SchumannPatchesAndPacks\CueTimeliner_MCP\Subs\Scenes.v4p" scrollx="0" scrolly="3165" systemname="Scenes" filename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Subs\Scenes.v4p">
+   <PATCH nodename="D:\_SchumannPatchesAndPacks\CueTimeliner_MCP\Subs\Scenes.v4p" scrollx="0" scrolly="360" systemname="Scenes" filename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Subs\Scenes.v4p">
    <NODE systemname="Sampler (DX11 Advanced)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Sampler (DX11 Advanced)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2175" top="9225" width="100" height="100">
    </BOUNDS>
@@ -127,7 +127,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8925" top="1500" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="27" visible="1" values="0,5,7,8,10,11,15,18,20,27,30,34,37,40,43,46,52,56,59,2,7,11,15,22,26,33,41">
+   <PIN pinname="Y Input Value" slicecount="27" visible="1" values="0,3,5,7,10,11,15,18,20,27,30,34,37,40,43,48,52,56,59,3,7,11,15,22,26,34,41">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -163,7 +163,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9330" top="1500" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="27" visible="1" values="0,56,55,18,34,47,22,14,25,9,25,11,14,29,31,6,45,44,56,59,26,49,50,43,55,52,11">
+   <PIN pinname="Y Input Value" slicecount="27" visible="1" values="0,12,56,54,33,58,22,14,27,9,25,15,46,28,31,6,58,47,57,0,27,52,51,44,56,16,11">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -199,7 +199,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9735" top="1500" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="27" visible="1" values="0,69,39,97,64,6,44,20,62,86,22,7,21,14,50,2,84,61,65,21,25,51,14,43,29,82,45">
+   <PIN pinname="Y Input Value" slicecount="27" visible="1" values="0,80,33,33,10,0,30,33,57,27,90,57,23,47,30,60,50,30,17,30,17,33,60,57,57,50,45">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -999,5 +999,39 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="62" srcpinname="Transform Out" dstnodeid="25" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="63">
+   <BOUNDS type="Node" left="5445" top="1575" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" slicecount="1" values="15">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="64">
+   <BOUNDS type="Node" left="5220" top="2070" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="100">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="63" srcpinname="Output" dstnodeid="64" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="65">
+   <BOUNDS type="Box" left="5115" top="2565" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5115" top="2565" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="Output" dstnodeid="65" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
