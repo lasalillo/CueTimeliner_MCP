@@ -225,7 +225,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3210" top="1590" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.71">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1335,7 +1335,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9060" top="6945" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" visible="1" slicecount="1" values="192.168.0.52">
+   <PIN pinname="Input String" visible="1" slicecount="1" values="192.168.10.100">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1890,4 +1890,6 @@
    <LINKPOINT x="6330" y="7818">
    </LINKPOINT>
    </LINK>
+   <INFO author="" description="" tags="">
+   </INFO>
    </PATCH>

@@ -261,7 +261,7 @@
    </PIN>
    <PIN pinname="Send" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Enable" slicecount="1" values="1" visible="1">
+   <PIN pinname="Enable" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Server" visible="1" slicecount="1" values="127.0.0.1">
    </PIN>
@@ -619,7 +619,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="615" top="4500" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="192.168.0.52">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="192.168.10.100">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -627,7 +627,7 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="GraphicsIP">
+   <PIN pinname="Descriptive Name" slicecount="1" values="MyIP">
    </PIN>
    </NODE>
    <LINK srcnodeid="81" srcpinname="Output String" dstnodeid="58" dstpinname="Server">

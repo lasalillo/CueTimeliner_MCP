@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="D:\_SchumannPatchesAndPacks\CueTimeliner_MCP\SendReceiveModules\Network.v4p" systemname="NETWORK" filename="C:\Projects\merck\SYSTEM\NETWORK.v4p" bgcolor="8973311" scrollx="0" scrolly="-360">
+   <PATCH nodename="D:\_SchumannPatchesAndPacks\CueTimeliner_MCP\SendReceiveModules\Network.v4p" systemname="NETWORK" filename="C:\Projects\merck\SYSTEM\NETWORK.v4p" bgcolor="8973311" scrollx="0" scrolly="0">
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="0" systemname="IOBox (Enumerations)">
    <BOUNDS type="Box" left="360" top="1755" width="600" height="240">
    </BOUNDS>
@@ -303,7 +303,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4890" top="1335" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="192.168.0.52">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="192.168.10.100">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="localhost">
    </PIN>
