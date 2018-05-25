@@ -345,9 +345,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="230">
-   <BOUNDS type="Box" left="4155" top="7485" width="1020" height="375">
+   <BOUNDS type="Box" left="3225" top="7500" width="1020" height="375">
    </BOUNDS>
-   <BOUNDS type="Node" left="4155" top="7485" width="0" height="0">
+   <BOUNDS type="Node" left="3225" top="7500" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -969,9 +969,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="230" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Speed" linkstyle="VHV">
-   <LINKPOINT x="3950" y="6715">
+   <LINKPOINT x="3330" y="6735">
    </LINKPOINT>
-   <LINKPOINT x="4975" y="5420">
+   <LINKPOINT x="4665" y="5430">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="271" srcpinname="Y Output Value" dstnodeid="2" dstpinname="PrevCue" linkstyle="VHV">
@@ -1039,9 +1039,9 @@
    <LINK srcnodeid="430" srcpinname="Path" dstnodeid="2" dstpinname="Location" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="445">
-   <BOUNDS type="Box" left="3120" top="7485" width="480" height="480">
+   <BOUNDS type="Box" left="4275" top="7500" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3120" top="7485" width="0" height="0">
+   <BOUNDS type="Node" left="4275" top="7500" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1055,9 +1055,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="MasterButton" dstnodeid="445" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="3215" y="6950">
+   <LINKPOINT x="3060" y="6930">
    </LINKPOINT>
-   <LINKPOINT x="4270" y="7120">
+   <LINKPOINT x="4305" y="6930">
    </LINKPOINT>
    </LINK>
    <NODE systemname="AsValue (Raw)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="AsValue (Raw)" componentmode="Hidden" id="475">
@@ -1655,29 +1655,29 @@
    <LINK srcnodeid="527" srcpinname="Y Output Value" dstnodeid="500" dstpinname="Send">
    </LINK>
    <NODE systemname="MIDIOut (MIDI.ControllerSystem)" filename="vl\VVVV.MIDI.Controllers.vl" nodename="MIDIOut (MIDI.ControllerSystem)" componentmode="Hidden" id="529">
-   <BOUNDS type="Node" left="7860" top="6870" width="100" height="100">
+   <BOUNDS type="Node" left="7845" top="7065" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="XTouch/PlatFormM+" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="7860" top="6870">
+   <BOUNDS type="Box" left="7845" top="7065">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Controllers" dstnodeid="529" dstpinname="Input" linkstyle="VHV">
-   <LINKPOINT x="5655" y="6645">
+   <LINKPOINT x="5650" y="6710">
    </LINKPOINT>
-   <LINKPOINT x="7890" y="6645">
+   <LINKPOINT x="7880" y="6775">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="524" srcpinname="Y Output Value" dstnodeid="529" dstpinname="XTouch/PlatFormM+" linkstyle="VHV">
-   <LINKPOINT x="7305" y="1800">
+   <LINKPOINT x="7305" y="1785">
    </LINKPOINT>
-   <LINKPOINT x="8700" y="1800">
+   <LINKPOINT x="8685" y="1785">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="2" srcpinname="RawOut" dstnodeid="500" dstpinname="Raw" linkstyle="VHV">
-   <LINKPOINT x="4020" y="6735">
+   <LINKPOINT x="3825" y="6735">
    </LINKPOINT>
    <LINKPOINT x="9900" y="6735">
    </LINKPOINT>
@@ -1751,9 +1751,9 @@
    <LINK srcnodeid="541" srcpinname="Output String" dstnodeid="539" dstpinname="Topic">
    </LINK>
    <NODE systemname="CDR (Raw Bin)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="CDR (Raw Bin)" componentmode="Hidden" id="542">
-   <BOUNDS type="Node" left="6240" top="6825" width="100" height="100">
+   <BOUNDS type="Node" left="6240" top="7260" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6240" top="6825" width="3000" height="3000">
+   <BOUNDS type="Box" left="6240" top="7260" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
@@ -1761,9 +1761,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="RawOut" dstnodeid="542" dstpinname="Input" linkstyle="VHV">
-   <LINKPOINT x="4050" y="6705">
+   <LINKPOINT x="3825" y="6870">
    </LINKPOINT>
-   <LINKPOINT x="6240" y="6705">
+   <LINKPOINT x="6270" y="6870">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="542" srcpinname="Last Slice" dstnodeid="539" dstpinname="Raw">
@@ -1851,9 +1851,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="2" srcpinname="MasterFade" dstnodeid="230" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="4185" y="7050">
+   <LINKPOINT x="3875" y="7060">
    </LINKPOINT>
-   <LINKPOINT x="4185" y="7050">
+   <LINKPOINT x="3565" y="7070">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="549">
