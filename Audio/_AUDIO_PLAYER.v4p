@@ -671,7 +671,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1035" top="1305" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="|ASIO4ALL v2|">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="|US-2x2 &amp; US-4x4 Mixing Driver|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="|ASIO4ALL v2|">
    </PIN>
@@ -691,7 +691,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2130" top="570" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -703,7 +703,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Player/AudioIn">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="84" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Player/AudioIn" linkstyle="VHV">
