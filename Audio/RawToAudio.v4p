@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="D:\_SchumannPatchesAndPacks\CueTimeliner_MCP\Audio\RawToAudio.v4p" scrollx="0" scrolly="0" systemname="RawToAudio" filename="D:\_SCHUMANN\CueTimeliner_MCP\Audio\RawToAudio.v4p">
+   <PATCH nodename="D:\_VVVV\_Projects\_SCHUMANN\CueTimeliner_MCP\Audio\RawToAudio.v4p" scrollx="0" scrolly="0" systemname="RawToAudio" filename="D:\_SCHUMANN\CueTimeliner_MCP\Audio\RawToAudio.v4p">
    <NODE systemname="FromRawAudioPlayer (Preset.Serialize)" filename="..\vl\VVVV.Preset.CueTimeliner.vl" nodename="FromRawAudioPlayer (Preset.Serialize)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="675" top="1305" width="100" height="100">
    </BOUNDS>
@@ -37,6 +37,8 @@
    </PIN>
    <PIN pinname="MasterButton" visible="1">
    </PIN>
+   <PIN pinname="MainAlpha" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="675" top="1905" width="100" height="100">
@@ -64,7 +66,7 @@
    </LINK>
    <LINK srcnodeid="0" srcpinname="Output" dstnodeid="2" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="11625" top="4275" width="4410" height="5970">
+   <BOUNDS type="Window" left="16830" top="3930" width="4410" height="5970">
    </BOUNDS>
    <NODE nodename="S (Value)" id="5" systemname="S (Value)">
    <BOUNDS type="Node" left="675" top="2745" width="0" height="0">
@@ -143,6 +145,8 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="MainAlpha" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="14" srcpinname="Output" dstnodeid="2" dstpinname="Default">
    </LINK>
@@ -193,5 +197,13 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="1" srcpinname="MasterButton" dstnodeid="19" dstpinname="Input Value">
+   </LINK>
+   <NODE nodename="S (Value)" id="20">
+   <BOUNDS type="Node" left="2700" top="3930" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="MainAlpha">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="MainAlpha" dstnodeid="20" dstpinname="Input Value">
    </LINK>
    </PATCH>
