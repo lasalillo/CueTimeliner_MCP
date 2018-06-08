@@ -49,7 +49,7 @@
    </BOUNDS>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" values="|Stop (hold) = Go to init, Zoom out&cr;&lf;Read &amp; IO (hold) = Follow Pointer&cr;&lf;Write &amp; Sends (hold) = Edit Values&cr;&lf;Bank &amp; Frame =  Track&cr;&lf;Rew/FF = Preset&cr;&lf;Wheel &amp; Channel = Pointer&cr;&lf;Wheel Push &amp; DYN = Do Seek&cr;&lf;EQ = Channel is Zoom&cr;&lf;Pan = Channel is XScroll&cr;&lf;Wheel HZ &amp; Channel = Zoom&cr;&lf;Wheel VT &amp; Channel = ScrollX&cr;&lf;Master Fade = Speed&cr;&lf;|">
+   <PIN pinname="Input String" slicecount="1" values="|Stop = Zoom out (Hold = Go to init)&cr;&lf;Read &amp; IO (hold) = Follow Pointer&cr;&lf;Write &amp; Sends (hold) = Edit Values&cr;&lf;Bank &amp; Frame =  Track&cr;&lf;Rew/FF = Preset&cr;&lf;Wheel &amp; Channel = Pointer&cr;&lf;Wheel Push &amp; DYN = Do Seek&cr;&lf;EQ = Channel is Zoom&cr;&lf;Pan = Channel is XScroll&cr;&lf;Wheel HZ &amp; Channel = Zoom&cr;&lf;Wheel VT &amp; Channel = ScrollX&cr;&lf;Master Fade = Speed&cr;&lf;|">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="12">
    </PIN>
